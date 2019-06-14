@@ -11,7 +11,7 @@ import java.util.Arrays;
  * <p>
  * Space complexity: O(n)
  */
-public class SquaresOfSortedArray {
+public class SquaresOfSortedArrayKt {
 
     public int[] sortedSquares(int[] A) {
         int n = A.length;
