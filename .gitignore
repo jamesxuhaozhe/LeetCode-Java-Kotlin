@@ -9,7 +9,7 @@
 /captures
 .externalNativeBuild
 
-.idea
+.idea/
 
 .project
 .settings
