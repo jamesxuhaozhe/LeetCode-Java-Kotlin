@@ -2,7 +2,7 @@ package Array
 
 import java.util.*
 
-class SquaresOfSortedArray {
+class SquaresOfSortedArrayKt {
     fun sortedSquares(A: IntArray): IntArray {
         val n = A.size
         val result = IntArray(n) // Creates an int array of fixed size n, default elements are all 0
