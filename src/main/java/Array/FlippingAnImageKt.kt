@@ -28,7 +28,7 @@ class FlippingAnImageKt {
         }
 
         for (index in array.indices) {
-            array[index] = reverseInt(array[index])
+            array[index] = array[index].reverse()
         }
     }
 
@@ -38,4 +38,6 @@ class FlippingAnImageKt {
         }
         return 0
     }
+
+    fun Int.reverse(): Int = if (this == 0) 1 else 0
 }
