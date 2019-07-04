@@ -39,5 +39,5 @@ class FlippingAnImageKt {
         return 0
     }
 
-    fun Int.reverse(): Int = if (this == 0) 1 else 0
+    private fun Int.reverse(): Int = if (this == 0) 1 else 0
 }
