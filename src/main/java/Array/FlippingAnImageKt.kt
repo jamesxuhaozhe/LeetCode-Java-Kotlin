@@ -17,7 +17,7 @@ class FlippingAnImageKt {
         if (array.isEmpty()) {
             return
         }
-        var i = 0;
+        var i = 0
         var j = array.size - 1
         while (i < j) {
             val middle = array[j]

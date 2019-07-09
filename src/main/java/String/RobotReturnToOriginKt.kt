@@ -30,10 +30,10 @@ class RobotReturnToOriginKt {
         if (moves.isBlank()) {
             return true
         }
-        var L = moves.count { ch -> ch == 'L' }
-        var R = moves.count { ch -> ch == 'R' }
-        var U = moves.count { ch -> ch == 'U' }
-        var D = moves.count { ch -> ch == 'D' }
+        val L = moves.count { ch -> ch == 'L' }
+        val R = moves.count { ch -> ch == 'R' }
+        val U = moves.count { ch -> ch == 'U' }
+        val D = moves.count { ch -> ch == 'D' }
         return (L == R) && (U == D)
     }
 }

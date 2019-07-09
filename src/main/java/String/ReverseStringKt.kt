@@ -8,7 +8,7 @@ class ReverseStringKt {
 
         var i = 0
         var j = s.size - 1
-        var middle = 'a'
+        var middle: Char
         while (i < j) {
             middle = s[j]
             s[j] = s[i]
