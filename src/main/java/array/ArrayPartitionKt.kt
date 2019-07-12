@@ -2,7 +2,7 @@ package array
 
 import java.util.*
 
-class ArrayPartition1Kt {
+class ArrayPartitionKt {
     fun arrayPairSum(nums: IntArray): Int {
         Arrays.sort(nums)
         var sum = 0
