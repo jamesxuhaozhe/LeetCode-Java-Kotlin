@@ -1,19 +1,8 @@
-/*
 package hashtable;
 
-import ktplayground.String;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ValidWordAbbr {
-    public ValidWordAbbr(String[] dictionary) {
 
-    }
-
-    public boolean isUnique(String word) {
-
-    }
-
-    private String genAbbrString(String str) {
-        if (str.)
-    }
 }
-*/
