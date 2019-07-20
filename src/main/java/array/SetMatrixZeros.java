@@ -1,6 +1,7 @@
 package array;
 
 public class SetMatrixZeros {
+
     public void setZeroes(int[][] matrix) {
         int rowLength = matrix.length;
         int colLength = matrix[0].length;

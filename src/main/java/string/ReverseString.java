@@ -1,6 +1,7 @@
 package string;
 
 public class ReverseString {
+
     public void reverseString(char[] s) {
         if (s == null || s.length == 0) {
             return;

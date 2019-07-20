@@ -1,9 +1,11 @@
 package hashtable
 
 class KeyboardRowKt {
+
     companion object {
         val ROWS = arrayOf("qwertyuiop", "asdfghjkl", "zxcvbnm")
     }
+
     fun findWords(words: Array<String>): Array<String> {
         if (words.isEmpty()) {
             return words

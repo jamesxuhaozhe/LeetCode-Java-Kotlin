@@ -13,6 +13,7 @@ import java.util.Set;
  * Space complexity: O(n)
  */
 public class JewelsAndStones {
+
     public int numJewelsInStones(String J, String S) {
         Set<Integer> typeSets = new HashSet<>();
         char[] types = J.toCharArray();

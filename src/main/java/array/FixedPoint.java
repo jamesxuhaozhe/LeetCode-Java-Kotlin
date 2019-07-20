@@ -1,6 +1,7 @@
 package array;
 
 public class FixedPoint {
+
     public int fixedPoint(int[] A) {
         if (A == null || A.length == 0) {
             return -1;

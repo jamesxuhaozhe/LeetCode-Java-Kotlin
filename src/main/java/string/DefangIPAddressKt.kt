@@ -1,6 +1,7 @@
 package string
 
 class DefangIPAddressKt {
+
     fun defangIPaddr(address: String): String {
         if (address.isEmpty()) {
             return address

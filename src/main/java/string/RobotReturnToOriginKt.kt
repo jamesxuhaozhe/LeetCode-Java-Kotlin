@@ -1,6 +1,7 @@
 package string
 
 class RobotReturnToOriginKt {
+
     fun judgeCircle(moves: String): Boolean {
         if (moves.isBlank()) {
             return true

@@ -41,5 +41,4 @@ public class FlippingAnImage {
 
         return 0;
     }
-
 }

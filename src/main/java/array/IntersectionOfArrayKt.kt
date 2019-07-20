@@ -1,6 +1,7 @@
 package array
 
 class IntersectionOfArrayKt {
+
     fun intersection(nums1: IntArray, nums2: IntArray): IntArray {
         val set1 = HashSet<Int>()
         val set2 = HashSet<Int>()

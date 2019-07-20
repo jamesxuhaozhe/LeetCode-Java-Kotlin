@@ -1,6 +1,7 @@
 package string
 
 class OneEditDistanceKt {
+
     fun isOneEditDistance(s: String, t: String): Boolean {
         if (s == t) {
             return false

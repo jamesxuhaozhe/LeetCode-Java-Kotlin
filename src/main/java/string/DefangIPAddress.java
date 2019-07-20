@@ -1,6 +1,7 @@
 package string;
 
 public class DefangIPAddress {
+
     public String defangIPaddr(String address) {
         if (address == null || address.isEmpty()) {
             return null;

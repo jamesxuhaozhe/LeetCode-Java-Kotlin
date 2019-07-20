@@ -1,6 +1,7 @@
 package string
 
 class FlipGameKt {
+
     fun generatePossibleNextMoves(s: String): List<String> {
         if (s.isEmpty() || s.length == 1) {
             return emptyList()

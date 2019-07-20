@@ -1,6 +1,7 @@
 package array;
 
 public class FibonacciNumber {
+
     public int fib(int N) {
         if (N == 0) {
             return 0;

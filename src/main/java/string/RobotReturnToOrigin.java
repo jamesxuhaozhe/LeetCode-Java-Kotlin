@@ -1,6 +1,7 @@
 package string;
 
 public class RobotReturnToOrigin {
+
     public boolean judgeCircle(String moves) {
         if (moves == null) {
             return true;

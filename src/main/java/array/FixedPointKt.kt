@@ -1,6 +1,7 @@
 package array
 
 class FixedPointKt {
+
     fun fixedPoint(A: IntArray): Int {
         if (A.isEmpty()) {
             return -1

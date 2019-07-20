@@ -1,6 +1,7 @@
 package array;
 
 public class ToLowerCase {
+
     public String toLowerCase(String str) {
         int offset = 'A' - 'a';
         char[] chars = str.toCharArray();

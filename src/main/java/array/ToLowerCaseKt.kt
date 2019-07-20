@@ -1,6 +1,7 @@
 package array
 
 class ToLowerCaseKt {
+
     fun toLowerCase(str: String): String {
         val offset = 'A' - 'a'
         val chars = str.toCharArray()

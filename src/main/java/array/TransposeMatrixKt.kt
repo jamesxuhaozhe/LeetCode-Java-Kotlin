@@ -1,6 +1,7 @@
 package array
 
 class TransposeMatrixKt {
+
     fun transpose(A: Array<IntArray>): Array<IntArray> {
         if (A.isEmpty()) {
             return A

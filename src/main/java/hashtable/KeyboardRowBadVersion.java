@@ -75,5 +75,4 @@ public class KeyboardRowBadVersion {
             System.out.println(word);
         }
     }
-
 }

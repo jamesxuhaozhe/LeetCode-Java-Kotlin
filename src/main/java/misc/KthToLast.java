@@ -3,6 +3,7 @@ package misc;
 import misc.datastructure.LinkedListNode;
 
 public class KthToLast {
+
     class Index {
         public int value = 0;
     }

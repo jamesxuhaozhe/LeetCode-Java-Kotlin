@@ -3,6 +3,7 @@ package array;
 import java.util.Arrays;
 
 public class ArrayPartition {
+
     public int arrayPairSum(int[] nums) {
         Arrays.sort(nums);
         int sum = 0;

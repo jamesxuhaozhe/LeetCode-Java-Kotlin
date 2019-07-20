@@ -1,6 +1,7 @@
 package array
 
 class SetMatrixZerosKt {
+
     fun setZeroes(matrix: Array<IntArray>): Unit {
         val rowFlags = BooleanArray(matrix.size)
         val colFlags = BooleanArray(matrix[0].size)

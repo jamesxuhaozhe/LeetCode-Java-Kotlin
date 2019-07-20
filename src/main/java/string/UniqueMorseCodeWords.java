@@ -5,7 +5,6 @@ import java.util.Set;
 
 public class UniqueMorseCodeWords {
 
-
     private static String[] MORSE_CODE_TABLE = new String[]
             {".-", "-...", "-.-.", "-..", ".", "..-.",
                     "--.", "....", "..", ".---", "-.-", ".-..",

@@ -1,6 +1,7 @@
 package array;
 
 public class TransposeMatrix {
+
     public int[][] transpose(int[][] A) {
         if (A == null || A.length == 0) {
             return A;

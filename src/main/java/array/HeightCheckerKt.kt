@@ -2,7 +2,6 @@ package array
 
 import java.util.*
 
-
 class HeightCheckerKt {
 
     fun heightChecker(heights: IntArray): Int {

@@ -1,6 +1,7 @@
 package array
 
 class FlippingAnImageKt {
+
     fun flipAndInvertImage(A: Array<IntArray>): Array<IntArray> {
         if (A.isEmpty()) {
             return A

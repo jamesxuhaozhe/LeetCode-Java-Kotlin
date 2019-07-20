@@ -1,6 +1,6 @@
 package ktplayground
 
-//type inference
+
 
 val authors = listOf("Dmitry", "Svetlana")
 
