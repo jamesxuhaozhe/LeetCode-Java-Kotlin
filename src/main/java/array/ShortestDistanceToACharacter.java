@@ -2,6 +2,7 @@ package array;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.OptionalInt;
 
 //TODO we can do better
 public class ShortestDistanceToACharacter {
@@ -19,7 +20,12 @@ public class ShortestDistanceToACharacter {
                 result[i] = 0;
             } else {
                 final int index = i;
-                result[i] = cPos.stream().mapToInt(number -> Math.abs(number - index)).min().getAsInt();
+                OptionalInt optionalInt = cPos.stream().mapToInt(number -> Math.abs(number - index)).min();
+                if (optionalInt.isPresent()) {
+                    result[i] = optionalInt.getAsInt();
+                } else {
+                    throw new IllegalArgumentException();
+                }
             }
         }
         return result;
