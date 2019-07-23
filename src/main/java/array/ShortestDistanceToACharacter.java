@@ -6,6 +6,7 @@ import java.util.OptionalInt;
 
 //TODO we can do better
 public class ShortestDistanceToACharacter {
+
     public int[] shortestToChar(String S, char C) {
         char[] chars = S.toCharArray();
         int[] result = new int[chars.length];
