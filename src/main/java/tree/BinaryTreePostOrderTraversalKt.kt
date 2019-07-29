@@ -2,7 +2,7 @@ package tree
 
 import misc.ktdatastructure.TreeNode
 
-class BinaryTreePostOrderTraversal {
+class BinaryTreePostOrderTraversalKt {
     fun postorderTraversal(root: TreeNode?): List<Int> {
         if (root == null) {
             return emptyList()
