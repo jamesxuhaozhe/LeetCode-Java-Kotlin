@@ -2,7 +2,7 @@ package tree
 
 import misc.ktdatastructure.TreeNode
 
-class MaxDepthTree {
+class MaxDepthTreeKt {
     fun maxDepth(root: TreeNode?): Int {
         if (root == null) {
             return 0
