@@ -1,4 +1,4 @@
-package array
+package array.flipping_an_image_832
 
 class FlippingAnImageKt {
 

@@ -1,5 +1,12 @@
-package array;
+package array.flipping_an_image_832;
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/flipping-an-image/
+ *
+ * Time complexity: TODO
+ *
+ * Space complexity: TODO
+ */
 public class FlippingAnImage {
 
     public int[][] flipAndInvertImage(int[][] A) {
