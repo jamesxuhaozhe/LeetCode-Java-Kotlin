@@ -1,6 +1,6 @@
 package tree;
 
-import misc.datastructure.TreeNode;
+import common.datastructure.TreeNode;
 
 public class MaxDepthTree {
     public int maxDepth(TreeNode root) {

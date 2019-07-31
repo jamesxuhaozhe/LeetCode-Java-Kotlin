@@ -1,6 +1,6 @@
 package tree
 
-import misc.ktdatastructure.TreeNode
+import common.ktdatastructure.TreeNode
 
 class BalancedBinaryTreeKt {
     fun isBalanced(root: TreeNode?): Boolean {

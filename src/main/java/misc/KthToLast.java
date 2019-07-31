@@ -1,6 +1,6 @@
 package misc;
 
-import misc.datastructure.LinkedListNode;
+import common.datastructure.LinkedListNode;
 
 public class KthToLast {
 

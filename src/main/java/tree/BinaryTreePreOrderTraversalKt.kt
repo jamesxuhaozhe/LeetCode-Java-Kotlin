@@ -1,6 +1,6 @@
 package tree
 
-import misc.ktdatastructure.TreeNode
+import common.ktdatastructure.TreeNode
 
 class BinaryTreePreOrderTraversalKt {
     fun preorderTraversal(root: TreeNode?): List<Int> {

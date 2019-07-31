@@ -1,6 +1,6 @@
 package tree
 
-import misc.ktdatastructure.TreeNode
+import common.ktdatastructure.TreeNode
 
 class MaxDepthTreeKt {
     fun maxDepth(root: TreeNode?): Int {

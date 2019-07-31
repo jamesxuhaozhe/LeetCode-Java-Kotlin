@@ -1,6 +1,6 @@
 package tree
 
-import misc.ktdatastructure.TreeNode
+import common.ktdatastructure.TreeNode
 
 class BinaryTreeInOrderTraversalKt {
     fun inorderTraversal(root: TreeNode?): List<Int> {

@@ -1,6 +1,6 @@
 package tree
 
-import misc.ktdatastructure.TreeNode
+import common.ktdatastructure.TreeNode
 
 class SameTreeKt {
     fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean {

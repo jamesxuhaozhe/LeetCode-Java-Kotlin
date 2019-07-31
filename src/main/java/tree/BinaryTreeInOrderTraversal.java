@@ -1,6 +1,6 @@
 package tree;
 
-import misc.datastructure.TreeNode;
+import common.datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package misc.ktdatastructure
+package common.ktdatastructure
 
 class TreeNode(var `val`: Int) {
     var left: TreeNode? = null

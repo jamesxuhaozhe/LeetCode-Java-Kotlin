@@ -1,4 +1,4 @@
-package misc.datastructure;
+package common.datastructure;
 
 public class TreeNode {
 
