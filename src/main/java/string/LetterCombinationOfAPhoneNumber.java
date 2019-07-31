@@ -4,7 +4,7 @@ import java.util.*;
 
 public class LetterCombinationOfAPhoneNumber {
 
-    private static Map<String, List<String>> KEY_BOARDS = new HashMap<>();
+    private static final Map<String, List<String>> KEY_BOARDS = new HashMap<>();
 
     static {
         KEY_BOARDS.put("2", Arrays.asList("a", "b", "c"));
