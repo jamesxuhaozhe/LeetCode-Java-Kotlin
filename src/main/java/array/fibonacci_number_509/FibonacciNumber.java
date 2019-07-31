@@ -1,5 +1,12 @@
-package array;
+package array.fibonacci_number_509;
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/fibonacci-number/
+ *
+ * Time complexity: O(1.6^n)
+ *
+ * Space Complexity: O(n)
+ */
 public class FibonacciNumber {
 
     public int fib(int N) {

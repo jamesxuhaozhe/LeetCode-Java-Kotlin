@@ -1,7 +1,14 @@
-package array;
+package array.array_partition_I_561;
 
 import java.util.Arrays;
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/array-partition-i/
+ *
+ * Time complexity: O(nlogn)
+ *
+ * Space complexity: O(n)
+ */
 public class ArrayPartition {
 
     public int arrayPairSum(int[] nums) {

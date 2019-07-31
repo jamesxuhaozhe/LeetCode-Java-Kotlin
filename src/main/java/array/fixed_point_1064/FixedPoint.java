@@ -1,5 +1,12 @@
-package array;
+package array.fixed_point_1064;
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/fixed-point/
+ *
+ * Time complexity: O(n)
+ *
+ * Space complexity: O(1)
+ */
 public class FixedPoint {
 
     public int fixedPoint(int[] A) {
