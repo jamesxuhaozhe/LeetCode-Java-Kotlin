@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Problem link: https://leetcode-cn.com/problems/array-partition-i/
  *
- * Time complexity: O(nlogn)
+ * Time complexity: O(nlog(n))
  *
  * Space complexity: O(n)
  */
