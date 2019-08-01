@@ -1,4 +1,4 @@
-package array;
+package array.majority_element_169;
 
 import java.util.Arrays;
 

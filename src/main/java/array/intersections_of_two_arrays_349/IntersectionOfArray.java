@@ -1,4 +1,4 @@
-package array;
+package array.intersections_of_two_arrays_349;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package array
+package array.transpose_matrix_867
 
 class TransposeMatrixKt {
 

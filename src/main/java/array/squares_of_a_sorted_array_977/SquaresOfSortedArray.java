@@ -1,4 +1,4 @@
-package array;
+package array.squares_of_a_sorted_array_977;
 
 import java.util.Arrays;
 

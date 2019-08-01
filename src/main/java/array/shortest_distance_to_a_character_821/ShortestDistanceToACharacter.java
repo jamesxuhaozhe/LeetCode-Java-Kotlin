@@ -1,4 +1,4 @@
-package array;
+package array.shortest_distance_to_a_character_821;
 
 import java.util.ArrayList;
 import java.util.List;

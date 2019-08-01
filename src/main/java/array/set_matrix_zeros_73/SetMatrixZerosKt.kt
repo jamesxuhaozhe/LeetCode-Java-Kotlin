@@ -1,4 +1,4 @@
-package array
+package array.set_matrix_zeros_73
 
 class SetMatrixZerosKt {
 

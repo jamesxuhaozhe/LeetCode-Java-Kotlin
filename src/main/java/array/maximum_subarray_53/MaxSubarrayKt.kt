@@ -1,4 +1,4 @@
-package array
+package array.maximum_subarray_53
 
 class MaxSubarrayKt {
 
