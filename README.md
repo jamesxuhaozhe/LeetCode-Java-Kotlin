@@ -2,7 +2,7 @@
 
 This project contains solution for LeetCode problems. 
 
-Every solution is given in both Java and Kotlin language
+Every solution is given in both Java and Kotlin language.
 
 As the size of the LeetCode problems keep growing, this project will be updated regularly, contributions in any form will be much appreciated.
 
