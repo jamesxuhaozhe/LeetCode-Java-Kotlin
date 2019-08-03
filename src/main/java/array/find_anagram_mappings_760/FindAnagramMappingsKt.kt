@@ -1,7 +1,6 @@
 package array.find_anagram_mappings_760
 
 class FindAnagramMappingsKt {
-
     fun anagramMappings(A: IntArray, B: IntArray): IntArray {
         val map = HashMap<Int, Int>()
         for (index in B.indices) {
