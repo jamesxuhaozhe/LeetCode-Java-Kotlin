@@ -1,10 +1,10 @@
-package hashtable;
+package hashtable.keyboard_row_500;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class KeyboardRowGoodVersion {
+public class SolutionGood {
 
     private static String[] ROWS = new String[] {
             "qwertyuiop",

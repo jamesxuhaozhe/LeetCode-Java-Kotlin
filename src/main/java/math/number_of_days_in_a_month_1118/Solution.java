@@ -1,6 +1,6 @@
-package math;
+package math.number_of_days_in_a_month_1118;
 
-public class NumbersOfDaysInAMonth {
+public class Solution {
 
     private static final int[] LEAP_YEAR = new int[]{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 

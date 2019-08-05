@@ -1,8 +1,8 @@
-package queue
+package queue.number_of_recent_calls_933
 
 import java.util.*
 
-class NumberOfRecentCallsKt {
+class SolutionKt {
     private val queue = ArrayDeque<Int>()
 
     fun ping(t: Int): Int {

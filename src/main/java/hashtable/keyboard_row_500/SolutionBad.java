@@ -1,8 +1,8 @@
-package hashtable;
+package hashtable.keyboard_row_500;
 
 import java.util.*;
 
-public class KeyboardRowBadVersion {
+public class SolutionBad {
 
     private static Set<Integer> row1 = new HashSet<>();
     private static Set<Integer> row2 = new HashSet<>();
@@ -70,7 +70,7 @@ public class KeyboardRowBadVersion {
     }
 
     public static void main(String[] args) {
-        String[] results = new KeyboardRowBadVersion().findWords(new String[] {"Alaska", "Dad"});
+        String[] results = new SolutionBad().findWords(new String[] {"Alaska", "Dad"});
         for (String word : results) {
             System.out.println(word);
         }

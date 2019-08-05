@@ -1,17 +1,17 @@
-package queue;
+package queue.implement_stack_with_queues;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
 
 //TODO need to fix the logic, the below logic is not right.
-public class ImplementStackWithQueues {
+public class Solution {
 
     private Queue<Integer> input;
 
     private Queue<Integer> output;
 
     /** Initialize your data structure here. */
-    public ImplementStackWithQueues() {
+    public Solution() {
         input = new PriorityQueue<>();
         output = new PriorityQueue<>();
     }

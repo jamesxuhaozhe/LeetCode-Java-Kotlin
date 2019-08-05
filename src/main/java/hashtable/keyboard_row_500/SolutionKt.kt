@@ -1,6 +1,6 @@
-package hashtable
+package hashtable.keyboard_row_500
 
-class KeyboardRowKt {
+class SolutionKt {
 
     companion object {
         val ROWS = arrayOf("qwertyuiop", "asdfghjkl", "zxcvbnm")

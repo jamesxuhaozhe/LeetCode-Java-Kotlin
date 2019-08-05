@@ -1,8 +1,8 @@
-package linkedList;
+package linkedList.add_two_numbers_2;
 
 import datastructure.ListNode;
 
-public class AddTwoNumbers {
+public class Solution {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         return addTwoNumbers(l1, l2, 0);

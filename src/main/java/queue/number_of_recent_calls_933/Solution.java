@@ -1,13 +1,13 @@
-package queue;
+package queue.number_of_recent_calls_933;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class NumberOfRecentCalls {
+public class Solution {
 
     private Queue<Integer> queue;
 
-    public NumberOfRecentCalls() {
+    public Solution() {
         queue = new ArrayDeque<>();
     }
 
