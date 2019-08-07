@@ -2,7 +2,7 @@ package hashtable.employee_importance_690
 
 import java.util.HashMap
 
-class SolutionKt {
+class SolutionDFSKt {
 
     fun getImportance(employees: List<Employee>, id: Int): Int {
         val map = HashMap<Int, Employee>()

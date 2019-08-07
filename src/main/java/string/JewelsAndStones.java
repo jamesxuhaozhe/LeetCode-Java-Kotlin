@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * Problem link: https://leetcode.com/problems/jewels-and-stones/
  * <p>
- * Solution idea: naive idea
+ * SolutionDFS idea: naive idea
  * <p>
  * Time complexity: O(n)
  * <p>

@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Problem link: https://leetcode.com/problems/two-sum/
  * <p>
- * Solution idea: Maintain a map value -> index
+ * SolutionDFS idea: Maintain a map value -> index
  * <p>
  * Time complexity: O(n)
  * <p>
