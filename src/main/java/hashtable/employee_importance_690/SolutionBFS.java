@@ -37,11 +37,11 @@ public class SolutionBFS {
     private static class Employee {
         // It's the unique id of each node;
         // unique id of this employee
-        public int id;
+        int id;
         // the importance value of this employee
-        public int importance;
+        int importance;
         // the id of direct subordinates
-        public List<Integer> subordinates;
+        List<Integer> subordinates;
 
         Employee(int id, int importance, List<Integer> subordinates) {
             this.id = id;
