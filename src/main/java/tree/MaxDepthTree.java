@@ -3,6 +3,7 @@ package tree;
 import common.datastructure.TreeNode;
 
 public class MaxDepthTree {
+
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;

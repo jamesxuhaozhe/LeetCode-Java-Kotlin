@@ -2,7 +2,7 @@ package tree
 
 import common.ktdatastructure.TreeNode
 
-class ConvertSortedArrayToBST {
+class ConvertSortedArrayToBSTKt {
 
     fun sortedArrayToBST(nums: IntArray): TreeNode? {
         if (nums.isEmpty()) {

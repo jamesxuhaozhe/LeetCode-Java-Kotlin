@@ -3,6 +3,7 @@ package tree
 import common.ktdatastructure.TreeNode
 
 class SameTreeKt {
+
     fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean {
         if (p == null && q == null) {
             return true

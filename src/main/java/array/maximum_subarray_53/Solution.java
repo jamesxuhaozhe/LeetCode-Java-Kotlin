@@ -1,6 +1,7 @@
 package array.maximum_subarray_53;
 
 public class Solution {
+
     public int maxSubArray(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;

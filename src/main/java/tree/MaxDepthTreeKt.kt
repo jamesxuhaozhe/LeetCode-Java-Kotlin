@@ -3,6 +3,7 @@ package tree
 import common.ktdatastructure.TreeNode
 
 class MaxDepthTreeKt {
+
     fun maxDepth(root: TreeNode?): Int {
         if (root == null) {
             return 0
