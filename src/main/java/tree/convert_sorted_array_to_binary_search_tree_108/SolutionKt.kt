@@ -1,8 +1,8 @@
-package tree
+package tree.convert_sorted_array_to_binary_search_tree_108
 
 import common.ktdatastructure.TreeNode
 
-class ConvertSortedArrayToBSTKt {
+class SolutionKt {
 
     fun sortedArrayToBST(nums: IntArray): TreeNode? {
         if (nums.isEmpty()) {

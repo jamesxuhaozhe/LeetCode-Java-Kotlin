@@ -1,8 +1,8 @@
-package tree;
+package tree.balanced_binary_tree_110;
 
 import common.datastructure.TreeNode;
 
-public class BalancedBinaryTreeStupidVersion {
+public class SolutionStupid {
 
     public boolean isBalanced(TreeNode root) {
         if (root == null) {

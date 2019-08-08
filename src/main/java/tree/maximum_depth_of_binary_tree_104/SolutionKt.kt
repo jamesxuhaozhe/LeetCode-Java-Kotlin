@@ -1,8 +1,8 @@
-package tree
+package tree.maximum_depth_of_binary_tree_104
 
 import common.ktdatastructure.TreeNode
 
-class MaxDepthTreeKt {
+class SolutionKt {
 
     fun maxDepth(root: TreeNode?): Int {
         if (root == null) {

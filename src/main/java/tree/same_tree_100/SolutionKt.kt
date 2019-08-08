@@ -1,8 +1,8 @@
-package tree
+package tree.same_tree_100
 
 import common.ktdatastructure.TreeNode
 
-class SameTreeKt {
+class SolutionKt {
 
     fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean {
         if (p == null && q == null) {

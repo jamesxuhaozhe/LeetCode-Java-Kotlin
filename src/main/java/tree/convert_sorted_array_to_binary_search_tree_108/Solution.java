@@ -1,8 +1,8 @@
-package tree;
+package tree.convert_sorted_array_to_binary_search_tree_108;
 
 import common.datastructure.TreeNode;
 
-public class ConvertSortedArrayToBST {
+public class Solution {
 
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums == null || nums.length == 0) {

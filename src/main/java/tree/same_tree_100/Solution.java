@@ -1,8 +1,8 @@
-package tree;
+package tree.same_tree_100;
 
 import common.datastructure.TreeNode;
 
-public class SameTree {
+public class Solution {
 
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) {

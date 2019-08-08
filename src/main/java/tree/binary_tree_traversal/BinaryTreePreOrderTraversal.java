@@ -1,4 +1,4 @@
-package tree;
+package tree.binary_tree_traversal;
 
 import common.datastructure.TreeNode;
 
@@ -6,21 +6,21 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class BinaryTreeInOrderTraversal {
-    public List<Integer> inorderTraversal(TreeNode root) {
+public class BinaryTreePreOrderTraversal {
+    public List<Integer> preorderTraversal(TreeNode root) {
         if (root == null) {
             return Collections.emptyList();
         }
         List<Integer> result = new ArrayList<>();
-        inOrderTraversal(root, result);
+        preOrderTraversal(root, result);
         return result;
     }
 
-    private void inOrderTraversal(TreeNode node, List<Integer> result) {
+    private void preOrderTraversal(TreeNode node, List<Integer> result) {
         if (node != null) {
-            inOrderTraversal(node.left, result);
             result.add(node.val);
-            inOrderTraversal(node.right, result);
+            preOrderTraversal(node.left, result);
+            preOrderTraversal(node.right, result);
         }
     }
 }

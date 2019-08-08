@@ -1,8 +1,8 @@
-package tree;
+package tree.maximum_depth_of_binary_tree_104;
 
 import common.datastructure.TreeNode;
 
-public class MaxDepthTree {
+public class Solution {
 
     public int maxDepth(TreeNode root) {
         if (root == null) {

@@ -1,4 +1,4 @@
-package tree
+package tree.binary_tree_traversal
 
 import common.ktdatastructure.TreeNode
 
