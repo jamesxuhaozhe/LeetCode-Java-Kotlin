@@ -1,9 +1,9 @@
-package string;
+package string.unique_email_addresses_929;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class UniqueEmailAddress {
+public class Solution {
 
     public int numUniqueEmails(String[] emails) {
         if (emails == null || emails.length == 0) {

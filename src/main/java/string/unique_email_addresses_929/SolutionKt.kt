@@ -1,6 +1,6 @@
-package string
+package string.unique_email_addresses_929
 
-class UniqueEmailAddressKt {
+class SolutionKt {
 
     fun numUniqueEmails(emails: Array<String>): Int {
         if (emails.isEmpty()) {

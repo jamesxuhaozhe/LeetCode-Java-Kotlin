@@ -1,10 +1,10 @@
-package string;
+package string.flip_game_293;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class FlipGame {
+public class Solution {
 
     public List<String> generatePossibleNextMoves(String s) {
         if (s == null || s.isEmpty() || s.length() == 1) {

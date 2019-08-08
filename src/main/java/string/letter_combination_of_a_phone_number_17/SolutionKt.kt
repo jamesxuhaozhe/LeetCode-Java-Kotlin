@@ -1,6 +1,6 @@
-package string
+package string.letter_combination_of_a_phone_number_17
 
-class LetterCombinationOfAPhoneNumberKt {
+class SolutionKt {
 
     companion object {
         private val KEY_BOARDS = mapOf(

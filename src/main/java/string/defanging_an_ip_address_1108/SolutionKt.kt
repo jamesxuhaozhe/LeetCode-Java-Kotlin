@@ -1,6 +1,6 @@
-package string
+package string.defanging_an_ip_address_1108
 
-class DefangIPAddressKt {
+class SolutionKt {
 
     fun defangIPaddr(address: String): String {
         if (address.isEmpty()) {

@@ -1,6 +1,6 @@
-package string
+package string.reverse_string_344
 
-class ReverseStringKt {
+class SolutionKt {
 
     fun reverseString(s: CharArray): Unit {
         if (s.isEmpty()) {

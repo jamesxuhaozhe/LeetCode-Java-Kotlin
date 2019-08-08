@@ -1,8 +1,8 @@
-package tree;
+package tree.balanced_binary_tree_110;
 
 import common.datastructure.TreeNode;
 
-public class BalancedBinaryTree {
+public class Solution {
     public boolean isBalanced(TreeNode root) {
         return checkHeight(root) != Integer.MIN_VALUE;
     }

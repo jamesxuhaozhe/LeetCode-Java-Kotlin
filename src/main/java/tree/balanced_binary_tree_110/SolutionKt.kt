@@ -1,8 +1,8 @@
-package tree
+package tree.balanced_binary_tree_110
 
 import common.ktdatastructure.TreeNode
 
-class BalancedBinaryTreeKt {
+class SolutionKt {
     fun isBalanced(root: TreeNode?): Boolean {
         return checkHeight(root) != Int.MIN_VALUE
     }

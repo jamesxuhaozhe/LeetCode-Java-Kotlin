@@ -1,6 +1,6 @@
-package string;
+package string.defanging_an_ip_address_1108;
 
-public class DefangIPAddress {
+public class Solution {
 
     public String defangIPaddr(String address) {
         if (address == null || address.isEmpty()) {
@@ -20,6 +20,6 @@ public class DefangIPAddress {
     }
 
     public static void main(String[] args) {
-        System.out.println(new DefangIPAddress().defangIPaddr("139.168.34.56"));
+        System.out.println(new Solution().defangIPaddr("139.168.34.56"));
     }
 }

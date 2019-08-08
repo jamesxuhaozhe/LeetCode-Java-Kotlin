@@ -1,4 +1,4 @@
-package string;
+package string.jewels_and_stones_771;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -12,7 +12,7 @@ import java.util.Set;
  * <p>
  * Space complexity: O(n)
  */
-public class JewelsAndStones {
+public class Solution {
 
     public int numJewelsInStones(String J, String S) {
         Set<Integer> typeSets = new HashSet<>();

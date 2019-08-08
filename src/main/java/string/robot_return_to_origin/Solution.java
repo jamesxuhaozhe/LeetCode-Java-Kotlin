@@ -1,6 +1,6 @@
-package string;
+package string.robot_return_to_origin;
 
-public class RobotReturnToOrigin {
+public class Solution {
 
     public boolean judgeCircle(String moves) {
         if (moves == null) {

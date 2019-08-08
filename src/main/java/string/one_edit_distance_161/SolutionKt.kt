@@ -1,6 +1,6 @@
-package string
+package string.one_edit_distance_161
 
-class OneEditDistanceKt {
+class SolutionKt {
 
     fun isOneEditDistance(s: String, t: String): Boolean {
         if (s == t) {

@@ -1,6 +1,6 @@
-package string
+package string.jewels_and_stones_771
 
-class JewelsAndStonesKt {
+class SolutionKt {
 
     fun numJewelsInStones(J: String, S: String): Int {
         val types = J.toCharArray()

@@ -1,6 +1,6 @@
-package string
+package string.flip_game_293
 
-class FlipGameKt {
+class SolutionKt {
 
     fun generatePossibleNextMoves(s: String): List<String> {
         if (s.isEmpty() || s.length == 1) {

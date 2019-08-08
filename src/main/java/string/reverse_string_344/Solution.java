@@ -1,6 +1,6 @@
-package string;
+package string.reverse_string_344;
 
-public class ReverseString {
+public class Solution {
 
     public void reverseString(char[] s) {
         if (s == null || s.length == 0) {

@@ -1,4 +1,4 @@
-package string;
+package string.letter_combination_of_a_phone_number_17;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LetterCombinationOfAPhoneNumber {
+public class Solution {
 
     private static final Map<String, List<String>> KEY_BOARDS = new HashMap<>();
 

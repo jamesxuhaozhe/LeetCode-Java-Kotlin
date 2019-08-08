@@ -1,10 +1,10 @@
-package string
+package string.unique_morse_code_words_804
 
-class UniqueMorseCodeWordsKt {
+class SolutionKt {
 
     companion object {
         val MORSE_CODE_TABLE = arrayOf(".-", "-...", "-.-.", "-..", ".", "..-.",
-            "--.", "....", "..", ".---", "-.-", ".-..",
+            "--.", "....", "", ".---", "-.-", ".-..",
             "--", "-.", "---", ".--.", "--.-", ".-.",
             "...", "-", "..-", "...-", ".--", "-..-",
             "-.--", "--..")

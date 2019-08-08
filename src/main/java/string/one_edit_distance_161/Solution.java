@@ -1,6 +1,6 @@
-package string;
+package string.one_edit_distance_161;
 
-public class OneEditDistance {
+public class Solution {
 
     public boolean isOneEditDistance(String s, String t) {
         if (s == null || t == null) {

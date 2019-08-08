@@ -1,13 +1,13 @@
-package string;
+package string.unique_morse_code_words_804;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class UniqueMorseCodeWords {
+public class Solution {
 
     private static String[] MORSE_CODE_TABLE = new String[]
             {".-", "-...", "-.-.", "-..", ".", "..-.",
-                    "--.", "....", "..", ".---", "-.-", ".-..",
+                    "--.", "....", "", ".---", "-.-", ".-..",
                     "--", "-.", "---", ".--.", "--.-", ".-.",
                     "...", "-", "..-", "...-", ".--", "-..-",
                     "-.--", "--.."};
