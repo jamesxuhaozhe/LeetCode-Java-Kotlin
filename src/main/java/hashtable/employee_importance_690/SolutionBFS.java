@@ -13,14 +13,9 @@ public class SolutionBFS {
 
         // building a query queue
         Queue<Integer> employeeIdQueue = new PriorityQueue<>();
-        employeeIdQueue.addAll(map.get(id).subordinates);
+        employeeIdQueue.add(id);
 
-        int currentIdEmployeeImportance = map.get(id).importance;
-        if (employeeIdQueue.isEmpty()) {
-            return currentIdEmployeeImportance;
-        }
-
-        int importanceSum = currentIdEmployeeImportance;
+        int importanceSum = 0;
         while (!employeeIdQueue.isEmpty()) {
             Employee employee = map.get(employeeIdQueue.poll());
             importanceSum += employee.importance;
