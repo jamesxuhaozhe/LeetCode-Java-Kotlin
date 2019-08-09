@@ -7,7 +7,6 @@ class SolutionKt {
             return A
         }
 
-        val outerSize = A.size
         for (array in A) {
             processArray(array)
         }
