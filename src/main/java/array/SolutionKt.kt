@@ -1,4 +1,4 @@
-package array.fibonacci_number_509;
+package array
 
 /**
  * Problem link: https://leetcode-cn.com/problems/fibonacci-number/
@@ -7,17 +7,17 @@ package array.fibonacci_number_509;
  *
  * Space Complexity: O(n)
  */
-public class Solution {
+class SolutionKt {
 
-    public int fib(int N) {
+    fun fib(N: Int): Int {
         if (N == 0) {
-            return 0;
+            return 0
         }
 
         if (N == 1) {
-            return 1;
+            return 1
         }
 
-        return fib(N - 1) + fib(N - 2);
+        return fib(N - 1) + fib(N - 2)
     }
 }
