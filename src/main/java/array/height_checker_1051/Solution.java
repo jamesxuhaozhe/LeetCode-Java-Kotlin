@@ -8,6 +8,7 @@ public class Solution {
         if (heights == null || heights.length == 0) {
             return 0;
         }
+
         int[] helperArray = Arrays.copyOf(heights, heights.length);
         Arrays.sort(helperArray);
         int diff = 0;
@@ -16,6 +17,7 @@ public class Solution {
                 diff++;
             }
         }
+
         return diff;
     }
 }
