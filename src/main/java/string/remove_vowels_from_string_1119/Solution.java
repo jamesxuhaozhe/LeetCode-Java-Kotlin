@@ -7,7 +7,7 @@ package string.remove_vowels_from_string_1119;
  *
  * Space complexity: O(n)
  */
-public class RemoveVowelsFromString {
+public class Solution {
 
     public String removeVowels(String S) {
         if (S == null) {

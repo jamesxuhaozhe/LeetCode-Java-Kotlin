@@ -7,7 +7,7 @@ package string.remove_vowels_from_string_1119
  *
  * Space complexity: O(n)
  */
-class RemoveVowelsFromStringKt {
+class SolutionKt {
 
     fun removeVowels(S: String): String {
         val chs = S.toCharArray()
