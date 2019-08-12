@@ -1,5 +1,12 @@
 package array.valid_angram_242;
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/valid-anagram/
+ *
+ * Time complexity: O(n)
+ *
+ * Space complexity: O(n)
+ */
 public class Solution {
 
     public boolean isAnagram(String s, String t) {
