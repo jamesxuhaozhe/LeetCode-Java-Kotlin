@@ -5,7 +5,7 @@ package array.valid_angram_242
  *
  * Time complexity: O(n)
  *
- * Space complexity: O(n)
+ * Space complexity: O(1)
  */
 class SolutionKt {
 
