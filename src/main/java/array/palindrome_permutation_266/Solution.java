@@ -1,4 +1,4 @@
-package array.palinrome_permutation_266;
+package array.palindrome_permutation_266;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/palindrome-permutation/
