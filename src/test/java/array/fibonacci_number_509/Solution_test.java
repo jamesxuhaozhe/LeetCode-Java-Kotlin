@@ -1,6 +1,5 @@
 package array.fibonacci_number_509;
 
-import array.Solution;
 import org.junit.Assert;
 import org.junit.Test;
 
