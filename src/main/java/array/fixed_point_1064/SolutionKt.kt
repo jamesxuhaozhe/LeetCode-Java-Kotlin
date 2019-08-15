@@ -13,8 +13,9 @@ class SolutionKt {
         if (A.isEmpty()) {
             return -1
         }
-        for (index in A.indices) {
-            if (index == A[index]) {
+
+        A.forEachIndexed { index, i ->
+            if (index == i) {
                 return index
             }
         }
