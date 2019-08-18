@@ -9,17 +9,17 @@ public class Solution {
         int Unums = 0;
         int Lnums = 0;
         char[] chars = moves.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            if (chars[i] == 'U') {
+        for (char aChar : chars) {
+            if (aChar == 'U') {
                 Unums++;
             }
-            if (chars[i] == 'D') {
+            if (aChar == 'D') {
                 Unums--;
             }
-            if (chars[i] == 'L') {
+            if (aChar == 'L') {
                 Lnums++;
             }
-            if (chars[i] == 'R') {
+            if (aChar == 'R') {
                 Lnums--;
             }
         }
