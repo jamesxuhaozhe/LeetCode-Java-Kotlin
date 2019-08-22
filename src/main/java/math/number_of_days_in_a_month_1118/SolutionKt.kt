@@ -1,6 +1,7 @@
 package math.number_of_days_in_a_month_1118
 
 class SolutionKt {
+
     companion object {
         val LEAP_YEAR = intArrayOf(31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
 
