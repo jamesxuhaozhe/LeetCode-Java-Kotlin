@@ -10,7 +10,7 @@ package sort.largest_number_179
 class SolutionKt {
 
     fun largestNumber(nums: IntArray): String {
-        val numsStr = Array<String>(nums.size) { "0" }
+        val numsStr = Array(nums.size) { "0" }
         nums.forEachIndexed { index, i -> numsStr[index] = i.toString() }
         numsStr.sortWith(Comparator { o1, o2 ->
             val order1 = o1 + o2
