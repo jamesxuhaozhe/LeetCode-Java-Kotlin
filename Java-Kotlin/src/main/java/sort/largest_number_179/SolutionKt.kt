@@ -5,7 +5,7 @@ package sort.largest_number_179
  *
  * Time complexity: O(nlogn)
  *
- * Space complexity: O(1)
+ * Space complexity: O(n)
  */
 class SolutionKt {
 

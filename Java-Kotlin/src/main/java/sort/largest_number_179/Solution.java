@@ -8,7 +8,7 @@ import java.util.Comparator;
  *
  * Time complexity: O(nlogn)
  *
- * Space complexity: O(1)
+ * Space complexity: O(n)
  */
 public class Solution {
 
