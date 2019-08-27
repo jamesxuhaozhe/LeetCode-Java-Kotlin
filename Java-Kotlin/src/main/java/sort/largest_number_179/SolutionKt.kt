@@ -1,7 +1,32 @@
 package sort.largest_number_179
 
-//TODO finish this
+/**
+ * Problem link: https://leetcode-cn.com/problems/largest-number/
+ *
+ * Time complexity: O(nlogn)
+ *
+ * Space complexity: O(1)
+ */
 class SolutionKt {
 
+    fun largestNumber(nums: IntArray): String {
+        val numsStr = Array<String>(nums.size) { "0" }
+        nums.forEachIndexed { index, i -> numsStr[index] = i.toString() }
+        numsStr.sortWith(Comparator { o1, o2 ->
+            val order1 = o1 + o2
+            val order2 = o2 + o1
+            order2.compareTo(order1)
+        })
 
+        if (!numsStr.isEmpty() && numsStr[0] == "0") {
+            return "0"
+        }
+
+        val sb = StringBuilder()
+        for (str in numsStr) {
+            sb.append(str)
+        }
+
+        return sb.toString()
+    }
 }

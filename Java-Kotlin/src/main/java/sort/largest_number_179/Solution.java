@@ -3,6 +3,13 @@ package sort.largest_number_179;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/largest-number/
+ *
+ * Time complexity: O(nlogn)
+ *
+ * Space complexity: O(1)
+ */
 public class Solution {
 
     public String largestNumber(int[] nums) {
