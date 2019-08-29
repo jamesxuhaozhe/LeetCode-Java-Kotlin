@@ -20,6 +20,8 @@
 
 *out/
 
+out/
+
 ### Gradle ###
 .gradle
 build/
