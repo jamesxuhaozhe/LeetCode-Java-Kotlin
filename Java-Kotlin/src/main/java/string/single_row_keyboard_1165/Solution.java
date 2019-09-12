@@ -7,7 +7,6 @@ package string.single_row_keyboard_1165;
  *
  * Space complexity: O(1)
  *
- *
  */
 public class Solution {
 
