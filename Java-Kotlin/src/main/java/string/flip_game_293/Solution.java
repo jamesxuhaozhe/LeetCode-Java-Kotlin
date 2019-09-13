@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Time Complexity: O(n)
+ */
 public class Solution {
 
     public List<String> generatePossibleNextMoves(String s) {
