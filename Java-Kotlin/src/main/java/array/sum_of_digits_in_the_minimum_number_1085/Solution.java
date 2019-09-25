@@ -1,5 +1,12 @@
 package array.sum_of_digits_in_the_minimum_number_1085;
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/sum-of-digits-in-the-minimum-number/
+ *
+ * Time complexity: O(n)
+ *
+ * Space complexity: O(1)
+ */
 public class Solution {
 
     public int sumOfDigits(int[] A) {
