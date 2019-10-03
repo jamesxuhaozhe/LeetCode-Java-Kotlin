@@ -1,5 +1,12 @@
 package array.binary_search_704;
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/binary-search/
+ *
+ * Time complexity: O(logn)
+ *
+ * Space complexity: O(1)
+ */
 public class Solution {
 
     public int search(int[] nums, int target) {

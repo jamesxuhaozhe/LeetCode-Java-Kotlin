@@ -1,5 +1,12 @@
 package array.binary_search_704
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/binary-search/
+ *
+ * Time complexity: O(logn)
+ *
+ * Space complexity: O(1)
+ */
 class SolutionKt {
 
     fun search(nums: IntArray, target: Int): Int {
