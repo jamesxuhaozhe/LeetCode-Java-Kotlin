@@ -74,7 +74,7 @@ public class Twitter {
         totalTweets.addAll(ownTweets);
         totalTweets.addAll(userFollowersTweets);
 
-        totalTweets.sort(((o1, o2) -> Integer.compare(o2.tweetCounter, o1.tweetCounter));
+        totalTweets.sort((o1, o2) -> Integer.compare(o2.tweetCounter, o1.tweetCounter));
 
         if (totalTweets.size() <= FEED_THRESHOLD) {
             return totalTweets.stream().map(tweet -> tweet.tweetId).collect(Collectors.toList());
