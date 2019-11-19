@@ -15,7 +15,7 @@ class SolutionKt {
         var headNode = head
         var newHead: ListNodeKt? = null
         while (headNode != null) {
-            var next = headNode.next
+            val next = headNode.next
             headNode.next = newHead
             newHead = headNode
             headNode = next
