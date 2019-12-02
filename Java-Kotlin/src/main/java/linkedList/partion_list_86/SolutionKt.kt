@@ -13,8 +13,8 @@ class SolutionKt {
         var less = ListNodeKt(-1)
         var greater = ListNodeKt(-1)
 
-        var left = less
-        var right = greater
+        val left = less
+        val right = greater
         less.next = head
         while (head != null) {
             if (head.`val` < x) {
