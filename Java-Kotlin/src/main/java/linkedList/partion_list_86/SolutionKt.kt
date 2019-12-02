@@ -6,7 +6,7 @@ class SolutionKt {
 
     fun partition(head: ListNodeKt?, x: Int): ListNodeKt? {
 
-        if (head == null || head.next == null) {
+        if (head?.next == null) {
             return head
         }
         var head = head
