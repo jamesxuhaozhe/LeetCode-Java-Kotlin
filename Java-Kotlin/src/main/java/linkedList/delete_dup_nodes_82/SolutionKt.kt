@@ -10,7 +10,7 @@ class SolutionKt {
             return head
         }
 
-        var fakeHead = ListNodeKt(-1)
+        val fakeHead = ListNodeKt(-1)
         fakeHead.next = head
         var pre = fakeHead
         var curr = head
