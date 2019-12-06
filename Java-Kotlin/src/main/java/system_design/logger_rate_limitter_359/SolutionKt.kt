@@ -8,11 +8,11 @@ class SolutionKt {
 
         if (message in map) {
             val lastPrintTimestamp = map[message]!!
-            if (timestamp - lastPrintTimestamp < 10) {
-                return false
+            return if (timestamp - lastPrintTimestamp < 10) {
+                false
             } else {
                 map[message] = timestamp
-                return true
+                true
             }
         }
 
