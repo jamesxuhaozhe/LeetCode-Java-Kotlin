@@ -15,7 +15,7 @@ class SolutionKt {
             val digit = n % 10
             sum += digit
             product *= digit
-            n = n / 10
+            n /= 10
         }
 
         return product - sum
