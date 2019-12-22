@@ -1,5 +1,10 @@
 package math.check_straight_line_1232;
 
+/**
+ * Time complexity: O(n)
+ *
+ * Space complexity: O(1)
+ */
 public class Solution {
 
     public boolean checkStraightLine(int[][] coordinates) {
