@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+
 public class BrutalSolution {
 
     private int[] array;
@@ -40,6 +41,8 @@ public class BrutalSolution {
         for (int i = 0; i < array.length; i++) {
             int removeIdx = random.nextInt(aux.size());
             array[i] = aux.get(removeIdx);
+
+            //this is the time consuming part TODO: using the fisher-yates algorithms
             aux.remove(removeIdx);
         }
 
