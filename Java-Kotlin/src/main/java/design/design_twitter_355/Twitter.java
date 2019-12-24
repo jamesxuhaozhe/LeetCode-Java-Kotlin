@@ -1,4 +1,4 @@
-package system_design.design_twitter_355;
+package design.design_twitter_355;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package system_design.design_tic_tac_toe_348
+package design.design_tic_tac_toe_348
 
 class TicTacToe(n: Int) {
 

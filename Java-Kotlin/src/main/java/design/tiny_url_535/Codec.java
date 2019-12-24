@@ -1,4 +1,4 @@
-package system_design.tiny_url_535;
+package design.tiny_url_535;
 
 import java.util.HashMap;
 import java.util.Map;

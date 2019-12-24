@@ -1,4 +1,4 @@
-package system_design.design_hashset_705;
+package design.design_hashset_705;
 
 import java.util.HashMap;
 import java.util.Map;

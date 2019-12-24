@@ -1,4 +1,4 @@
-package system_design.design_min_stack_155;
+package design.design_min_stack_155;
 
 import java.util.Stack;
 

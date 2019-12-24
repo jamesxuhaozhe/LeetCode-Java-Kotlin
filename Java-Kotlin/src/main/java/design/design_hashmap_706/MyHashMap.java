@@ -1,4 +1,4 @@
-package system_design.design_hashmap_706;
+package design.design_hashmap_706;
 
 public class MyHashMap {
 
