@@ -2,6 +2,7 @@ package design.design_lru_cache_146;
 
 import java.util.Hashtable;
 
+//TODO: add kt impl
 public class LRUCache {
 
     private final int capacity;
