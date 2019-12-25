@@ -21,12 +21,12 @@ class LRUCacheKt(capacity: Int) {
 
 
     fun get(key: Int): Int {
-        if (cache.containsKey(key)) {
+        return if (cache.containsKey(key)) {
             val node = cache[key]
             moveToHead(node!!)
-            return node.value
+            node.value
         } else {
-            return -1
+            -1
         }
     }
 
