@@ -1,10 +1,7 @@
 package design.design_lru_cache_146
 
-class LRUCacheKt(capacity: Int) {
+class LRUCacheKt(private var capacity: Int) {
 
-
-
-    private var capacity = capacity
 
     private var size = 0
 
