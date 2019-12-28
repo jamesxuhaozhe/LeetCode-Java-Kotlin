@@ -2,7 +2,6 @@ package design.design_lru_cache_146
 
 class LRUCacheKt(private var capacity: Int) {
 
-
     private var size = 0
 
     private val head = DoubleLinkedNode()
