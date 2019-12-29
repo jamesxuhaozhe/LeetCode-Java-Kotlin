@@ -1,6 +1,6 @@
 package design.design_tic_tac_toe_348;
 
-public class Solution {
+public class TicTacToe {
 
     // if row == col means in the diagonal
     private int diagonal;
@@ -16,7 +16,7 @@ public class Solution {
 
 
     /** Initialize your data structure here. */
-    public Solution(int n) {
+    public TicTacToe(int n) {
         this.size = n;
         this.rows = new int[n];
         this.cols = new int[n];

@@ -1,6 +1,6 @@
 package design.design_tic_tac_toe_348
 
-class TicTacToe(n: Int) {
+class TicTacToeKt(n: Int) {
 
     private val rows = IntArray(n)
 
