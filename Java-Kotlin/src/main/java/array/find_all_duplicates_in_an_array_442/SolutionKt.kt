@@ -6,11 +6,11 @@ class SolutionKt {
     fun findDuplicates(nums: IntArray): List<Int> {
         val set = HashSet<Int>()
         val result = mutableListOf<Int>()
-        for (num in nums) {
-            if (set.contains(num)) {
-                result.add(num)
+        nums.forEach {
+            if (set.contains(it)) {
+                result.add(it)
             }
-            set.add(num)
+            set.add(it)
         }
 
         return result
