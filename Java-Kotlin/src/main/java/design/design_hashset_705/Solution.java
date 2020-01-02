@@ -7,7 +7,9 @@ public class Solution {
 
     private final Map<Integer, Integer> map;
 
-    /** Initialize your data structure here. */
+    /**
+     * Initialize your data structure here.
+     */
     public Solution() {
         this.map = new HashMap<>();
     }
@@ -17,12 +19,12 @@ public class Solution {
     }
 
     public void remove(int key) {
-        if (map.containsKey(key)) {
-            map.remove(key);
-        }
+        map.remove(key);
     }
 
-    /** Returns true if this set contains the specified element */
+    /**
+     * Returns true if this set contains the specified element
+     */
     public boolean contains(int key) {
         return map.containsKey(key);
     }
