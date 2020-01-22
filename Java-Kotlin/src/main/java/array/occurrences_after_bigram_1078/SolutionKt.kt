@@ -9,7 +9,7 @@ package array.occurrences_after_bigram_1078
  */
 class SolutionKt {
 
-    fun findOcurrences(text: String, first: String, second: String): Array<String> {
+    fun findOccurrences(text: String, first: String, second: String): Array<String> {
         val textArr = text.split(" ")
         val result = arrayListOf<String>()
         for (index in 0 until textArr.size - 2) {

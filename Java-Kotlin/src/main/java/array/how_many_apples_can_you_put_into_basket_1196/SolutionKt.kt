@@ -10,7 +10,7 @@ package array.how_many_apples_can_you_put_into_basket_1196
 class SolutionKt {
 
     companion object {
-        val MAX = 5000
+        const val MAX = 5000
     }
 
     fun maxNumberOfApples(arr: IntArray): Int {
