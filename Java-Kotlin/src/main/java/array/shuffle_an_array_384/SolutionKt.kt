@@ -1,6 +1,6 @@
 package array.shuffle_an_array_384
 
-import kotlin.random.Random
+//import kotlin.random.Random
 
 class SolutionKt(nums: IntArray) {
 
@@ -28,9 +28,9 @@ class SolutionKt(nums: IntArray) {
     fun shuffle(): IntArray {
         val copyArray = getCopyArray()
         for (index in 0 until array.size) {
-            val removeIdx = Random.nextInt(copyArray.size)
-            array[index] = copyArray[removeIdx]
-            copyArray.removeAt(removeIdx)
+            //val removeIdx = Random.nextInt(copyArray.size)
+            //array[index] = copyArray[removeIdx]
+            //copyArray.removeAt(removeIdx)
         }
         return array
     }
