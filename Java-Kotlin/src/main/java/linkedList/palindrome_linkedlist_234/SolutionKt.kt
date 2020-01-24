@@ -2,6 +2,13 @@ package linkedList.palindrome_linkedlist_234
 
 import datastructure.ListNodeKt
 
+/**
+ * Problem link: https://leetcode-cn.com/problems/palindrome-linked-list/
+ *
+ * Time and Space complexity: O(n)
+ *
+ * TODO: there got be a better solution
+ */
 class SolutionKt {
 
     fun isPalindrome(head: ListNodeKt?): Boolean {
