@@ -3,8 +3,18 @@ package linkedList.convert_sortedlist_to_bst_109;
 import common.datastructure.TreeNode;
 import common.datastructure.ListNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
 
+    /**
+     * Time complexity: O(nlogn)
+     *
+     * Space complexity: O(logn)
+     * @param head
+     * @return
+     */
     public TreeNode sortedListToBST(ListNode head) {
         // base case 1:
         if (head == null) {
@@ -43,4 +53,47 @@ public class Solution {
 
         return slow;
     }
+
+    /**
+     * Time complexity: O(n)
+     * Space complexity: O(n)
+     * @param head
+     * @return
+     */
+    public TreeNode sortedListToBST1(ListNode head) {
+        addToList(head);
+        return convertToBST(0, sortedList.size() - 1);
+    }
+
+    public TreeNode convertToBST(int left, int right) {
+        if (left > right) {
+            return null;
+        }
+
+        int mid = (left + right) / 2;
+        int value = sortedList.get(mid);
+
+        TreeNode root = new TreeNode(value);
+        if (left == right) {
+            return root;
+        }
+
+        TreeNode leftTree = convertToBST(left, mid - 1);
+        TreeNode rightTree = convertToBST(mid + 1, right);
+        root.left = leftTree;
+        root.right = rightTree;
+        return root;
+    }
+
+    private List<Integer> sortedList = new ArrayList<>();
+
+    private void addToList(ListNode head) {
+        while (head != null) {
+           sortedList.add(head.val);
+           head = head.next;
+        }
+    }
+
+
+
 }
