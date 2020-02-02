@@ -1,6 +1,6 @@
 package linkedList.remove_linkedlist_element_203;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 

@@ -1,6 +1,6 @@
 package linkedList.reverse_nodes_in_kgroup_25;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {

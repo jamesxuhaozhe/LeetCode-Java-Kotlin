@@ -1,6 +1,6 @@
 package linkedList.swap_node_in_pair_24
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 class SolutionKt {
 

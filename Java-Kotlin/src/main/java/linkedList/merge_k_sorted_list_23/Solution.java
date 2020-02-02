@@ -1,6 +1,6 @@
 package linkedList.merge_k_sorted_list_23;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

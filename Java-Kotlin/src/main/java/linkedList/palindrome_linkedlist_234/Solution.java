@@ -1,6 +1,6 @@
 package linkedList.palindrome_linkedlist_234;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;

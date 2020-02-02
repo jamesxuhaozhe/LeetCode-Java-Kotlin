@@ -1,6 +1,6 @@
 package linkedList.sort_list_148
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 class SolutionKt {
 

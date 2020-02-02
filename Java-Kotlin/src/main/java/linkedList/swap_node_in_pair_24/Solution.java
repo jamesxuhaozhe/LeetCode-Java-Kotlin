@@ -1,6 +1,6 @@
 package linkedList.swap_node_in_pair_24;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 

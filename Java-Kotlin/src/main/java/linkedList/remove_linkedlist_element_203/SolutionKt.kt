@@ -1,6 +1,6 @@
 package linkedList.remove_linkedlist_element_203
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 class SolutionKt {
 

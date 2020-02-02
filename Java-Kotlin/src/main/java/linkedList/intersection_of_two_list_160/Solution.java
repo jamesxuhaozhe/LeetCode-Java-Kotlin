@@ -1,6 +1,6 @@
 package linkedList.intersection_of_two_list_160;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

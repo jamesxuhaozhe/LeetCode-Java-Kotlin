@@ -1,6 +1,6 @@
 package linkedList.middle_of_list_876
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 class SolutionKt {
 

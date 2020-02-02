@@ -1,6 +1,6 @@
 package linkedList.merge_two_sorted_list_21;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 

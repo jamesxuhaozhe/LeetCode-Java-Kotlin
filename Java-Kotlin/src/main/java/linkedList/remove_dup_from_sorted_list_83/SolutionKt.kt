@@ -1,6 +1,6 @@
 package linkedList.remove_dup_from_sorted_list_83
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 class SolutionKt {
     fun deleteDuplicates(head: ListNodeKt?): ListNodeKt? {

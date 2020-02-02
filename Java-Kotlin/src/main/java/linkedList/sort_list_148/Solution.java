@@ -1,6 +1,6 @@
 package linkedList.sort_list_148;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 

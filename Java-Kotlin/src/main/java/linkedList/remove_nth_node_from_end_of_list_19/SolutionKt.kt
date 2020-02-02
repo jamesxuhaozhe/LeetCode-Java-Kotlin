@@ -1,6 +1,6 @@
 package linkedList.remove_nth_node_from_end_of_list_19
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 class SolutionKt {
 

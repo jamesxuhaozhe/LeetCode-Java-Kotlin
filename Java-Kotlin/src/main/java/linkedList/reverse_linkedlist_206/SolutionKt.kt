@@ -1,6 +1,6 @@
 package linkedList.reverse_linkedlist_206
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 /**
  * Problem link: https://leetcode-cn.com/problems/reverse-linked-list/

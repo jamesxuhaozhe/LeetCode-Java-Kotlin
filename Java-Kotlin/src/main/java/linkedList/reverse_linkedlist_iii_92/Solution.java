@@ -1,6 +1,6 @@
 package linkedList.reverse_linkedlist_iii_92;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 import java.util.Arrays;
 

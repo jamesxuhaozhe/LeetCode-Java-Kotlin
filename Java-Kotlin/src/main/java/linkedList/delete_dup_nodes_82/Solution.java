@@ -1,6 +1,6 @@
 package linkedList.delete_dup_nodes_82;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 

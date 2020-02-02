@@ -1,6 +1,6 @@
 package linkedList.middle_of_list_876;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 

@@ -1,6 +1,6 @@
 package linkedList.partion_list_86;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 

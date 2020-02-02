@@ -1,6 +1,6 @@
 package linkedList.partion_list_86
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 class SolutionKt {
 

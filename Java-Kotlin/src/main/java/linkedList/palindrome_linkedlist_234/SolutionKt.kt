@@ -1,6 +1,6 @@
 package linkedList.palindrome_linkedlist_234
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 /**
  * Problem link: https://leetcode-cn.com/problems/palindrome-linked-list/

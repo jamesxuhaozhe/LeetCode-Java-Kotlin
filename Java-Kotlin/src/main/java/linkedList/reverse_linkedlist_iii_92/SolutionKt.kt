@@ -1,6 +1,6 @@
 package linkedList.reverse_linkedlist_iii_92
 
-import datastructure.ListNodeKt
+import common.datastructure.ListNodeKt
 
 class SolutionKt {
 

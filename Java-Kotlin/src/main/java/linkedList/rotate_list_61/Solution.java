@@ -1,6 +1,6 @@
 package linkedList.rotate_list_61;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 

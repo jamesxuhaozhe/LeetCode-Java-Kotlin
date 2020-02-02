@@ -1,6 +1,6 @@
 package linkedList.add_two_numbers_2;
 
-import datastructure.ListNode;
+import common.datastructure.ListNode;
 
 public class Solution {
 
