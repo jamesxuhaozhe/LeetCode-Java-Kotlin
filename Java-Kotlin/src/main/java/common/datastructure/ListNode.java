@@ -41,7 +41,7 @@ public class ListNode {
             tmp.next = next;
             tmp = tmp.next;
         }
-        printList(head);
+        //printList(head);
         return head;
     }
 }
