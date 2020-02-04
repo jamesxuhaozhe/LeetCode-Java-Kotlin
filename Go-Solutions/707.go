@@ -21,14 +21,10 @@ func Constructor() MyLinkedList {
 	var linkedList = MyLinkedList{
 		size: 0,
 		headDummy: &myDoublyLinkedList{
-			val:      0,
-			previous: nil,
-			next:     nil,
+			val: 0,
 		},
 		tailDummy: &myDoublyLinkedList{
-			val:      0,
-			previous: nil,
-			next:     nil,
+			val: 0,
 		},
 	}
 
