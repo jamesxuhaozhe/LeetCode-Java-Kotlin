@@ -43,4 +43,34 @@ public class _347 {
             this.count = count;
         }
     }
+
+    public List<Integer> topKFrequent1(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i : nums) {
+            Integer count = map.get(i);
+            if (count == null) {
+                map.put(i, 1);
+            } else {
+                map.put(i, count + 1);
+            }
+        }
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return map.get(o2) - map.get(o1);
+            }
+        });
+
+        for (int n : map.keySet()) {
+            pq.offer(n);
+        }
+
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < k; i++) {
+            result.add(pq.poll());
+        }
+
+        return result;
+    }
 }
