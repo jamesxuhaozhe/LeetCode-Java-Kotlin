@@ -79,7 +79,7 @@ public class _212 {
         }
 
         void insert(String word) {
-            if (word == null || word.length() == 0) {
+            if (!isValidInput(word)) {
                 return;
             }
 
@@ -96,7 +96,7 @@ public class _212 {
         }
 
         boolean startsWith(String prefix) {
-            if (prefix == null || prefix.length() == 0) {
+            if (!isValidInput(prefix)) {
                 return false;
             }
 
@@ -113,7 +113,7 @@ public class _212 {
         }
 
         boolean search(String word) {
-            if (word == null || word.length() == 0) {
+            if (!isValidInput(word)) {
                 return false;
             }
 
@@ -127,6 +127,13 @@ public class _212 {
                 node = node.children[index];
             }
             return node.isWord;
+        }
+
+        boolean isValidInput(String str) {
+            if (str == null || str.length() == 0) {
+                return false;
+            }
+            return true;
         }
     }
 }
