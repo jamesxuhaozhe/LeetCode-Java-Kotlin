@@ -4,7 +4,7 @@ import common.datastructure.LinkedListNode;
 
 public class KthToLast {
 
-    class Index {
+    static class Index {
         public int value = 0;
     }
 
