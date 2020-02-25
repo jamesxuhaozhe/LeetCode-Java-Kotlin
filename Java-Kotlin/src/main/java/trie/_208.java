@@ -81,10 +81,7 @@ public class _208 {
         }
 
         private boolean isValid(String str) {
-            if (str == null || str.length() == 0) {
-                return false;
-            }
-            return true;
+            return str != null && str.length() != 0;
         }
     }
 }
