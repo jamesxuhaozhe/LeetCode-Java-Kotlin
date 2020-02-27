@@ -41,7 +41,7 @@ public class Codec {
      * @return a String hash which is 62 based
      */
     private static String fromBase10(int i) {
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder();
         if (i == 0) {
             return "a";
         }
