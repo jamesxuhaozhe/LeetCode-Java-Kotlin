@@ -18,9 +18,7 @@ public class Solution {
         int max = Math.min(Math.min(max1, max2), max3);
 
         Map<Integer, Integer> map1 = getMap(arr1, min, max);
-
         Map<Integer, Integer> map2 = getMap(arr2, min, max);
-
         Map<Integer, Integer> map3 = getMap(arr3, min, max);
 
         Map<Integer, Integer> map12 = new HashMap<>();
