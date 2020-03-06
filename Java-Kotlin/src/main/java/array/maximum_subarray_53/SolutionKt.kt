@@ -1,5 +1,7 @@
 package array.maximum_subarray_53
 
+import kotlin.math.max
+
 class SolutionKt {
 
     fun maxSubArray(nums: IntArray): Int {
@@ -10,8 +12,8 @@ class SolutionKt {
         var max = Int.MIN_VALUE
         for (index in nums.indices) {
             sum += nums[index]
-            max = Math.max(max, sum)
-            sum = Math.max(0, sum)
+            max = max(max, sum)
+            sum = max(0, sum)
         }
         return max
     }
