@@ -1,5 +1,7 @@
 package array.sum_of_digits_in_the_minimum_number_1085
 
+import kotlin.math.min
+
 /**
  * Problem link: https://leetcode-cn.com/problems/sum-of-digits-in-the-minimum-number/
  *
@@ -13,7 +15,7 @@ class SolutionKt {
 
         var min = Int.MAX_VALUE
         for (num in A) {
-            min = Math.min(num, min)
+            min = min(num, min)
         }
 
         var sum = 0
