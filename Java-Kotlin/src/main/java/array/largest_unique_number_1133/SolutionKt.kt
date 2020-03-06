@@ -1,5 +1,6 @@
 package array.largest_unique_number_1133
 
+import kotlin.math.max
 
 
 class SolutionKt {
@@ -17,7 +18,7 @@ class SolutionKt {
         var max = Integer.MIN_VALUE
         for ((key, value) in map) {
             if (value == 1) {
-                max = Math.max(key, max)
+                max = max(key, max)
             }
         }
 
