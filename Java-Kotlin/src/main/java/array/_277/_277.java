@@ -37,4 +37,32 @@ public class _277 extends Relation {
 
         return -1;
     }
+
+    /**
+     *
+     * @param n
+     * @return
+     */
+    public int findCelebrity1(int n) {
+        int l = 0;
+        int r = n - 1;
+        while (l != r) {
+            if (knows(l, r)) {
+                l++;
+            } else {
+                r--;
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (i == l) {
+                continue;
+            }
+
+            if (knows(l, i) || !knows(i, l)) {
+                return -1;
+            }
+        }
+        return l;
+    }
 }
