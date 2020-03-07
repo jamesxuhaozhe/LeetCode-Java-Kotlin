@@ -53,6 +53,7 @@ public class _277 extends Relation {
                 r--;
             }
         }
+        // 最终如果l == r ， l就是我们可能的候选答案
 
         for (int i = 0; i < n; i++) {
             if (i == l) {
