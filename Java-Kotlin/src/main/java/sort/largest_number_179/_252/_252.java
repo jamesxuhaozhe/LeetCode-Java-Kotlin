@@ -9,12 +9,7 @@ public class _252 {
         if (intervals.length == 1 || intervals.length == 0) {
             return true;
         }
-        Arrays.sort(intervals, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                return o1[0] - o2[0];
-            }
-        });
+        Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
         int lastEndTime = intervals[0][1];
         for (int i = 1; i < intervals.length; i++) {
             int currStartTime = intervals[i][0];
