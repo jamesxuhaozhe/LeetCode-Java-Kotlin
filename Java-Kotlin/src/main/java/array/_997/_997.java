@@ -91,12 +91,10 @@ public class _997 {
         Map<Integer, Set<Integer>> result = new HashMap<>();
         for (int i = 0; i < trust.length; i++) {
             int[] cur = trust[i];
-            if (result.containsKey(cur[0])) {
-                result.get(cur[0]).add(cur[1]);
-            } else {
+            if (!result.containsKey(cur[0])) {
                 result.put(cur[0], new HashSet<>());
-                result.get(cur[0]).add(cur[1]);
             }
+            result.get(cur[0]).add(cur[1]);
         }
         return result;
     }
