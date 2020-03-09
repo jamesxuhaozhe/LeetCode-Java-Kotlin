@@ -29,8 +29,7 @@ public class _997 {
 
     private Set<String> transfer(int[][] trust) {
         Set<String> result = new HashSet<>();
-        for (int i = 0; i < trust.length; i++) {
-            int[] element = trust[i];
+        for (int[] element : trust) {
             result.add(element[0] + ":" + element[1]);
         }
         return result;
@@ -89,8 +88,7 @@ public class _997 {
      */
     private Map<Integer, Set<Integer>> getMap(int[][] trust) {
         Map<Integer, Set<Integer>> result = new HashMap<>();
-        for (int i = 0; i < trust.length; i++) {
-            int[] cur = trust[i];
+        for (int[] cur : trust) {
             if (!result.containsKey(cur[0])) {
                 result.put(cur[0], new HashSet<>());
             }
