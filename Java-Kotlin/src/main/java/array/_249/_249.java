@@ -8,8 +8,6 @@ import java.util.Map;
 
 public class _249 {
 
-    private static final char[] CHARS = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-
     private static final int ALPHA_SIZE = 26;
 
     public List<List<String>> groupStrings(String[] strings) {
@@ -19,6 +17,7 @@ public class _249 {
 
         Map<String, List<String>> map = new HashMap<>();
         for (String str : strings) {
+            //每个string 以，第一个char为例，rebase到以z为开头的string作为key
             String key = getKey(str);
             if (!map.containsKey(key)) {
                 map.put(key, new ArrayList<>());
@@ -35,6 +34,7 @@ public class _249 {
         }
 
         char[] chars = str.toCharArray();
+        // string 长度为1的，都是等效的
         if (chars.length == 1) {
             return "single";
         }
@@ -43,7 +43,8 @@ public class _249 {
         StringBuilder sb = new StringBuilder("z");
         for (int i = 1; i < chars.length; i++) {
             int targetIndex = (chars[i] + diff) % ALPHA_SIZE;
-            sb.append(CHARS[targetIndex]);
+            char ch = (char) ('a' + targetIndex);
+            sb.append(ch);
         }
 
         return sb.toString();
