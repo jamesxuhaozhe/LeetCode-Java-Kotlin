@@ -16,7 +16,7 @@ public class _1200 {
         // 用一个map来记录，每两两之间的绝对差值，key是绝对差值，value是具有该绝对差值的两两对。
         Map<Integer, List<List<Integer>>> map = new HashMap<>();
         for (int i = 1; i < arr.length; i++) {
-            int currentDiff = Math.abs(lastValue - arr[i]);
+            int currentDiff = arr[i] - lastValue;
             if (map.containsKey(currentDiff)) {
                 map.get(currentDiff).add(Arrays.asList(lastValue, arr[i]));
             } else {
@@ -25,7 +25,7 @@ public class _1200 {
                 map.put(currentDiff, list);
             }
             //找到最小的绝对差值
-            minDiff = Math.min(minDiff, Math.abs(lastValue - arr[i]));
+            minDiff = Math.min(minDiff, arr[i] - lastValue);
 
             lastValue = arr[i];
         }
