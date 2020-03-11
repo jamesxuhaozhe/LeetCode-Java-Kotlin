@@ -9,8 +9,8 @@ public class Solution {
 
         int sum = 0;
         int max = Integer.MIN_VALUE;
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
+        for (int num : nums) {
+            sum += num;
             max = Math.max(sum, max);
             sum = Math.max(0, sum);
         }

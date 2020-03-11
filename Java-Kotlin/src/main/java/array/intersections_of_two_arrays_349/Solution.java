@@ -17,8 +17,7 @@ public class Solution {
         for (int num : nums2) {
             set2.add(num);
         }
-        Set<Integer> result = new HashSet<>();
-        result.addAll(set1);
+        Set<Integer> result = new HashSet<>(set1);
         result.retainAll(set2);
         int[] res = new int[result.size()];
         int i = 0;

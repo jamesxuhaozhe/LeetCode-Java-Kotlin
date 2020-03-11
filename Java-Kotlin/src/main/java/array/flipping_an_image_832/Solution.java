@@ -15,8 +15,7 @@ public class Solution {
         }
 
         int outerSize = A.length;
-        for (int i = 0; i < outerSize; i++) {
-            int[] currentArray = A[i];
+        for (int[] currentArray : A) {
             processArray(currentArray);
         }
         return A;

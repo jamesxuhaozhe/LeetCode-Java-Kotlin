@@ -31,7 +31,7 @@ public class Solution {
         return map.get(head);
     }
 
-    class Node {
+    static class Node {
         int val;
         Node next;
         Node random;
