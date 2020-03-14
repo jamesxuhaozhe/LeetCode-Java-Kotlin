@@ -18,8 +18,8 @@ class SolutionKt(nums: IntArray) {
 
     private fun getCopyArray(): ArrayList<Int>{
         val copyArray = arrayListOf<Int>()
-        for (index in 0 until array.size) {
-            copyArray.add(array[index])
+        for (element in array) {
+            copyArray.add(element)
         }
         return copyArray
     }
@@ -27,7 +27,7 @@ class SolutionKt(nums: IntArray) {
     /** Returns a random shuffling of the array. */
     fun shuffle(): IntArray {
         val copyArray = getCopyArray()
-        for (index in 0 until array.size) {
+        for (index in array.indices) {
             //val removeIdx = Random.nextInt(copyArray.size)
             //array[index] = copyArray[removeIdx]
             //copyArray.removeAt(removeIdx)

@@ -11,8 +11,8 @@ class SolutionKt {
 
     fun canPermutePalindrome(s: String): Boolean {
         val asc = IntArray(128)
-        for (index in 0 until s.length) {
-            asc[s[index].toInt()]++
+        for (element in s) {
+            asc[element.toInt()]++
         }
 
         var oddFreq = 0

@@ -20,8 +20,8 @@ public class BrutalSolution {
 
     private List<Integer> getCopyArray() {
         List<Integer> copyArray = new ArrayList<>(array.length);
-        for (int i = 0; i < array.length; i++) {
-            copyArray.add(array[i]);
+        for (int value : array) {
+            copyArray.add(value);
         }
 
         return copyArray;

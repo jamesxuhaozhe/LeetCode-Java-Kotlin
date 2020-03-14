@@ -15,8 +15,8 @@ public class Solution {
             asc[s.charAt(i)]++;
         }
         int oddFreq = 0;
-        for (int i = 0; i < asc.length; i++) {
-            if (asc[i] % 2 == 1) {
+        for (int value : asc) {
+            if (value % 2 == 1) {
                 oddFreq++;
             }
         }
