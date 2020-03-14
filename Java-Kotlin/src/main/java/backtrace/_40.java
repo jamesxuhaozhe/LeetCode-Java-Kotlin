@@ -25,7 +25,6 @@ public class _40 {
 
         if (target == 0) {
             result.add(new ArrayList<>(list));
-            return;
         } else {
             for (int i = start; i < candidates.length; i++) {
                 // candidates might have dups, so we skip the dup
