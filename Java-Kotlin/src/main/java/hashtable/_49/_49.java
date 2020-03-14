@@ -31,8 +31,8 @@ public class _49 {
         }
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         char[] chars = str.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            pq.add((int) chars[i]);
+        for (char aChar : chars) {
+            pq.add((int) aChar);
         }
         StringBuilder sb = new StringBuilder();
         while (!pq.isEmpty()) {
