@@ -24,12 +24,12 @@ public class Solution {
         String domainName = email.substring(atSplitterIndex);
         StringBuilder sb = new StringBuilder();
         char[] chars = localName.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            if (chars[i] == '+') {
+        for (char aChar : chars) {
+            if (aChar == '+') {
                 break;
             }
-            if (chars[i] != '.') {
-                sb.append(chars[i]);
+            if (aChar != '.') {
+                sb.append(aChar);
             }
         }
 

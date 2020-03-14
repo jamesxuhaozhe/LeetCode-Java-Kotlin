@@ -1,5 +1,7 @@
 package string._1165
 
+import kotlin.math.abs
+
 /**
  * Problem link: https://leetcode-cn.com/problems/single-row-keyboard/
  *
@@ -15,7 +17,7 @@ class SolutionKt {
         var sum = 0
         for (index in 1 until converted.length) {
             val previous = index - 1
-            sum += Math.abs(keyboard.indexOf(converted[previous]) - keyboard.indexOf(converted[index]))
+            sum += abs(keyboard.indexOf(converted[previous]) - keyboard.indexOf(converted[index]))
         }
 
         return sum

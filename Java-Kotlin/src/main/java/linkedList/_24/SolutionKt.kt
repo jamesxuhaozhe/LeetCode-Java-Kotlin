@@ -6,14 +6,14 @@ class SolutionKt {
 
     fun swapPairs(head: ListNodeKt?): ListNodeKt? {
 
-        var head = head
+        val head = head
 
         if (head?.next == null) {
             return head
         }
 
-        var second = head.next
-        var third = second!!.next
+        val second = head.next
+        val third = second!!.next
         second.next = head
         head.next = swapPairs(third)
         return second

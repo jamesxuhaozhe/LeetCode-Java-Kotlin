@@ -29,12 +29,7 @@ public class _239 {
             return nums;
         }
         List<Integer> resultList = new ArrayList<>();
-        Queue<Integer> priorityQueue = new PriorityQueue<>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return o2 - o1;
-            }
-        });
+        Queue<Integer> priorityQueue = new PriorityQueue<>((o1, o2) -> o2 - o1);
         for (int i = 0; i < nums.length - (k - 1); i++) {
             priorityQueue.clear();
             for (int j = i; j < i + k; j++) {

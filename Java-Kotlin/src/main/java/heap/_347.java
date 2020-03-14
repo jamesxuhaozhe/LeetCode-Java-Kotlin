@@ -19,12 +19,7 @@ public class _347 {
         }
 
         List<Holder> list = map.entrySet().stream().map( entry -> new Holder(entry.getKey(), entry.getValue())).collect(Collectors.toList());
-        sort(list, new Comparator<Holder>() {
-            @Override
-            public int compare(Holder o1, Holder o2) {
-                return o2.count - o1.count;
-            }
-        });
+        list.sort((o1, o2) -> o2.count - o1.count);
 
         List<Integer> result = new ArrayList<>(k);
         for (int i = 0; i < k; i++) {
@@ -55,12 +50,7 @@ public class _347 {
             }
         }
 
-        PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return map.get(o2) - map.get(o1);
-            }
-        });
+        PriorityQueue<Integer> pq = new PriorityQueue<>((o1, o2) -> map.get(o2) - map.get(o1));
 
         for (int n : map.keySet()) {
             pq.offer(n);

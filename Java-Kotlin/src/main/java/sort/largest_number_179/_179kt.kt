@@ -18,7 +18,7 @@ class _179kt {
             order2.compareTo(order1)
         })
 
-        if (!numsStr.isEmpty() && numsStr[0] == "0") {
+        if (numsStr.isNotEmpty() && numsStr[0] == "0") {
             return "0"
         }
 

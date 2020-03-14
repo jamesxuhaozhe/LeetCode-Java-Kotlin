@@ -11,7 +11,7 @@ class SolutionKt {
 
     fun firstUniqChar(s: String): Int {
         val map = HashMap<Int, Pair>()
-        for (index in 0 until s.length) {
+        for (index in s.indices) {
             val ch = s[index].toInt()
             if (map.containsKey(ch)) {
                 map[ch]!!.freq++

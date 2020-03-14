@@ -21,8 +21,7 @@ public class _49 {
             }
         }
 
-        List<List<String >> result = new ArrayList<>();
-        result.addAll(map.values());
+        List<List<String>> result = new ArrayList<>(map.values());
         return result;
     }
 
