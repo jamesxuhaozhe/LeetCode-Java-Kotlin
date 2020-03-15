@@ -1,4 +1,4 @@
-package hashtable._500;
+package hash._500;
 
 import java.util.ArrayList;
 import java.util.Arrays;

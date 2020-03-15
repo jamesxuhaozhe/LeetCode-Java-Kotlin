@@ -1,4 +1,4 @@
-package hashtable._690
+package hash._690
 
 import java.util.HashMap
 

@@ -1,4 +1,4 @@
-package hashtable._961;
+package hash._961;
 
 import java.util.HashSet;
 import java.util.Set;
