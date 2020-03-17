@@ -38,10 +38,10 @@ public class _311 {
         List<List<Integer>> listA = new ArrayList<>();
         int ma = A.length;
         int na = A[0].length;
-        for (int i = 0; i < ma; i++) {
+        for (int[] ints : A) {
             List<Integer> list = new ArrayList<>();
             for (int j = 0; j < na; j++) {
-                if (A[i][j] != 0) {
+                if (ints[j] != 0) {
                     list.add(j);
                 }
             }
