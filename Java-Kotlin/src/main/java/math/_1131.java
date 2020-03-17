@@ -1,16 +1,8 @@
 package math;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class _1131 {
 
     public int maxAbsValExpr(int[] arr1, int[] arr2) {
-        List<Integer> listA = new ArrayList<>();
-        List<Integer> listB = new ArrayList<>();
-        List<Integer> listC = new ArrayList<>();
-        List<Integer> listD = new ArrayList<>();
 
         int maxA = Integer.MIN_VALUE;
         int minA = Integer.MAX_VALUE;
