@@ -8,7 +8,6 @@ import java.util.List;
 /**
  * Time complexity: O(nlogn)
  *
- * TODO: complete the kt solution
  */
 public class _15 {
 
