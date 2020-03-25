@@ -20,11 +20,11 @@ public class _46 {
         if (list.size() == nums.length) {
             result.add(new ArrayList<>(list));
         } else {
-            for (int i = 0; i < nums.length; i++) {
-                if (list.contains(nums[i])) {
+            for (int num : nums) {
+                if (list.contains(num)) {
                     continue;
                 }
-                list.add(nums[i]);
+                list.add(num);
                 helper(nums, result, list);
                 list.remove(list.size() - 1);
             }
