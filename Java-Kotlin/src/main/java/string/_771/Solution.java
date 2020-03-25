@@ -17,13 +17,12 @@ public class Solution {
     public int numJewelsInStones(String J, String S) {
         Set<Integer> typeSets = new HashSet<>();
         char[] types = J.toCharArray();
-        for (int i = 0; i < types.length; i++) {
-            typeSets.add((int) types[i]);
+        for (char type : types) {
+            typeSets.add((int) type);
         }
         int result = 0;
         char[] stones = S.toCharArray();
-        for (int i = 0; i < stones.length; i++) {
-            int currentStone = stones[i];
+        for (int currentStone : stones) {
             if (typeSets.contains(currentStone)) {
                 result++;
             }
