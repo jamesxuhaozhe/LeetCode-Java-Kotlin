@@ -3,6 +3,9 @@ package array;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://leetcode-cn.com/problems/find-n-unique-integers-sum-up-to-zero/
+ */
 public class _1304 {
 
     public int[] sumZero(int n) {
