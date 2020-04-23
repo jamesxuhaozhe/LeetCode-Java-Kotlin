@@ -2,10 +2,6 @@ package main
 
 import "Go-Solutions/ds"
 
-func main() {
-	
-}
-
 func oddEvenList(head *ds.ListNode) *ds.ListNode {
 	if head == nil || head.Next == nil {
 		return head

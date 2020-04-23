@@ -1,10 +1,6 @@
 package main
 
-func main() {
-	
-}
-
-func search(nums []int, target int) int {
+func search1(nums []int, target int) int {
 	if len(nums) == 0 {
 		return -1
 	}

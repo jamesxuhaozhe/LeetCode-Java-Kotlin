@@ -1,9 +1,5 @@
 package main
 
-func main() {
-
-}
-
 type MyLinkedList struct {
 	size      int
 	headDummy *myDoublyLinkedList

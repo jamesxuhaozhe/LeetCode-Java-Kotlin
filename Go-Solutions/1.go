@@ -1,10 +1,6 @@
 package main
 
-func main() {
-	
-}
-
-func twoSum(nums []int, target int) []int {
+func twoSum1(nums []int, target int) []int {
 	helperMap := make(map[int]int)
 	for i, v := range nums {
 		complement := target - v

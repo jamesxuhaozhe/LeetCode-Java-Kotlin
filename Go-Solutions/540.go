@@ -1,9 +1,5 @@
 package main
 
-func main() {
-	
-}
-
 func singleNonDuplicate(nums []int) int {
 	if len(nums) == 0 {
 		panic("no solution")

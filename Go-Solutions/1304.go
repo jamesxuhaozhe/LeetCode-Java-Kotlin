@@ -1,9 +1,5 @@
 package main
 
-func main() {
-	
-}
-
 func sumZero(n int) []int {
 	if n == 1 {
 		return []int{0}

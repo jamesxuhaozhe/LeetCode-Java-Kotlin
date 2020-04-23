@@ -5,10 +5,6 @@ import (
 	"sort"
 )
 
-func main() {
-	
-}
-
 func threeSumClosest(nums []int, target int) int {
 	sort.Ints(nums)
 	ans := nums[0] + nums[1] + nums[2]

@@ -1,9 +1,5 @@
 package main
 
-func main() {
-	
-}
-
 func nextPermutation(nums []int)  {
 	if len(nums) <= 1 {
 		return

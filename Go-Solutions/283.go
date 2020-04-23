@@ -1,9 +1,5 @@
 package main
 
-func main() {
-	
-}
-
 func moveZeroes(nums []int)  {
 	j := 0
 	for i, _ := range nums {

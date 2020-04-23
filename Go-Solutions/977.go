@@ -2,10 +2,6 @@ package main
 
 import "sort"
 
-func main() {
-	
-}
-
 func sortedSquares(A []int) []int {
 	n := len(A)
 	result := make([]int, n, n)

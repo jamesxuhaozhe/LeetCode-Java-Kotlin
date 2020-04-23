@@ -1,9 +1,5 @@
 package main
 
-func main() {
-	
-}
-
 func search(nums []int, target int) int {
 	if len(nums) == 0 {
 		return -1

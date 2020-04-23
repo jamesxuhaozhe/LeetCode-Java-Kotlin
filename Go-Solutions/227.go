@@ -1,4 +1,4 @@
-package _27
+package main
 
 func solution(knows func(a int, b int) bool) func(n int) int {
 	return func(n int) int {
