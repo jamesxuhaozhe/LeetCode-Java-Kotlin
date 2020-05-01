@@ -24,7 +24,7 @@ class TicTacToeKt(n: Int) {
     1: Player 1 wins.
     2: Player 2 wins. */
     fun move(row: Int, col: Int, player: Int): Int {
-        var toAdd = if (player == 1) 1 else -1
+        val toAdd = if (player == 1) 1 else -1
         rows[row] += toAdd
         cols[col] += toAdd
 

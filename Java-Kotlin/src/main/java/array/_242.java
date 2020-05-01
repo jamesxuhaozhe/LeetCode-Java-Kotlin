@@ -18,8 +18,8 @@ public class _242 {
         }
 
         char[] tArr = t.toCharArray();
-        for (int i = 0; i < tArr.length; i++) {
-            int index = tArr[i] - 'a';
+        for (char c : tArr) {
+            int index = c - 'a';
             alpha[index]--;
             if (alpha[index] < 0) {
                 return false;

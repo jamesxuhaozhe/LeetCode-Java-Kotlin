@@ -40,6 +40,6 @@ public class Solution {
         ListNode head = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4, 5));
         Solution solution = new Solution();
         ListNode.printList(solution.reverseBetween(head, 2, 4));
-        System.out.printf("end");
+        System.out.print("end");
     }
 }

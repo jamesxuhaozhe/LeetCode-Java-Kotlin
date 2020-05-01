@@ -60,51 +60,27 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution(51);
 
-        Thread t1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    solution.zero(new IntConsumer() {
-                        @Override
-                        public void accept(int value) {
-                            System.out.println(0);
-                        }
-                    });
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        Thread t1 = new Thread(() -> {
+            try {
+                solution.zero(value -> System.out.println(0));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         });
 
-        Thread t2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    solution.even(new IntConsumer() {
-                        @Override
-                        public void accept(int value) {
-                            System.out.println(value);
-                        }
-                    });
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        Thread t2 = new Thread(() -> {
+            try {
+                solution.even(System.out::println);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         });
 
-        Thread t3 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    solution.odd(new IntConsumer() {
-                        @Override
-                        public void accept(int value) {
-                            System.out.println(value);
-                        }
-                    });
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        Thread t3 = new Thread(() -> {
+            try {
+                solution.odd(System.out::println);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         });
 
