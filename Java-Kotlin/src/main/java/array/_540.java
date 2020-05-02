@@ -7,6 +7,7 @@ public class _540 {
 
     /**
      * https://leetcode-cn.com/problems/single-element-in-a-sorted-array/solution/you-xu-shu-zu-zhong-de-dan-yi-yuan-su-by-leetcode/
+     *
      * @param nums
      * @return
      */
@@ -50,6 +51,7 @@ public class _540 {
 
     /**
      * A^A^C^B^B=C
+     *
      * @param nums
      * @return
      */
@@ -63,6 +65,7 @@ public class _540 {
 
     /**
      * https://leetcode-cn.com/problems/single-element-in-a-sorted-array/solution/you-xu-shu-zu-zhong-de-dan-yi-yuan-su-by-leetcode/
+     *
      * @param nums
      * @return
      */
@@ -95,7 +98,6 @@ public class _540 {
 
         return nums[low];
     }
-
 
 
 }

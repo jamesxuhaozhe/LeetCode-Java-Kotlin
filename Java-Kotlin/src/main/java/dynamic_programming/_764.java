@@ -7,6 +7,7 @@ public class _764 {
 
     /**
      * https://leetcode-cn.com/problems/largest-plus-sign/solution/zui-da-jia-hao-biao-zhi-by-leetcode/
+     *
      * @param N
      * @param mines
      * @return

@@ -27,7 +27,9 @@ public class _384 {
         return copyArray;
     }
 
-    /** Resets the array to its original configuration and return it. */
+    /**
+     * Resets the array to its original configuration and return it.
+     */
     public int[] reset() {
         array = original;
         original = original.clone();
@@ -35,7 +37,9 @@ public class _384 {
 
     }
 
-    /** Returns a random shuffling of the array. */
+    /**
+     * Returns a random shuffling of the array.
+     */
     public int[] shuffle() {
         List<Integer> aux = getCopyArray();
         for (int i = 0; i < array.length; i++) {

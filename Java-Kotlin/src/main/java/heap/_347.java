@@ -3,8 +3,6 @@ package heap;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static java.util.Collections.*;
-
 public class _347 {
 
     public List<Integer> topKFrequent(int[] nums, int k) {
@@ -18,7 +16,7 @@ public class _347 {
             }
         }
 
-        List<Holder> list = map.entrySet().stream().map( entry -> new Holder(entry.getKey(), entry.getValue())).collect(Collectors.toList());
+        List<Holder> list = map.entrySet().stream().map(entry -> new Holder(entry.getKey(), entry.getValue())).collect(Collectors.toList());
         list.sort((o1, o2) -> o2.count - o1.count);
 
         List<Integer> result = new ArrayList<>(k);

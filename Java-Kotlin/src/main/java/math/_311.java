@@ -8,6 +8,7 @@ public class _311 {
     /**
      * Based on the matrix multiplication rule. it is still though, ideally
      * we should leverage the fact that the matrix is sparse
+     *
      * @param A
      * @param B
      * @return

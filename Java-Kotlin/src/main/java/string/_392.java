@@ -20,6 +20,7 @@ public class _392 {
      * Double pointer, one point to the starting index of s, the other pointing to the starting index of t
      * if there is no match, we move j forward until we have a match, once we have a match, we move them both by one step.
      * if s is the subsequence of t, then i should be equal to len(s)
+     *
      * @param s
      * @param t
      * @return

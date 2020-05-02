@@ -9,7 +9,7 @@ public class Solution {
         dummy.next = head;
         ListNode curr = head;
         ListNode prev = dummy;
-        while(curr != null) {
+        while (curr != null) {
             if (curr.val == val) {
                 prev.next = curr.next;
             } else {

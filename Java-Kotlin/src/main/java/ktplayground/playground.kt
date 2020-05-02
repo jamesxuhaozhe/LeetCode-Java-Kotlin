@@ -1,13 +1,11 @@
 package ktplayground
 
 
-
 val authors = listOf("Dmitry", "Svetlana")
 
 val readers: MutableList<String> = mutableListOf()
 
 val readers1 = mutableListOf<String>()
-
 
 
 val letters = ('a'..'z').toList()

@@ -4,6 +4,7 @@ public class _680 {
 
     /**
      * Bad solution, there should be a better one. TODO: get a better solution
+     *
      * @param s
      * @return
      */

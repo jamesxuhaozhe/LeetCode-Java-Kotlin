@@ -1,7 +1,6 @@
 package greedy;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class _1029 {
     public int twoCitySchedCost(int[][] costs) {

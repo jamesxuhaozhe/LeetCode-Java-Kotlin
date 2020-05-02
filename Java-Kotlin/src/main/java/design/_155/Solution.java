@@ -8,7 +8,9 @@ public class Solution {
 
     private int min;
 
-    /** initialize your data structure here. */
+    /**
+     * initialize your data structure here.
+     */
     public Solution() {
         this.stack = new Stack<>();
         this.min = Integer.MAX_VALUE;

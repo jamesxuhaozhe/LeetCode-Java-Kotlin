@@ -19,7 +19,7 @@ public class _703 {
     public int add(int val) {
         if (priorityQueue.size() < k) {
             priorityQueue.offer(val);
-        } else if (priorityQueue.peek() < val){
+        } else if (priorityQueue.peek() < val) {
             priorityQueue.poll();
             priorityQueue.offer(val);
         }

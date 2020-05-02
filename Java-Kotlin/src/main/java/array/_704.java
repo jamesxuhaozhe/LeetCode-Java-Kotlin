@@ -2,9 +2,9 @@ package array;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/binary-search/
- *
+ * <p>
  * Time complexity: O(logn)
- *
+ * <p>
  * Space complexity: O(1)
  */
 public class _704 {

@@ -26,12 +26,16 @@ public class _208 {
 
         private TrieNode root;
 
-        /** Initialize your data structure here. */
+        /**
+         * Initialize your data structure here.
+         */
         public Trie() {
             this.root = new TrieNode();
         }
 
-        /** Inserts a word into the trie. */
+        /**
+         * Inserts a word into the trie.
+         */
         public void insert(String word) {
             if (word == null || word.length() == 0) {
                 return;
@@ -47,7 +51,9 @@ public class _208 {
             node.isWord = true;
         }
 
-        /** Returns if the word is in the trie. */
+        /**
+         * Returns if the word is in the trie.
+         */
         public boolean search(String word) {
             if (!isValid(word)) {
                 return false;
@@ -63,7 +69,9 @@ public class _208 {
             return node.isWord;
         }
 
-        /** Returns if there is any word in the trie that starts with the given prefix. */
+        /**
+         * Returns if there is any word in the trie that starts with the given prefix.
+         */
         public boolean startsWith(String prefix) {
             if (!isValid(prefix)) {
                 return false;

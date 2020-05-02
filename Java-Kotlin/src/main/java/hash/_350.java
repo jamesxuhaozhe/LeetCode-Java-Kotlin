@@ -9,6 +9,7 @@ public class _350 {
 
     /**
      * Solution that just works, TODO: find better one
+     *
      * @param nums1
      * @param nums2
      * @return
@@ -53,8 +54,8 @@ public class _350 {
 
     public static void main(String[] args) {
 
-        int[] nums1 = new int[] {4, 9, 5};
-        int[] nums2 = new int[] {9, 4, 9, 8, 4};
+        int[] nums1 = new int[]{4, 9, 5};
+        int[] nums2 = new int[]{9, 4, 9, 8, 4};
 
         int[] result = new _350().intersect(nums1, nums2);
         for (int num : result) {

@@ -35,7 +35,7 @@ public class _39 {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[] {2, 3, 6, 7};
+        int[] nums = new int[]{2, 3, 6, 7};
         int target = 7;
         System.out.println(new _39().combinationSum(nums, target));
     }

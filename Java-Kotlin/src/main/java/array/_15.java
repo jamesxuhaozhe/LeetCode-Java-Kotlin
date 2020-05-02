@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * Time complexity: O(nlogn)
- *
  */
 public class _15 {
 

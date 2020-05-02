@@ -57,6 +57,7 @@ public class LRUCache {
 
     /**
      * Append the node right after the head
+     *
      * @param node
      */
     private void addNode(DoubleLinkedNode node) {

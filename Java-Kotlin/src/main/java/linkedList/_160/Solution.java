@@ -8,25 +8,25 @@ import java.util.Set;
 public class Solution {
 
     public ListNode getIntersectionNode1(ListNode headA, ListNode headB) {
-       int lenA = getLen(headA);
-       int lenB = getLen(headB);
+        int lenA = getLen(headA);
+        int lenB = getLen(headB);
 
-       while (lenA < lenB) {
-           headB = headB.next;
-           lenB--;
-       }
+        while (lenA < lenB) {
+            headB = headB.next;
+            lenB--;
+        }
 
-       while (lenB < lenA) {
-           headA = headA.next;
-           lenA--;
-       }
+        while (lenB < lenA) {
+            headA = headA.next;
+            lenA--;
+        }
 
-       while (headA != headB) {
-           headA = headA.next;
-           headB = headB.next;
-       }
+        while (headA != headB) {
+            headA = headA.next;
+            headB = headB.next;
+        }
 
-       return headA;
+        return headA;
     }
 
     public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {

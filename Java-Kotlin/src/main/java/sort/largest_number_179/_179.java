@@ -1,13 +1,12 @@
 package sort.largest_number_179;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/largest-number/
- *
+ * <p>
  * Time complexity: O(nlogn)
- *
+ * <p>
  * Space complexity: O(n)
  */
 public class _179 {

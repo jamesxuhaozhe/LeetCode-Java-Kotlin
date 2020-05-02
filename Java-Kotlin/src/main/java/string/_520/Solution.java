@@ -2,9 +2,9 @@ package string._520;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/detect-capital/
- *
+ * <p>
  * Time complexity: O(n)
- *
+ * <p>
  * Space complexity: O(1)
  */
 public class Solution {
@@ -27,10 +27,10 @@ public class Solution {
         }
     }
 
-   private static boolean isUpperCase(char ch) {
+    private static boolean isUpperCase(char ch) {
         if (ch >= 'A' && ch <= 'Z') {
             return true;
         }
         return false;
-   }
+    }
 }

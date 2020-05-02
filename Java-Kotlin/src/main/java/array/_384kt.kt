@@ -16,7 +16,7 @@ class _384kt(nums: IntArray) {
         return array
     }
 
-    private fun getCopyArray(): ArrayList<Int>{
+    private fun getCopyArray(): ArrayList<Int> {
         val copyArray = arrayListOf<Int>()
         for (element in array) {
             copyArray.add(element)

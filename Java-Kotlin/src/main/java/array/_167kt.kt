@@ -24,6 +24,6 @@ class _167kt {
             }
         }
 
-        return intArrayOf(-1 , -1)
+        return intArrayOf(-1, -1)
     }
 }

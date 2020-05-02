@@ -1,12 +1,12 @@
 package main
 
-func nextPermutation(nums []int)  {
+func nextPermutation(nums []int) {
 	if len(nums) <= 1 {
 		return
 	}
 
 	i := len(nums) - 2
-	for i >= 0 && nums[i] >= nums[i + 1] {
+	for i >= 0 && nums[i] >= nums[i+1] {
 		i--
 	}
 	if i >= 0 {
@@ -16,7 +16,7 @@ func nextPermutation(nums []int)  {
 		}
 		swap(nums, i, j)
 	}
-	reverse(nums, i + 1)
+	reverse(nums, i+1)
 }
 
 func reverse(nums []int, start int) {

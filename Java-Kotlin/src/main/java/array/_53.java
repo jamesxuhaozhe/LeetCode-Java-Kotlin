@@ -19,8 +19,8 @@ public class _53 {
     }
 
     /**
-     *遍历到每个num时，有两种情况
-     *
+     * 遍历到每个num时，有两种情况
+     * <p>
      * num值比sum + num大
      * 此时令sum = num
      * 终结了上一段子数组的求和
@@ -37,7 +37,7 @@ public class _53 {
         }
         int sum = 0;
         int result = Integer.MIN_VALUE;
-        for(int num : nums) {
+        for (int num : nums) {
             sum = Math.max(sum + num, num);
             result = Math.max(result, sum);
         }
@@ -46,7 +46,7 @@ public class _53 {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[] {-1, -2, -3, -4, -5, -6, -7, -8};
+        int[] nums = new int[]{-1, -2, -3, -4, -5, -6, -7, -8};
         System.out.println(new _53kt().maxSubArray(nums));
     }
 }

@@ -3,11 +3,13 @@ package string._804
 class SolutionKt {
 
     companion object {
-        val MORSE_CODE_TABLE = arrayOf(".-", "-...", "-.-.", "-..", ".", "..-.",
+        val MORSE_CODE_TABLE = arrayOf(
+            ".-", "-...", "-.-.", "-..", ".", "..-.",
             "--.", "....", "", ".---", "-.-", ".-..",
             "--", "-.", "---", ".--.", "--.-", ".-.",
             "...", "-", "..-", "...-", ".--", "-..-",
-            "-.--", "--..")
+            "-.--", "--.."
+        )
     }
 
     fun uniqueMorseRepresentations(words: Array<String>): Int {

@@ -12,7 +12,7 @@ public class Solution {
             return -1;
         }
         int leftHeight = checkHeight(node.left);
-        if ( leftHeight == Integer.MIN_VALUE) {
+        if (leftHeight == Integer.MIN_VALUE) {
             return Integer.MIN_VALUE;
         }
 

@@ -1,7 +1,7 @@
 package linkedList._109;
 
-import common.datastructure.TreeNode;
 import common.datastructure.ListNode;
+import common.datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,9 @@ public class Solution {
 
     /**
      * Time complexity: O(nlogn)
-     *
+     * <p>
      * Space complexity: O(logn)
+     *
      * @param head
      * @return
      */
@@ -57,6 +58,7 @@ public class Solution {
     /**
      * Time complexity: O(n)
      * Space complexity: O(n)
+     *
      * @param head
      * @return
      */
@@ -89,8 +91,8 @@ public class Solution {
 
     private void addToList(ListNode head) {
         while (head != null) {
-           sortedList.add(head.val);
-           head = head.next;
+            sortedList.add(head.val);
+            head = head.next;
         }
     }
 }

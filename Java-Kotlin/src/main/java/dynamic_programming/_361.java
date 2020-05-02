@@ -2,8 +2,10 @@ package dynamic_programming;
 
 public class _361 {
 
-    /** This problem is similar to problem 764
+    /**
+     * This problem is similar to problem 764
      * https://leetcode-cn.com/problems/bomb-enemy/solution/hong-zha-di-ren-by-leetcode-solution/
+     *
      * @return
      */
     public int maxKilledEnemies(char[][] grid) {
@@ -72,7 +74,7 @@ public class _361 {
     }
 
     public static void main(String[] args) {
-        char[][] chars = new char[][] {{'0','E','0','0'},{'E','0','W','E'},{'0','E','0','0'}};
+        char[][] chars = new char[][]{{'0', 'E', '0', '0'}, {'E', '0', 'W', 'E'}, {'0', 'E', '0', '0'}};
         System.out.println(new _361().maxKilledEnemies(chars));
     }
 }

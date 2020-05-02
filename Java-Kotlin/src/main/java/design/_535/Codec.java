@@ -37,6 +37,7 @@ public class Codec {
 
     /**
      * Give a base10 integer, return a String hash which is 62 based
+     *
      * @param i base10 integer
      * @return a String hash which is 62 based
      */
@@ -59,6 +60,7 @@ public class Codec {
 
     /**
      * Transforms the given string hash into a base10 integer
+     *
      * @param str string hash in question
      * @return a base10 integer
      */

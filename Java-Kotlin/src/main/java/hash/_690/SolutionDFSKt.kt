@@ -1,6 +1,6 @@
 package hash._690
 
-import java.util.HashMap
+import java.util.*
 
 class SolutionDFSKt {
 

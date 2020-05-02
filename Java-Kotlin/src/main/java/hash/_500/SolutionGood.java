@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SolutionGood {
 
-    private static String[] ROWS = new String[] {
+    private static String[] ROWS = new String[]{
             "qwertyuiop",
             "asdfghjkl",
             "zxcvbnmm"

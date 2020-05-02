@@ -1,10 +1,6 @@
 package hash._500;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class SolutionBad {
 
@@ -74,7 +70,7 @@ public class SolutionBad {
     }
 
     public static void main(String[] args) {
-        String[] results = new SolutionBad().findWords(new String[] {"Alaska", "Dad"});
+        String[] results = new SolutionBad().findWords(new String[]{"Alaska", "Dad"});
         for (String word : results) {
             System.out.println(word);
         }

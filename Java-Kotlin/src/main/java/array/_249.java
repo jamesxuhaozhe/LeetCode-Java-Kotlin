@@ -1,10 +1,6 @@
 package array;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class _249 {
 
@@ -51,7 +47,7 @@ public class _249 {
     }
 
     public static void main(String[] args) {
-        String[] strings = new String[] {"abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"};
+        String[] strings = new String[]{"abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"};
         System.out.println(new _249().groupStrings(strings));
     }
 }

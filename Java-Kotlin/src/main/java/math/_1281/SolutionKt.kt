@@ -11,7 +11,7 @@ class SolutionKt {
         var sum = 0
         var product = 1
         var n = n
-        while(n != 0) {
+        while (n != 0) {
             val digit = n % 10
             sum += digit
             product *= digit

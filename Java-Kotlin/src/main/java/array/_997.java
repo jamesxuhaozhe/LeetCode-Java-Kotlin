@@ -83,6 +83,7 @@ public class _997 {
 
     /**
      * 建立一个map，key是相信别人的人，value是这个人相信的人的集合
+     *
      * @param trust
      * @return
      */

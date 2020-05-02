@@ -5,9 +5,9 @@ import java.util.List;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/occurrences-after-bigram/
- *
+ * <p>
  * Time complexity: O(n)
- *
+ * <p>
  * Space complexity: O(n)
  */
 public class _1078 {
@@ -24,7 +24,7 @@ public class _1078 {
         for (int i = 0; i < textArray.length - 2; i++) {
             int secondIndex = i + 1;
             if (first.equalsIgnoreCase(textArray[i]) && second.equalsIgnoreCase(textArray[secondIndex])) {
-               resultList.add(textArray[i + 2]);
+                resultList.add(textArray[i + 2]);
             }
         }
 

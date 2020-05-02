@@ -3,7 +3,7 @@ package main
 import "Go-Solutions/ds"
 
 func main() {
-	
+
 }
 
 func sortedListToBST(head *ds.ListNode) *ds.TreeNode {

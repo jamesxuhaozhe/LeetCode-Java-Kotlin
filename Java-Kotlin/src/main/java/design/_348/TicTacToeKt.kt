@@ -37,9 +37,10 @@ class TicTacToeKt(n: Int) {
         }
 
         if (Math.abs(rows[row]) == size
-        || Math.abs(cols[col]) == size
-        || Math.abs(diagonal) == size
-        || Math.abs(reverseDiagonal) == size) {
+            || Math.abs(cols[col]) == size
+            || Math.abs(diagonal) == size
+            || Math.abs(reverseDiagonal) == size
+        ) {
             return player
         }
 

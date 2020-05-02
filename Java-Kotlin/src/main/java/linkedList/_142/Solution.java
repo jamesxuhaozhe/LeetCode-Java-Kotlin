@@ -10,6 +10,7 @@ public class Solution {
 
     /**
      * Time and Space complexity: O(n)
+     *
      * @param head
      * @return
      */
@@ -28,6 +29,7 @@ public class Solution {
     /**
      * Time complexity: O(n)
      * Space complexity: O(1)
+     *
      * @param head
      * @return
      */

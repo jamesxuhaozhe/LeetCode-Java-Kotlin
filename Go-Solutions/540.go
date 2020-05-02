@@ -6,13 +6,13 @@ func singleNonDuplicate(nums []int) int {
 	}
 
 	length := len(nums)
-	for i := 0; i < length - 1; i += 2 {
-		if nums[i] != nums[i + 1] {
+	for i := 0; i < length-1; i += 2 {
+		if nums[i] != nums[i+1] {
 			return nums[i]
 		}
 	}
 
-	return nums[length - 1]
+	return nums[length-1]
 }
 
 func singleNonDuplicate1(nums []int) int {
@@ -55,15 +55,15 @@ func singleNonDuplicate3(nums []int) int {
 	low := 0
 	high := length - 1
 	for low < high {
-		mid := low + (high - low) / 2
-		isEven := (high - mid) % 2 == 0
-		if nums[mid + 1] == nums[mid] {
+		mid := low + (high-low)/2
+		isEven := (high-mid)%2 == 0
+		if nums[mid+1] == nums[mid] {
 			if isEven {
 				low = mid + 2
 			} else {
 				high = mid - 1
 			}
-		} else if nums[mid - 1] == nums[mid] {
+		} else if nums[mid-1] == nums[mid] {
 			if isEven {
 				high = mid - 2
 			} else {
@@ -76,4 +76,3 @@ func singleNonDuplicate3(nums []int) int {
 
 	return nums[low]
 }
-

@@ -18,6 +18,6 @@ public class _0106 {
                 cnt = 1;
             }
         }
-        return sb.append(cnt).length() < S.length()? sb.toString(): S;
+        return sb.append(cnt).length() < S.length() ? sb.toString() : S;
     }
 }

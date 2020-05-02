@@ -8,6 +8,7 @@ public class _256 {
      * lets say dp[0][0], at 0 level, this minimum cost if we paint the current one with the first color
      * dp[0][1], at 0 level, this minimum cost if we paint the current one with the second color
      * dp[0][2], at 0 level , this minimum cost if we paint the current one with the third color
+     *
      * @param costs
      * @return
      */
@@ -34,6 +35,7 @@ public class _256 {
 
     /**
      * Same dp algo as above, but use constant space
+     *
      * @param costs
      * @return
      */

@@ -10,30 +10,40 @@ public class Solution {
 
     private Queue<Integer> output;
 
-    /** Initialize your data structure here. */
+    /**
+     * Initialize your data structure here.
+     */
     public Solution() {
         input = new PriorityQueue<>();
         output = new PriorityQueue<>();
     }
 
-    /** Push element x onto stack. */
+    /**
+     * Push element x onto stack.
+     */
     public void push(int x) {
         input.offer(x);
     }
 
-    /** Removes the element on top of the stack and returns that element. */
+    /**
+     * Removes the element on top of the stack and returns that element.
+     */
     public int pop() {
         transfer();
         return output.poll();
     }
 
-    /** Get the top element. */
+    /**
+     * Get the top element.
+     */
     public int top() {
         transfer();
         return output.poll();
     }
 
-    /** Returns whether the stack is empty. */
+    /**
+     * Returns whether the stack is empty.
+     */
     public boolean empty() {
         return input.isEmpty() && output.isEmpty();
     }

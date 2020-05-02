@@ -12,17 +12,17 @@ public class _16 {
             int start = i + 1;
             int end = len - 1;
             while (start < end) {
-               int localSum = nums[i] + nums[start] + nums[end];
-               if (Math.abs(localSum - target) < Math.abs(ans - target)) {
-                   ans = localSum;
-               }
-               if (localSum > target) {
-                   end--;
-               } else if (localSum < target) {
-                   start++;
-               } else {
-                   return ans;
-               }
+                int localSum = nums[i] + nums[start] + nums[end];
+                if (Math.abs(localSum - target) < Math.abs(ans - target)) {
+                    ans = localSum;
+                }
+                if (localSum > target) {
+                    end--;
+                } else if (localSum < target) {
+                    start++;
+                } else {
+                    return ans;
+                }
             }
         }
         return ans;

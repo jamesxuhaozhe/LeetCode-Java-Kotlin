@@ -9,8 +9,9 @@ public class Solution {
 
     /**
      * Time Complexity: O(n)
-     *
+     * <p>
      * Space complexity: O(1)
+     *
      * @param head
      */
     public void reorderList(ListNode head) {
@@ -70,8 +71,9 @@ public class Solution {
 
     /**
      * Space complexity: O(n)
-     *
+     * <p>
      * Time complexity: O(n)
+     *
      * @param head
      */
     public void reorderList1(ListNode head) {

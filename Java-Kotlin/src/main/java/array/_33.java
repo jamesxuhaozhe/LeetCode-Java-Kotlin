@@ -31,6 +31,6 @@ public class _33 {
             }
         }
 
-        return  -1;
+        return -1;
     }
 }

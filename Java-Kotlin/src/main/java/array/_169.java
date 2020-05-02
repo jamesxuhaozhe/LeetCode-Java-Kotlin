@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/majority-element/
- *
+ * <p>
  * Time complexity: O(nlogn)
- *
+ * <p>
  * Space complexity:
  */
 public class _169 {

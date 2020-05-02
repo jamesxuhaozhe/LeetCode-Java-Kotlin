@@ -10,7 +10,7 @@ public class _1304 {
 
     public int[] sumZero(int n) {
         if (n == 1) {
-            return new int[] {0};
+            return new int[]{0};
         }
         List<Integer> list = new ArrayList<>();
         int start = 0;

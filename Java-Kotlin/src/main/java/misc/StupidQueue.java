@@ -10,6 +10,7 @@ public class StupidQueue<T> {
             this.data = data;
         }
     }
+
     private QueueNode<T> first;
 
     private QueueNode<T> last;

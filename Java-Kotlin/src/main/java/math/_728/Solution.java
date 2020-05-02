@@ -19,7 +19,7 @@ public class Solution {
         int number = i;
         while (i != 0) {
             int digit = i % 10;
-            if (digit == 0 ||number % digit != 0) {
+            if (digit == 0 || number % digit != 0) {
                 return false;
             }
             i = i / 10;

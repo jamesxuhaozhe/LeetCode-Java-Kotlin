@@ -7,9 +7,9 @@ import java.util.List;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/palindrome-linked-list/
- *
+ * <p>
  * Time and Space complexity: O(n)
- *
+ * <p>
  * TODO: there got be a better solution
  */
 public class Solution {

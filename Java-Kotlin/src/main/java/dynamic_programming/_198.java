@@ -8,6 +8,7 @@ public class _198 {
      * f(2) = Max(A[1], A[2])
      * f(3) = A[3] + f(1) or f(2) which ever is greater
      * f(n) = Max(A[n] + f(n - 2), f(n - 1))
+     *
      * @param nums
      * @return
      */
@@ -35,6 +36,7 @@ public class _198 {
 
     /**
      * 状态压缩过后
+     *
      * @param nums
      * @return
      */

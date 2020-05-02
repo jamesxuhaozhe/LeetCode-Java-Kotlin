@@ -1,10 +1,6 @@
 package dfs;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class _212 {
     private Set<String> foundWords = new HashSet<>();
@@ -24,8 +20,8 @@ public class _212 {
         boolean[][] visited = new boolean[m][n];
 
         for (int row = 0; row < m; row++) {
-            for (int col = 0;  col < n; col++) {
-                dfs(row, col, visited, board, trie,  "");
+            for (int col = 0; col < n; col++) {
+                dfs(row, col, visited, board, trie, "");
             }
         }
 
@@ -63,6 +59,7 @@ public class _212 {
             private char val;
             private TrieNode[] children;
             private boolean isWord;
+
             TrieNode() {
                 this.val = ' ';
                 this.children = new TrieNode[26];

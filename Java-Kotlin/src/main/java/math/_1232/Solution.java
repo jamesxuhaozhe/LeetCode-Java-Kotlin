@@ -2,7 +2,7 @@ package math._1232;
 
 /**
  * Time complexity: O(n)
- *
+ * <p>
  * Space complexity: O(1)
  */
 public class Solution {

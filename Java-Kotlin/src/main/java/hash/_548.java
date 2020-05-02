@@ -7,6 +7,7 @@ public class _548 {
 
     /**
      * Very easy to understand this solution: https://leetcode-cn.com/problems/split-array-with-equal-sum/solution/jiang-shu-zu-fen-ge-cheng-he-xiang-deng-de-zi-shu-/
+     *
      * @param nums
      * @return
      */

@@ -2,7 +2,7 @@ package array;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/move-zeroes/
- *
+ * <p>
  * Time and Space complexity: O(n)
  */
 public class _283 {
@@ -23,6 +23,7 @@ public class _283 {
     /**
      * this solution is the most optimal since it minimizes the number of operations
      * the idea is to swap the non-zero element to the first zero number position
+     *
      * @param nums
      */
     public void moveZeroes1(int[] nums) {

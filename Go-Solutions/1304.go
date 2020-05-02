@@ -7,7 +7,7 @@ func sumZero(n int) []int {
 	list := make([]int, 0)
 	start := 0
 	sum := 0
-	for i := 0; i < n - 1; i++ {
+	for i := 0; i < n-1; i++ {
 		sum += start
 		list = append(list, start)
 		start++

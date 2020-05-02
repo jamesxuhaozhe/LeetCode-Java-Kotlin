@@ -3,12 +3,12 @@ package array;
 public class _34 {
     public int[] searchRange(int[] nums, int target) {
         if (nums == null || nums.length <= 0) {
-            return new int[] {-1, -1};
+            return new int[]{-1, -1};
         }
 
         int oneKnownIndex = getKnownIndex(nums, target);
         if (oneKnownIndex == -1) {
-            return new int[] {-1, -1};
+            return new int[]{-1, -1};
         }
 
         int left = oneKnownIndex;
@@ -19,7 +19,7 @@ public class _34 {
         while (right < nums.length - 1 && nums[right] == nums[right + 1]) {
             right++;
         }
-        return new int[] {left, right};
+        return new int[]{left, right};
     }
 
     private int getKnownIndex(int[] nums, int target) {
