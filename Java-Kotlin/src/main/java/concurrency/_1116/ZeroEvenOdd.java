@@ -53,7 +53,7 @@ public class ZeroEvenOdd {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution(51);
+        _1116 solution = new _1116(51);
 
         Thread t1 = new Thread(() -> {
             try {

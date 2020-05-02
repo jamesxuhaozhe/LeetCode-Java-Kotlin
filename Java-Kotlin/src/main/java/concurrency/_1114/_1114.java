@@ -2,7 +2,7 @@ package concurrency._1114;
 
 import java.util.concurrent.CountDownLatch;
 
-public class Solution {
+public class _1114 {
 
     class Foo {
 

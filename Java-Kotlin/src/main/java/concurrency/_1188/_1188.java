@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Problem link: https://leetcode-cn.com/problems/design-bounded-blocking-queue/
  */
-public class BoundedBlockingQueue {
+public class _1188 {
 
     private int maxCapacity;
 
@@ -21,7 +21,7 @@ public class BoundedBlockingQueue {
 
     private Condition notEmpty = lock.newCondition();
 
-    public BoundedBlockingQueue(int capacity) {
+    public _1188(int capacity) {
         this.maxCapacity = capacity;
         this.queue = new LinkedList<>();
     }

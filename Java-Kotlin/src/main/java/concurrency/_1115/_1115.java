@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Problem link: https://leetcode-cn.com/problems/print-foobar-alternately/
  */
-public class FooBar {
+public class _1115 {
 
     private int n;
 
@@ -19,7 +19,7 @@ public class FooBar {
 
     private volatile boolean isFooTurn = true;
 
-    public FooBar(int n) {
+    public _1115(int n) {
         this.n = n;
     }
 

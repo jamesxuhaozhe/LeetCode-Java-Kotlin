@@ -2,7 +2,7 @@ package concurrency._1116;
 
 import java.util.function.IntConsumer;
 
-public class Solution {
+public class _1116 {
 
     private int n;
 
@@ -12,7 +12,7 @@ public class Solution {
 
     private volatile boolean shouldPrintZero = true;
 
-    public Solution(int n) {
+    public _1116(int n) {
         this.n = n;
         this.currentNum = 1;
     }
@@ -58,7 +58,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution(51);
+        _1116 solution = new _1116(51);
 
         Thread t1 = new Thread(() -> {
             try {
