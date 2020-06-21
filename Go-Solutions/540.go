@@ -19,7 +19,6 @@ func singleNonDuplicate1(nums []int) int {
 	if len(nums) == 0 {
 		panic("no solution")
 	}
-
 	helperMap := make(map[int]int)
 	for _, num := range nums {
 		if value, ok := helperMap[num]; ok {
