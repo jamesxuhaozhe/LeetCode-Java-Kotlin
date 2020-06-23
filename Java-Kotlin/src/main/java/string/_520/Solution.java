@@ -20,17 +20,10 @@ public class Solution {
 
         if (count == 0 || count == len) {
             return true;
-        } else if (isUpperCase(word.charAt(0)) && count == 1) {
-            return true;
-        } else {
-            return false;
-        }
+        } else return isUpperCase(word.charAt(0)) && count == 1;
     }
 
     private static boolean isUpperCase(char ch) {
-        if (ch >= 'A' && ch <= 'Z') {
-            return true;
-        }
-        return false;
+        return ch >= 'A' && ch <= 'Z';
     }
 }
