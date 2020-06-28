@@ -1,4 +1,4 @@
-package sort.largest_number_179
+package sort
 
 /**
  * Problem link: https://leetcode-cn.com/problems/largest-number/
