@@ -6,7 +6,7 @@ import java.util.Queue;
 /**
  * https://leetcode-cn.com/problems/implement-stack-using-queues/
  * <p>
- * Solution 1: Use two queues, and use a variable to keep track of the top value. when poping, you need to move
+ * Solution 1: Use two queues, and use a variable to keep track of the top value. when popping, you need to move
  * q1.size - 1 numbers of elements to q2
  * <p>
  * Solution2: just use one queue.
