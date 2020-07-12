@@ -72,6 +72,7 @@ public class _225 {
     }
 
     static class Solution2 {
+
         class MyStack {
 
             private Queue<Integer> q1;
