@@ -21,7 +21,6 @@ public class _892 {
 
             }
         }
-        System.out.println(area);
         return area;
     }
 
