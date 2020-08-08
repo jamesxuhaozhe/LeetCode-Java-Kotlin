@@ -17,7 +17,6 @@ public class _892 {
                     area += checkUp(grid, row, col, i, j);
                     area += checkRight(grid, row, col, i, j);
                     area += checkDown(grid, row, col, i, j);
-                    System.out.println("finish process i: " + i + " j: " + j + " " + grid[i][j] + " area: " + area);
                 }
 
             }
