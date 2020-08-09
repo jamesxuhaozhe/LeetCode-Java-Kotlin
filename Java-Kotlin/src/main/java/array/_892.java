@@ -18,7 +18,6 @@ public class _892 {
                     area += checkRight(grid, row, col, i, j);
                     area += checkDown(grid, row, col, i, j);
                 }
-
             }
         }
         return area;
