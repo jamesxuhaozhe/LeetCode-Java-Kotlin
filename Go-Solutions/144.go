@@ -2,7 +2,7 @@ package main
 
 /**
 Problem link: https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
- */
+*/
 func preorderTraversal1(root *TreeNode) []int {
 	var result []int
 	preOrder(root, &result)
@@ -28,9 +28,9 @@ func preorderTraversal2(root *TreeNode) []int {
 	stack = append(stack, root)
 	for len(stack) != 0 {
 		// stack 的实现方式
-		node := stack[len(stack) - 1]
+		node := stack[len(stack)-1]
 		// golang 里面把栈顶的元素出栈
-		stack = stack[:len(stack) - 1]
+		stack = stack[:len(stack)-1]
 		if node != nil {
 			result = append(result, node.Val)
 		}

@@ -4,7 +4,7 @@ package main
 // like 102, just reverse
 func levelOrderBottom(root *TreeNode) [][]int {
 	result := levelOrder107(root)
-	i, j := 0, len(result) - 1
+	i, j := 0, len(result)-1
 	for i < j {
 		result[i], result[j] = result[j], result[i]
 		i += 1
@@ -12,7 +12,6 @@ func levelOrderBottom(root *TreeNode) [][]int {
 	}
 	return result
 }
-
 
 func levelOrder107(root *TreeNode) [][]int {
 	if root == nil {
@@ -31,10 +30,10 @@ func helperLevelOrder107(root *TreeNode, result *[][]int, level int) {
 	(*result)[level] = append((*result)[level], root.Val)
 
 	if root.Left != nil {
-		helperLevelOrder107(root.Left, result, level + 1)
+		helperLevelOrder107(root.Left, result, level+1)
 	}
 
 	if root.Right != nil {
-		helperLevelOrder107(root.Right, result, level + 1)
+		helperLevelOrder107(root.Right, result, level+1)
 	}
 }

@@ -6,8 +6,8 @@ package main
 所以左子树比根结点大的话，就是出现了乱序；根节点比右子树大的话，就是出现了乱序。
 遍历过程中在左子树中如果出现了前一次遍历的结点的值大于此次根节点的值，这就出现了出错结点了，
 记录下来。继续遍历直到找到第二个这样的结点。最后交换这两个结点的时候，只是交换他们的值就可以了，而不是交换这两个结点相应的指针指向。
- */
-func recoverTree(root *TreeNode)  {
+*/
+func recoverTree(root *TreeNode) {
 	var prev, target1, target2 *TreeNode
 	_, target1, target2 = inorderRec(root, prev, target1, target2)
 	if target1 != nil && target2 != nil {

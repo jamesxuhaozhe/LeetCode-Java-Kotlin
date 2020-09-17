@@ -27,7 +27,7 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 			}
 		}
 		result = append(result, curLevel)
-		if levelCount % 2 != 0 {
+		if levelCount%2 != 0 {
 			helpReverse(&curLevel)
 		}
 		levelCount += 1
@@ -37,7 +37,7 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 }
 
 func helpReverse(arr *[]int) {
-	i, j := 0, len(*arr) - 1
+	i, j := 0, len(*arr)-1
 	for i < j {
 		(*arr)[i], (*arr)[j] = (*arr)[j], (*arr)[i]
 		i += 1

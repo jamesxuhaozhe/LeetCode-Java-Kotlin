@@ -1,4 +1,5 @@
 package main
+
 // Problem link : https://leetcode-cn.com/problems/binary-tree-level-order-traversal/
 // DFS
 func levelOrder(root *TreeNode) [][]int {
@@ -18,11 +19,11 @@ func helperLevelOrder(root *TreeNode, result *[][]int, level int) {
 	(*result)[level] = append((*result)[level], root.Val)
 
 	if root.Left != nil {
-		helperLevelOrder(root.Left, result, level + 1)
+		helperLevelOrder(root.Left, result, level+1)
 	}
 
 	if root.Right != nil {
-		helperLevelOrder(root.Right, result, level + 1)
+		helperLevelOrder(root.Right, result, level+1)
 	}
 }
 

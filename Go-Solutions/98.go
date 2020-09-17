@@ -10,7 +10,7 @@ func isValidBST(root *TreeNode) bool {
 	var arr []int
 	inorder(root, &arr)
 	for i := 1; i < len(arr); i++ {
-		if arr[i - 1] >= arr[i] {
+		if arr[i-1] >= arr[i] {
 			return false
 		}
 	}

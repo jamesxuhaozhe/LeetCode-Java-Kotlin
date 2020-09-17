@@ -2,7 +2,7 @@ package main
 
 /**
 Problem link: https://leetcode-cn.com/problems/symmetric-tree/
- */
+*/
 func isSymmetric(root *TreeNode) bool {
 	if root == nil {
 		return true
@@ -21,4 +21,3 @@ func isSymmetr(left *TreeNode, right *TreeNode) bool {
 
 	return isSymmetr(left.Left, right.Right) && isSymmetr(left.Right, right.Left)
 }
-

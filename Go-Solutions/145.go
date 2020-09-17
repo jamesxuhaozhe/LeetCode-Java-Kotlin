@@ -2,7 +2,7 @@ package main
 
 /**
 Problem link: https://leetcode-cn.com/problems/binary-tree-postorder-traversal/submissions/
- */
+*/
 func postorderTraversal(root *TreeNode) []int {
 	var result []int
 	postOrder(root, &result)
