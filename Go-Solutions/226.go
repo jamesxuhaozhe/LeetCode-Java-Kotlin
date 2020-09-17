@@ -1,8 +1,6 @@
 package main
 
-import "Go-Solutions/ds"
-
-func invertTree(root *ds.TreeNode) *ds.TreeNode {
+func invertTree(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
 	}

@@ -1,18 +1,16 @@
 package main
 
-import "Go-Solutions/ds"
-
 /**
 Problem link: https://leetcode-cn.com/problems/symmetric-tree/
  */
-func isSymmetric(root *ds.TreeNode) bool {
+func isSymmetric(root *TreeNode) bool {
 	if root == nil {
 		return true
 	}
 	return isSymmetr(root.Left, root.Right)
 }
 
-func isSymmetr(left *ds.TreeNode, right *ds.TreeNode) bool {
+func isSymmetr(left *TreeNode, right *TreeNode) bool {
 	if left == nil || right == nil {
 		return left == right
 	}

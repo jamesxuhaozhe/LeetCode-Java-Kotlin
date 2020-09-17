@@ -1,8 +1,6 @@
 package main
 
-import ds "Go-Solutions/ds"
-
-func isSameTree(p *ds.TreeNode, q *ds.TreeNode) bool {
+func isSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
 		return true
 	}

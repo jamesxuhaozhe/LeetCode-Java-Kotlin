@@ -1,8 +1,6 @@
 package main
 
-import "Go-Solutions/ds"
-
-func oddEvenList(head *ds.ListNode) *ds.ListNode {
+func oddEvenList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}

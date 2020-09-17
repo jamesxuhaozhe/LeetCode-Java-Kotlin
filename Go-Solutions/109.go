@@ -1,18 +1,16 @@
 package main
 
-import "Go-Solutions/ds"
-
 func main() {
 
 }
 
-func sortedListToBST(head *ds.ListNode) *ds.TreeNode {
+func sortedListToBST(head *ListNode) *TreeNode {
 	if head == nil {
 		return nil
 	}
 
 	mid := findMiddleNode(head)
-	root := &ds.TreeNode{
+	root := &TreeNode{
 		Val:   mid.Val,
 		Left:  nil,
 		Right: nil,
@@ -29,8 +27,8 @@ func sortedListToBST(head *ds.ListNode) *ds.TreeNode {
 	return root
 }
 
-func findMiddleNode(head *ds.ListNode) *ds.ListNode {
-	var pre *ds.ListNode = nil
+func findMiddleNode(head *ListNode) *ListNode {
+	var pre *ListNode = nil
 	slow := head
 	fast := head
 	for fast != nil && fast.Next != nil {

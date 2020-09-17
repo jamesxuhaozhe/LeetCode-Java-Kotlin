@@ -1,13 +1,12 @@
 package main
 
 import (
-	"Go-Solutions/ds"
 	"math"
 )
 
 // Problem link:https://leetcode-cn.com/problems/validate-binary-search-tree/
 // 先inorder 遍历，如果是valid bst，那么数组里面的元素一定是严格升序的
-func isValidBST(root *ds.TreeNode) bool {
+func isValidBST(root *TreeNode) bool {
 	var arr []int
 	inorder(root, &arr)
 	for i := 1; i < len(arr); i++ {
@@ -18,7 +17,7 @@ func isValidBST(root *ds.TreeNode) bool {
 	return true
 }
 
-func inorder(root *ds.TreeNode, result *[]int) {
+func inorder(root *TreeNode, result *[]int) {
 	if root == nil {
 		return
 	}
@@ -29,11 +28,11 @@ func inorder(root *ds.TreeNode, result *[]int) {
 }
 
 // solution that goes by definition
-func isValidBST1(root *ds.TreeNode) bool {
+func isValidBST1(root *TreeNode) bool {
 	return isValid(root, math.Inf(-1), math.Inf(1))
 }
 
-func isValid(root *ds.TreeNode, min float64, max float64) bool {
+func isValid(root *TreeNode, min float64, max float64) bool {
 	if root == nil {
 		return true
 	}

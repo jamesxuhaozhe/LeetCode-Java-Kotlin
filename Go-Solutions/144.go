@@ -1,17 +1,15 @@
 package main
 
-import "Go-Solutions/ds"
-
 /**
 Problem link: https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
  */
-func preorderTraversal1(root *ds.TreeNode) []int {
+func preorderTraversal1(root *TreeNode) []int {
 	var result []int
 	preOrder(root, &result)
 	return result
 }
 
-func preOrder(root *ds.TreeNode, result *[]int) {
+func preOrder(root *TreeNode, result *[]int) {
 	if root == nil {
 		return
 	}
@@ -21,12 +19,12 @@ func preOrder(root *ds.TreeNode, result *[]int) {
 }
 
 // iterative
-func preorderTraversal2(root *ds.TreeNode) []int {
+func preorderTraversal2(root *TreeNode) []int {
 	if root == nil {
 		return []int{}
 	}
 
-	stack, result := []*ds.TreeNode{}, []int{}
+	stack, result := []*TreeNode{}, []int{}
 	stack = append(stack, root)
 	for len(stack) != 0 {
 		// stack 的实现方式

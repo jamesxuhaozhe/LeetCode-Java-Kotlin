@@ -1,9 +1,7 @@
 package main
 
-import "Go-Solutions/ds"
-
-func reverseBetween(head *ds.ListNode, m int, n int) *ds.ListNode {
-	dummy := &ds.ListNode{
+func reverseBetween(head *ListNode, m int, n int) *ListNode {
+	dummy := &ListNode{
 		Val:  0,
 		Next: head,
 	}
@@ -23,8 +21,8 @@ func reverseBetween(head *ds.ListNode, m int, n int) *ds.ListNode {
 	return dummy.Next
 }
 
-func reverseList(head *ds.ListNode) *ds.ListNode {
-	var pre *ds.ListNode = nil
+func reverseList(head *ListNode) *ListNode {
+	var pre *ListNode = nil
 	curr := head
 	for curr != nil {
 		next := curr.Next
