@@ -74,3 +74,50 @@ func dfs993(root *TreeNode, val int, depth int, last int, parent *int, depthRes 
 	dfs993(root.Right, val, depth, root.Val, parent, depthRes)
 }
 
+type node993 struct {
+	parent int
+	depth int
+}
+
+// bfs, just like level order bfs traversal, but need to add one more data structure
+func isCousins2(root *TreeNode, x int, y int) bool {
+	if root == nil {
+		return false
+	}
+
+	visitedNodes := make(map[int]node993, 100)
+	visitedNodes[root.Val] = node993{
+		parent: -1,
+		depth:  0,
+	}
+
+	queue := make([]*TreeNode, 0)
+	queue = append(queue, root)
+	level := 0
+	for len(queue) != 0 {
+		size := len(queue)
+		for i := 0; i < size; i++ {
+			n := queue[0]
+			queue = queue[1:]
+			if n.Left != nil {
+				queue = append(queue, n.Left)
+				visitedNodes[n.Left.Val] = node993{
+					parent: n.Val,
+					depth:  level + 1,
+				}
+			}
+			if n.Right != nil {
+				queue = append(queue, n.Right)
+				visitedNodes[n.Right.Val] = node993{
+					parent: n.Val,
+					depth:  level + 1,
+				}
+			}
+		}
+		level++
+	}
+
+	xNode, yNode := visitedNodes[x], visitedNodes[y]
+	return xNode.parent != yNode.parent && xNode.depth > 1 && xNode.depth == yNode.depth
+}
+
