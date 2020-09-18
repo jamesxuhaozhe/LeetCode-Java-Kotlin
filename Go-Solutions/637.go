@@ -29,7 +29,7 @@ func averageOfLevels(root *TreeNode) []float64 {
 			}
 		}
 		if nextLevelCount > 0 {
-			res = append(res, nextLevelSum / float64(nextLevelCount))
+			res = append(res, nextLevelSum/float64(nextLevelCount))
 		}
 	}
 	return res

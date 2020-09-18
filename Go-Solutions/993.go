@@ -42,7 +42,7 @@ func getLevel993(root *TreeNode, val int, level int) int {
 		return level
 	}
 
-	leftLevel, rightLevel := getLevel993(root.Left, val, level + 1), getLevel993(root.Right, val, level + 1)
+	leftLevel, rightLevel := getLevel993(root.Left, val, level+1), getLevel993(root.Right, val, level+1)
 	if leftLevel == 0 {
 		return rightLevel
 	}
@@ -76,7 +76,7 @@ func dfs993(root *TreeNode, val int, depth int, last int, parent *int, depthRes 
 
 type node993 struct {
 	parent int
-	depth int
+	depth  int
 }
 
 // bfs, just like level order bfs traversal, but need to add one more data structure
@@ -120,4 +120,3 @@ func isCousins2(root *TreeNode, x int, y int) bool {
 	xNode, yNode := visitedNodes[x], visitedNodes[y]
 	return xNode.parent != yNode.parent && xNode.depth > 1 && xNode.depth == yNode.depth
 }
-

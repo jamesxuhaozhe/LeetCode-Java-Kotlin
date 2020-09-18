@@ -9,7 +9,7 @@ func kthSmallest(root *TreeNode, k int) int {
 
 	arr := make([]int, 0)
 	inorder230(root, &arr, k)
-	return arr[k - 1]
+	return arr[k-1]
 }
 
 func inorder230(root *TreeNode, arr *[]int, k int) {
@@ -24,5 +24,4 @@ func inorder230(root *TreeNode, arr *[]int, k int) {
 		return
 	}
 	inorder230(root.Right, arr, k)
-
 }

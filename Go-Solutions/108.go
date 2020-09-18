@@ -14,20 +14,19 @@ func sortedArrayToBST(nums []int) *TreeNode {
 	}
 }
 
-
 func sortedArrayToBST1(nums []int) *TreeNode {
 	if nums == nil || len(nums) == 0 {
 		return nil
 	}
 
-	return createBST108(nums, 0, len(nums) - 1)
+	return createBST108(nums, 0, len(nums)-1)
 }
 
 func createBST108(nums []int, start int, end int) *TreeNode {
 	if start > end {
 		return nil
 	}
-	
+
 	mid := (start + end) / 2
 	return &TreeNode{
 		Val:   nums[mid],
