@@ -48,3 +48,29 @@ func getLevel993(root *TreeNode, val int, level int) int {
 	}
 	return leftLevel
 }
+
+// dfs
+func isCousins1(root *TreeNode, x int, y int) bool {
+	if root == nil {
+		return false
+	}
+	var xDepth, yDepth, xParent, yParent int
+	dfs993(root, x, 0, -1, &xParent, &xDepth)
+	dfs993(root, y, 0, -1, &yParent, &yDepth)
+	return xDepth > 1 && xDepth == yDepth && xParent != yParent
+}
+
+func dfs993(root *TreeNode, val int, depth int, last int, parent *int, depthRes *int) {
+	if root == nil {
+		return
+	}
+
+	if root.Val == val {
+		*depthRes = depth
+		*parent = last
+	}
+	depth++
+	dfs993(root.Left, val, depth, root.Val, parent, depthRes)
+	dfs993(root.Right, val, depth, root.Val, parent, depthRes)
+}
+
