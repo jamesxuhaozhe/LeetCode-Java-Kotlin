@@ -1,4 +1,4 @@
-package offer
+package jianzhi
 
 func numIdenticalPairs(nums []int) int {
 	res := 0

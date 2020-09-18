@@ -1,4 +1,4 @@
-package offer
+package jianzhi
 
 func exchange(nums []int) []int {
 	if nums == nil || len(nums) == 0 {

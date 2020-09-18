@@ -1,4 +1,4 @@
-package offer
+package jianzhi
 
 func twoSum(nums []int, target int) []int {
 	i := 0
