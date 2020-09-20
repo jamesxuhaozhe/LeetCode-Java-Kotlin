@@ -1,5 +1,6 @@
 package jianzhi
 
+// Problem link: https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/
 func isSymmetric28(root *TreeNode) bool {
 	if root == nil {
 		return true
