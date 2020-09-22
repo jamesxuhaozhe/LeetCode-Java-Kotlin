@@ -3,6 +3,7 @@ package jianzhi
 import "strings"
 
 // Problem link: https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/
+// TODO 用two pointers来做
 func reverseWords(s string) string {
 	res := ""
 	slice := strings.Fields(s)
