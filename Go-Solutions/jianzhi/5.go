@@ -6,7 +6,6 @@ func replaceSpace(s string) string {
 	return strings.ReplaceAll(s, " ", "%20")
 }
 
-
 func replaceSpace1(s string) string {
 	var result strings.Builder
 	for i := range s {

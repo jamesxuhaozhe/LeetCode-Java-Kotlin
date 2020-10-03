@@ -36,4 +36,3 @@ func isValidMat240(matrix [][]int) bool {
 
 	return true
 }
-

@@ -14,7 +14,7 @@ func reversePrint(head *ListNode) []int {
 	}
 
 	// start reversing the array
-	i, j := 0, len(arr) - 1
+	i, j := 0, len(arr)-1
 	for i < j {
 		arr[i], arr[j] = arr[j], arr[i]
 		i++

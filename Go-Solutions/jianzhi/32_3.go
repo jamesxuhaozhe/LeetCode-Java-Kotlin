@@ -25,7 +25,7 @@ func levelOrder(root *TreeNode) [][]int {
 				queue = append(queue, node.Right)
 			}
 		}
-		if len(levelSlice) != 0 && curLevel % 2 != 0 {
+		if len(levelSlice) != 0 && curLevel%2 != 0 {
 			reverse32(&levelSlice)
 		}
 		res = append(res, levelSlice)
@@ -35,7 +35,7 @@ func levelOrder(root *TreeNode) [][]int {
 }
 
 func reverse32(slice *[]int) {
-	i, j := 0, len(*slice) - 1
+	i, j := 0, len(*slice)-1
 	for i < j {
 		(*slice)[i], (*slice)[j] = (*slice)[j], (*slice)[i]
 		i++

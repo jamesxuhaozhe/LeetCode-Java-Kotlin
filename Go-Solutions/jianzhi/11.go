@@ -7,7 +7,7 @@ func minArray(numbers []int) int {
 		return -1
 	}
 
-	i, j := 0, len(numbers) - 1
+	i, j := 0, len(numbers)-1
 	for i < j {
 		m := (i + j) / 2
 		if numbers[m] > numbers[j] {

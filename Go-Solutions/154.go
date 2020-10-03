@@ -7,7 +7,7 @@ func findMin(nums []int) int {
 		return -1
 	}
 
-	i, j := 0, len(nums) - 1
+	i, j := 0, len(nums)-1
 	for i < j {
 		m := (i + j) / 2
 		if nums[m] > nums[j] {

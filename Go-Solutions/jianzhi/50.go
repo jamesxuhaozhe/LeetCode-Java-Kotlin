@@ -28,10 +28,10 @@ func firstUniqChar1(s string) byte {
 	arr := make([]int, 26)
 	length := len(s)
 	for i := 0; i < length; i++ {
-		arr[s[i] - 'a']++
+		arr[s[i]-'a']++
 	}
 	for i := 0; i < length; i++ {
-		if arr[s[i] - 'a'] == 1 {
+		if arr[s[i]-'a'] == 1 {
 			return s[i]
 		}
 	}

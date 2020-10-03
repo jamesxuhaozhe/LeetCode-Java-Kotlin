@@ -5,7 +5,6 @@ type CQueue struct {
 	stack2 stack
 }
 
-
 func Constructor() CQueue {
 	return CQueue{
 		stack1: createStack(),
@@ -13,11 +12,9 @@ func Constructor() CQueue {
 	}
 }
 
-
-func (this *CQueue) AppendTail(value int)  {
+func (this *CQueue) AppendTail(value int) {
 	this.stack1.push(value)
 }
-
 
 func (this *CQueue) DeleteHead() int {
 	for !this.stack1.isEmpty() {
@@ -39,7 +36,7 @@ type stackImpl struct {
 }
 
 func createStack() stack {
-	return &stackImpl{arr:make([]int, 0)}
+	return &stackImpl{arr: make([]int, 0)}
 }
 
 func (s *stackImpl) len() int {
@@ -67,4 +64,3 @@ func (s *stackImpl) peek() int {
 func (s *stackImpl) isEmpty() bool {
 	return len(s.arr) == 0
 }
-
