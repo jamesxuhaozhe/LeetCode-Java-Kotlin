@@ -12,15 +12,15 @@ func Constructor() CQueue {
 	}
 }
 
-func (this *CQueue) AppendTail(value int) {
-	this.stack1.push(value)
+func (q *CQueue) AppendTail(value int) {
+	q.stack1.push(value)
 }
 
-func (this *CQueue) DeleteHead() int {
-	for !this.stack1.isEmpty() {
-		this.stack2.push(this.stack1.pop())
+func (q *CQueue) DeleteHead() int {
+	for !q.stack1.isEmpty() {
+		q.stack2.push(q.stack1.pop())
 	}
-	return this.stack2.pop()
+	return q.stack2.pop()
 }
 
 type stack interface {
