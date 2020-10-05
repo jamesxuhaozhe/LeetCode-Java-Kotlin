@@ -4,7 +4,7 @@ import common.datastructure.TreeNode;
 
 /**
  * Problem link: https://leetcode-cn.com/problems/invert-binary-tree/submissions/
- *
+ * <p>
  * Solution: just post order traversal
  */
 public class _226 {

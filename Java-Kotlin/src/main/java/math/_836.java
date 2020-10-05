@@ -19,7 +19,7 @@ public class _836 {
     }
 
     private static int[][] getPoints(int[] rec) {
-        return new int[][] {
+        return new int[][]{
                 {rec[0], rec[1]},
                 {rec[0], rec[3]},
                 {rec[2], rec[1]},
