@@ -15,3 +15,28 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	l2.Next = mergeTwoLists(l1, l2.Next)
 	return l2
 }
+
+func mergeTwoLists_2(left *ListNode, right *ListNode) *ListNode {
+	dummy := &ListNode{
+		Val:  -1,
+		Next: nil,
+	}
+	runner := dummy
+	for left != nil && right != nil {
+		if left.Val < right.Val {
+			runner.Next = left
+			left = left.Next
+		} else {
+			runner.Next = right
+			right = right.Next
+		}
+		runner = runner.Next
+	}
+	if left != nil {
+		runner.Next = left
+	}
+	if right != nil {
+		runner.Next = right
+	}
+	return dummy.Next
+}
