@@ -16,12 +16,12 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	}
 	headOfRemained := end.Next
 	end.Next = nil
-	pre.Next = reverseList(start)
+	pre.Next = reverseList92(start)
 	start.Next = headOfRemained
 	return dummy.Next
 }
 
-func reverseList(head *ListNode) *ListNode {
+func reverseList92(head *ListNode) *ListNode {
 	var pre *ListNode = nil
 	curr := head
 	for curr != nil {

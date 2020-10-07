@@ -2,7 +2,7 @@ package linkedList._2;
 
 import common.datastructure.ListNode;
 
-public class Solution {
+public class _2 {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         return addTwoNumbers(l1, l2, 0);
