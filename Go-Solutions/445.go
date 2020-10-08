@@ -1,6 +1,7 @@
 package main
 
 // 方法1，是用reverse list的方法，然后用add two numbers的方法，然后再把结果reverse一下，
+// https://leetcode-cn.com/problems/add-two-numbers-ii/solution/javakai-fa-by-sweetiee/
 // 方法2，可以用两个栈，然后进行计算
 func addTwoNumbers445(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil {
