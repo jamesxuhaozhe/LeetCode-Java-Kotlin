@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func oddEvenList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
@@ -57,54 +55,54 @@ func oddEvenList1(head *ListNode) *ListNode {
 	return oddHead.Next
 }
 
-func main() {
-	one := &ListNode{
-		Val:  2,
-		Next: nil,
-	}
-
-	two := &ListNode{
-		Val:  1,
-		Next: nil,
-	}
-
-	three := &ListNode{
-		Val:  3,
-		Next: nil,
-	}
-
-	four := &ListNode{
-		Val:  5,
-		Next: nil,
-	}
-
-	five := &ListNode{
-		Val:  6,
-		Next: nil,
-	}
-
-	six := &ListNode{
-		Val:  4,
-		Next: nil,
-	}
-
-	seven := &ListNode{
-		Val:  7,
-		Next: nil,
-	}
-
-	one.Next = two
-	two.Next = three
-	three.Next = four
-	four.Next = five
-	five.Next = six
-	six.Next = seven
-
-	head := oddEvenList1(one)
-
-	for head != nil {
-		fmt.Println(head.Val)
-		head = head.Next
-	}
-
-}
+//func main() {
+//	one := &ListNode{
+//		Val:  2,
+//		Next: nil,
+//	}
+//
+//	two := &ListNode{
+//		Val:  1,
+//		Next: nil,
+//	}
+//
+//	three := &ListNode{
+//		Val:  3,
+//		Next: nil,
+//	}
+//
+//	four := &ListNode{
+//		Val:  5,
+//		Next: nil,
+//	}
+//
+//	five := &ListNode{
+//		Val:  6,
+//		Next: nil,
+//	}
+//
+//	six := &ListNode{
+//		Val:  4,
+//		Next: nil,
+//	}
+//
+//	seven := &ListNode{
+//		Val:  7,
+//		Next: nil,
+//	}
+//
+//	one.Next = two
+//	two.Next = three
+//	three.Next = four
+//	four.Next = five
+//	five.Next = six
+//	six.Next = seven
+//
+//	head := oddEvenList1(one)
+//
+//	for head != nil {
+//		fmt.Println(head.Val)
+//		head = head.Next
+//	}
+//
+//}
