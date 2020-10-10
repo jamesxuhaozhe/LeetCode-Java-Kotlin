@@ -10,8 +10,8 @@ func (s *stack469) push(val int) {
 
 func (s *stack469) pop() int {
 	length := len(s.arr)
-	res := s.arr[length - 1]
-	s.arr = s.arr[:length - 1]
+	res := s.arr[length-1]
+	s.arr = s.arr[:length-1]
 	return res
 }
 
@@ -20,7 +20,7 @@ func (s *stack469) isEmpty() bool {
 }
 
 func getStack() stack469 {
-	return stack469{arr:make([]int, 0)}
+	return stack469{arr: make([]int, 0)}
 }
 
 // like problem 445

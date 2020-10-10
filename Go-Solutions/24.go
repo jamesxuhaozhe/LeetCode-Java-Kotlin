@@ -1,4 +1,5 @@
 package main
+
 // Problem link: https://leetcode-cn.com/problems/swap-nodes-in-pairs/
 // use recursion to swap two adjacent nodes
 func swapPairs(head *ListNode) *ListNode {

@@ -49,7 +49,7 @@ func addTwoNumbers445(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 
 func createStack445() stack445 {
-	return stack445{arr:make([]int, 0)}
+	return stack445{arr: make([]int, 0)}
 }
 
 type stack445 struct {
@@ -66,8 +66,8 @@ func (s *stack445) push(val int) {
 
 func (s *stack445) pop() int {
 	len := len(s.arr)
-	res := s.arr[len - 1]
-	s.arr = s.arr[:len - 1]
+	res := s.arr[len-1]
+	s.arr = s.arr[:len-1]
 	return res
 }
 

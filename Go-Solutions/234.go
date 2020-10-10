@@ -11,7 +11,7 @@ func isPalindrome(head *ListNode) bool {
 		head = head.Next
 	}
 
-	i, j := 0, len(arr) - 1
+	i, j := 0, len(arr)-1
 	for i < j {
 		if arr[i] != arr[j] {
 			return false
@@ -61,6 +61,3 @@ func getMiddleNode234(head *ListNode) *ListNode {
 	}
 	return slow
 }
-
-
-

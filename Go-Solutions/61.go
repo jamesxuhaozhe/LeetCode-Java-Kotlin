@@ -3,7 +3,7 @@ package main
 // 首先看长度是多少，如果k是长度的整数倍，那么什么都不需要做，直接返回head，如果有余数的话，就通过two pointer找到需要
 // 拆分的前驱，然后进行重新拼接
 func rotateRight(head *ListNode, k int) *ListNode {
-	if head == nil || head.Next == nil  || k == 0 {
+	if head == nil || head.Next == nil || k == 0 {
 		return head
 	}
 

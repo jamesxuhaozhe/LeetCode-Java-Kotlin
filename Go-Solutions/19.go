@@ -14,7 +14,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	}
 
 	runner := dummy
-	for i := 0; i < length - n; i++ {
+	for i := 0; i < length-n; i++ {
 		runner = runner.Next
 	}
 	runner.Next = runner.Next.Next
@@ -27,7 +27,7 @@ func removeNthFromEnd2(head *ListNode, n int) *ListNode {
 		Next: head,
 	}
 	slow, fast := dummy, dummy
-	for i := 0; i < n + 1; i++ {
+	for i := 0; i < n+1; i++ {
 		fast = fast.Next
 	}
 

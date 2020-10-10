@@ -7,12 +7,12 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
 		Next: head,
 	}
 	pre := dummy
-	for i := 0; i < m - 1; i++ {
+	for i := 0; i < m-1; i++ {
 		pre = pre.Next
 	}
 	start := pre.Next
 	end := start
-	for i := 0; i < n - m; i++ {
+	for i := 0; i < n-m; i++ {
 		end = end.Next
 	}
 	headOfRemained := end.Next

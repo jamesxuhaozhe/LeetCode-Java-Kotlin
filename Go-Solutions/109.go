@@ -81,6 +81,7 @@ func sortedListToBST_1(head *ListNode) *TreeNode {
 	}
 	return root
 }
+
 // https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/solution/jian-dan-di-gui-bi-xu-miao-dong-by-sweetiee-3/
 func sortedListToBST_2(head *ListNode) *TreeNode {
 	if head == nil {

@@ -1,6 +1,5 @@
 package main
 
-
 func splitListToParts(head *ListNode, k int) []*ListNode {
 	length := getLength725(head)
 	avg := length / k

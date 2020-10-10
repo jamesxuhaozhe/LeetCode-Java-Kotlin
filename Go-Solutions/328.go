@@ -41,7 +41,7 @@ func oddEvenList1(head *ListNode) *ListNode {
 	cur := head
 	count := 1
 	for cur != nil {
-		if count % 2 == 1 {
+		if count%2 == 1 {
 			oddRunner.Next = cur
 			oddRunner = oddRunner.Next
 		} else {
@@ -99,7 +99,6 @@ func main() {
 	four.Next = five
 	five.Next = six
 	six.Next = seven
-
 
 	head := oddEvenList1(one)
 
