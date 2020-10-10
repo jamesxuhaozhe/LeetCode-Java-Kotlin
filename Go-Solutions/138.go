@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func copyRandomList(head *Node) *Node {
 	if head == nil {
 		return head
@@ -54,58 +52,58 @@ func copyRandomList(head *Node) *Node {
 	return resDummy.Next
 }
 
-func main() {
-	first := &Node{
-		Val:    7,
-		Next:   nil,
-		Random: nil,
-	}
-	
-	second := &Node{
-		Val:    13,
-		Next:   nil,
-		Random: nil,
-	}
-	
-	third := &Node{
-		Val:    11,
-		Next:   nil,
-		Random: nil,
-	}
-	
-	fourth := &Node{
-		Val:    10,
-		Next:   nil,
-		Random: nil,
-	}
-	
-	fifth := &Node{
-		Val:    1,
-		Next:   nil,
-		Random: nil,
-	}
-
-	first.Next = second
-	second.Next = third
-	third.Next = fourth
-	fourth.Next = fifth
-
-	first.Random = nil
-	second.Random = first
-	third.Random = fifth
-	fourth.Random = third
-	fifth.Random = first
-
-	head := copyRandomList(first)
-
-	for head != nil {
-		fmt.Println(head.Val)
-		head = head.Next
-	}
-
-	fmt.Println("--------------------")
-	for first != nil {
-		fmt.Println(first.Val)
-		first = first.Next
-	}
-}
+//func main() {
+//	first := &Node{
+//		Val:    7,
+//		Next:   nil,
+//		Random: nil,
+//	}
+//
+//	second := &Node{
+//		Val:    13,
+//		Next:   nil,
+//		Random: nil,
+//	}
+//
+//	third := &Node{
+//		Val:    11,
+//		Next:   nil,
+//		Random: nil,
+//	}
+//
+//	fourth := &Node{
+//		Val:    10,
+//		Next:   nil,
+//		Random: nil,
+//	}
+//
+//	fifth := &Node{
+//		Val:    1,
+//		Next:   nil,
+//		Random: nil,
+//	}
+//
+//	first.Next = second
+//	second.Next = third
+//	third.Next = fourth
+//	fourth.Next = fifth
+//
+//	first.Random = nil
+//	second.Random = first
+//	third.Random = fifth
+//	fourth.Random = third
+//	fifth.Random = first
+//
+//	head := copyRandomList(first)
+//
+//	for head != nil {
+//		fmt.Println(head.Val)
+//		head = head.Next
+//	}
+//
+//	fmt.Println("--------------------")
+//	for first != nil {
+//		fmt.Println(first.Val)
+//		first = first.Next
+//	}
+//}
