@@ -5,6 +5,7 @@ type CQueue struct {
 	stack2 stack
 }
 
+// ctor
 func Constructor() CQueue {
 	return CQueue{
 		stack1: createStack(),
