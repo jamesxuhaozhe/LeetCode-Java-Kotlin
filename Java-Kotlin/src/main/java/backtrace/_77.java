@@ -42,5 +42,8 @@ public class _77 {
         }
     }
 
-
+//    public static void main(String[] args) {
+//        byte x = 0xA;
+//        System.out.println(x << 2);
+//    }
 }
