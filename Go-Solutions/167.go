@@ -31,12 +31,15 @@ func twoSum11(numbers []int, target int) []int {
 	left, right := 0, len(numbers) - 1
 	for left < right {
 		sum := numbers[left] + numbers[right]
+		// if sum == target, it means you have found your solutions
 		if sum == target {
 			return []int{left + 1, right + 1}
 		}
+		// if sum is less than the target, then your only chance is to move the left to the right
 		if sum < target {
 			left++
 		} else {
+			// in this branch, it means your only chance is to move the right to the left
 			right--
 		}
 	}
