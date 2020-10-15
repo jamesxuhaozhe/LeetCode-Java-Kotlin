@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -71,7 +70,7 @@ func abs29(val int) int {
 	}
 	return val
 }
-
-func main() {
-	fmt.Println(divide(2, 2))
-}
+//
+//func main() {
+//	fmt.Println(divide(2, 2))
+//}
