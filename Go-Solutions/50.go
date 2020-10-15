@@ -1,4 +1,5 @@
 package main
+
 // solution: https://leetcode-cn.com/problems/powx-n/solution/powx-n-by-leetcode-solution/
 func myPow(x float64, n int) float64 {
 	if n == 0 {

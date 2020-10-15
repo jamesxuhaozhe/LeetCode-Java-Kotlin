@@ -24,10 +24,10 @@ func findDuplicate(nums []int) int {
 // https://leetcode-cn.com/problems/find-the-duplicate-number/solution/er-fen-fa-si-lu-ji-dai-ma-python-by-liweiwei1419/
 func findDuplicate1(nums []int) int {
 	n := len(nums)
-	l, r := 1, n - 1
+	l, r := 1, n-1
 	ans := -1
 	for l <= r {
-		mid := l + (r - l) >> 1
+		mid := l + (r-l)>>1
 
 		cnt := 0
 		for i := 0; i < n; i++ {

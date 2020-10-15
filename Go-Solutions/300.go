@@ -1,4 +1,5 @@
 package main
+
 // dp[i]表示以nums[i]为结尾的最长子序列的长度，必须包含nums[i]，那么对于dp[i] = max(dp[j]) + 1， 0<=j < i and nums[i] > nums[j]
 // 详细请看官方题解：https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/
 // TODO 用别的做法
@@ -15,7 +16,7 @@ func lengthOfLIS(nums []int) int {
 		dp[i] = 1
 		for j := 0; j < i; j++ {
 			if nums[i] > nums[j] {
-				dp[i] = max300(dp[i], dp[j] + 1)
+				dp[i] = max300(dp[i], dp[j]+1)
 			}
 		}
 		maxAns = max300(dp[i], maxAns)

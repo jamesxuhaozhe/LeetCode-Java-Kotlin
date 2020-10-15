@@ -9,7 +9,7 @@ import (
 商的取值范围是 [0, dividend]，所以从 0 到被除数之间搜索。利用二分，找到(商 + 1 ) * 除数 > 被除数并且 商 * 除数 ≤ 被除数 或者 (商+1)* 除数 ≥ 被除数并且商 * 除数 < 被除数的时候，就算找到了商，
 其余情况继续二分即可。最后还要注意符号和题目规定的 Int32 取值范围。
 https://books.halfrost.com/leetcode/ChapterFour/0029.Divide-Two-Integers/
- */
+*/
 func divide(dividend int, divisor int) int {
 	sign, res := -1, 0
 
@@ -70,6 +70,7 @@ func abs29(val int) int {
 	}
 	return val
 }
+
 //
 //func main() {
 //	fmt.Println(divide(2, 2))

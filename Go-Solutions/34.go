@@ -8,15 +8,15 @@ func searchRange(nums []int, target int) []int {
 }
 
 func getFarRightIndex(nums []int, target int) int {
-	left, right := 0, len(nums) - 1
+	left, right := 0, len(nums)-1
 	for left <= right {
-		mid := left + (right - left)>> 1
+		mid := left + (right-left)>>1
 		if nums[mid] > target {
 			right = mid - 1
 		} else if nums[mid] < target {
 			left = mid + 1
 		} else {
-			if (mid == len(nums) - 1) || (nums[mid + 1] != target) {
+			if (mid == len(nums)-1) || (nums[mid+1] != target) {
 				return mid
 			}
 			left = mid + 1
@@ -26,9 +26,9 @@ func getFarRightIndex(nums []int, target int) int {
 }
 
 func getFarLeftIndex(nums []int, target int) int {
-	left, right := 0, len(nums) - 1
+	left, right := 0, len(nums)-1
 	for left <= right {
-		mid := left + (right - left) >> 1
+		mid := left + (right-left)>>1
 		if nums[mid] > target {
 			right = mid - 1
 		} else if nums[mid] < target {

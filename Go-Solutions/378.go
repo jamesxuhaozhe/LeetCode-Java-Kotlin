@@ -28,10 +28,10 @@ func kthSmallest_2(matrix [][]int, k int) int {
 	high := matrix[n-1][n-1]
 	mid := 0
 	for low <= high {
-		mid = low + (high - low) >> 1
+		mid = low + (high-low)>>1
 		count := getLessEqualCount378(matrix, mid)
 		if count == k {
-			if getLessEqualCount378(matrix, mid - 1) < k {
+			if getLessEqualCount378(matrix, mid-1) < k {
 				return mid
 			}
 			//if getLessEqualCount378(matrix, mid - 1) == k
@@ -40,7 +40,7 @@ func kthSmallest_2(matrix [][]int, k int) int {
 			low = mid + 1
 		} else if count > k {
 			// 因为matrix中是有可能有重复的数字的
-			if getLessEqualCount378(matrix, mid - 1) < k {
+			if getLessEqualCount378(matrix, mid-1) < k {
 				//fmt.Printf("count: %d, mid: %d\n", count, mid)
 				return mid
 			}

@@ -35,8 +35,8 @@ func mySqrt(x int) int {
 // https://leetcode-cn.com/problems/sqrtx/solution/er-fen-cha-zhao-niu-dun-fa-python-dai-ma-by-liweiw/
 func mySqrt_newton(x int) int {
 	r := x
-	for r * r > x {
-		r = (r + x / r) / 2
+	for r*r > x {
+		r = (r + x/r) / 2
 	}
 	return r
 }

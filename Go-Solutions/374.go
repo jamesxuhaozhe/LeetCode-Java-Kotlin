@@ -4,7 +4,7 @@ package main
 func guessNumber(n int) int {
 	left, right := 1, n
 	for left <= right {
-		mid := left + (right - left) >> 1
+		mid := left + (right-left)>>1
 		if guess(mid) == 0 {
 			return mid
 		} else if guess(mid) == 1 {

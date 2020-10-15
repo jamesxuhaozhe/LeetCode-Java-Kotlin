@@ -17,7 +17,7 @@ func minSubArrayLen(s int, nums []int) int {
 	for end < len {
 		sum += nums[end]
 		for sum >= s {
-			ans = min209(ans, end - start + 1)
+			ans = min209(ans, end-start+1)
 			sum -= nums[start]
 			start++
 		}

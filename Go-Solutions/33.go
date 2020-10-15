@@ -24,7 +24,7 @@ O(logN) 的时间复杂度，基本可以断定本题是需要使用二分查找
 链接：https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/ji-bai-liao-9983de-javayong-hu-by-reedfan/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
- */
+*/
 func search1(nums []int, target int) int {
 	if len(nums) == 0 {
 		return -1
@@ -60,9 +60,9 @@ func search2(nums []int, target int) int {
 		return -1
 	}
 
-	left, right := 0, len(nums) - 1
+	left, right := 0, len(nums)-1
 	for left <= right {
-		mid := left + (right - left) >> 1
+		mid := left + (right-left)>>1
 		if nums[mid] == target {
 			return mid
 		}

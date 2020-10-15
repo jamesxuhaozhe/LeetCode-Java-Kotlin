@@ -12,9 +12,9 @@ func findLength(A []int, B []int) int {
 	}
 
 	n, m := len(A), len(B)
-	dp := make([][]int, n + 1)
+	dp := make([][]int, n+1)
 	for index, _ := range dp {
-		dp[index] = make([]int, m + 1)
+		dp[index] = make([]int, m+1)
 	}
 	maxAns := 0
 	for i := n - 1; i >= 0; i-- {
