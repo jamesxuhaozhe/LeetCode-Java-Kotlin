@@ -11,7 +11,7 @@ func fourSumCount(A []int, B []int, C []int, D []int) int {
 		for _, b := range B {
 			for _, c := range C {
 				for _, d := range D {
-					if a + b + c + d == 0 {
+					if a+b+c+d == 0 {
 						count++
 					}
 				}
@@ -24,18 +24,18 @@ func fourSumCount(A []int, B []int, C []int, D []int) int {
 
 // https://leetcode-cn.com/problems/4sum-ii/solution/ji-ge-xiao-xi-jie-ji-hu-shuang-bai-by-cluas/
 func fourSumCount_smart(A []int, B []int, C []int, D []int) int {
-	map1 := make(map[int]int, len(A)* len(B))
+	map1 := make(map[int]int, len(A)*len(B))
 	for _, a := range A {
 		for _, b := range B {
-			map1[a + b]++
+			map1[a+b]++
 		}
 	}
 
 	ans := 0
-	for _, c :=range C {
+	for _, c := range C {
 		for _, d := range D {
 			if count, ok := map1[-c-d]; ok {
-				ans+=count
+				ans += count
 			}
 		}
 	}
