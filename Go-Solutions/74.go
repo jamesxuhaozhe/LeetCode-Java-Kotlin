@@ -76,12 +76,33 @@ func isValidMat74(matrix [][]int) bool {
 	return true
 }
 
-func main() {
-	matrix := [][]int{
-		{1},
-		{3},
-	}
+//func main() {
+//	matrix := [][]int{
+//		{1},
+//		{3},
+//	}
+//
+//	k := 3
+//	searchMatrix74(matrix, k)
+//}
 
-	k := 3
-	searchMatrix74(matrix, k)
+func searchMatrix74_2(matrix [][]int, target int) bool {
+	if len(matrix) == 0 {
+		return false
+	}
+	m, low, high := len(matrix[0]), 0, len(matrix[0])*len(matrix)-1
+	for low <= high {
+		mid := low + (high-low)>>1
+		// row is mid / m, mid % m
+		if matrix[mid/m][mid%m] == target {
+			return true
+		} else if matrix[mid/m][mid%m] > target {
+			high = mid - 1
+		} else {
+			low = mid + 1
+		}
+	}
+	return false
 }
+
+
