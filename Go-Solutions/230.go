@@ -25,3 +25,26 @@ func inorder230(root *TreeNode, arr *[]int, k int) {
 	}
 	inorder230(root.Right, arr, k)
 }
+
+func kthSmallest1(root *TreeNode, k int) int {
+	if root == nil {
+		return -1
+	}
+
+	arr := make([]int, 0)
+	inorder230_1(root, &arr, k)
+	return arr[k - 1]
+}
+
+func inorder230_1(root *TreeNode, arr *[]int, k int) {
+	if root == nil {
+		return
+	}
+
+	inorder230_1(root.Left, arr, k)
+	*arr = append(*arr, root.Val)
+	if len(*arr) == k {
+		return
+	}
+	inorder230_1(root.Right, arr, k)
+}
