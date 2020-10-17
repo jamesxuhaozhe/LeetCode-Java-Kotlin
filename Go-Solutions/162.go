@@ -12,10 +12,10 @@ func findPeakElement(nums []int) int {
 		if idx == 0 && value > nums[1] {
 			return 0
 		}
-		if idx == len(nums) - 1 && value > nums[idx - 1] {
+		if idx == len(nums)-1 && value > nums[idx-1] {
 			return idx
 		}
-		if idx - 1 >= 0 && idx + 1 < len(nums) && value > nums[idx + 1] && value > nums[idx - 1] {
+		if idx-1 >= 0 && idx+1 < len(nums) && value > nums[idx+1] && value > nums[idx-1] {
 			return idx
 		}
 	}
@@ -36,7 +36,7 @@ func findPeakElement(nums []int) int {
 链接：https://leetcode-cn.com/problems/find-peak-element/solution/hua-jie-suan-fa-162-xun-zhao-feng-zhi-by-guanpengc/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
- */
+*/
 func findPeakElement_1(nums []int) int {
 	low, high := 0, len(nums)-1
 	for low < high {

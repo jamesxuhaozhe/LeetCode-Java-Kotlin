@@ -12,14 +12,14 @@ func arrangeCoins(n int) int {
 
 	low, high := 1, n
 	for low <= high {
-		mid := low + (high - low) >> 1
+		mid := low + (high-low)>>1
 		sum := getSum441(mid)
 		if sum == n {
 			return mid
 		} else if sum > n {
 			high = mid - 1
 		} else {
-			if mid == n || getSum441(mid + 1) > n {
+			if mid == n || getSum441(mid+1) > n {
 				return mid
 			}
 			low = mid + 1
