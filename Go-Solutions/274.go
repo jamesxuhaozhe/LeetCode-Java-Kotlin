@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -58,8 +57,8 @@ func getLastLessElementIdx(h int, citations []int) int {
 	}
 	return -1
 }
-
-func main() {
-	arr := []int{1,2}
-	fmt.Println(hIndex(arr))
-}
+//
+//func main() {
+//	arr := []int{1,2}
+//	fmt.Println(hIndex(arr))
+//}
