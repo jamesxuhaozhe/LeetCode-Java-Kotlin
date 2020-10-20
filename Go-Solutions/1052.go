@@ -131,6 +131,7 @@ func maxSatisfied_sliding_window_while(customers []int, grumpy []int, X int) int
 			}
 			left++
 		}
+		//fmt.Printf("left: %d, right: %d, length: %d\n", left, right, right - left + 1)
 		right++
 		max = max1052(max, baseCount)
 	}
