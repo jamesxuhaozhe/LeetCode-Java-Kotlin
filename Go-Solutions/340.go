@@ -17,12 +17,12 @@ func lengthOfLongestSubstringKDistinct(s string, k int) int {
 	for right < sLen {
 		table[s[right]] = right
 		right++
-		if len(table) == k + 1 {
+		if len(table) == k+1 {
 			idx := getMapMinValue340(table)
 			delete(table, s[idx])
 			left = idx + 1
 		}
-		res = max340(res, right - left)
+		res = max340(res, right-left)
 	}
 	return res
 }
@@ -43,4 +43,3 @@ func getMapMinValue340(table map[byte]int) int {
 	}
 	return min
 }
-

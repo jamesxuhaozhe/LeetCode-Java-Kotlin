@@ -10,7 +10,7 @@ func minWindow(s string, t string) string {
 	var window [256]int
 
 	for i := 0; i < len(t); i++ {
-		need[t[i] - 'a']++
+		need[t[i]-'a']++
 	}
 
 	// 当前window里已经符合条件的字符数量
@@ -32,9 +32,9 @@ func minWindow(s string, t string) string {
 				count--
 			}
 
-			if right - left + 1 < minWinLen {
+			if right-left+1 < minWinLen {
 				minWinLen = right - left + 1
-				res = s[left:right+1]
+				res = s[left : right+1]
 			}
 			left++
 			window[leftCh]--

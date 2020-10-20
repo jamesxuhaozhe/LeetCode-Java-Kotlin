@@ -14,10 +14,10 @@ func hIndex(citations []int) int {
 	low, high := 1, n
 	for low <= high {
 
-		mid := low + (high - low) >> 1
+		mid := low + (high-low)>>1
 		count := getGreaterOrEqualElementsCount(mid, citations)
 		if mid <= count {
-			if mid == n || (getGreaterOrEqualElementsCount(mid + 1, citations) < mid + 1) {
+			if mid == n || (getGreaterOrEqualElementsCount(mid+1, citations) < mid+1) {
 				return mid
 			}
 			low = mid + 1
@@ -43,11 +43,11 @@ func getGreaterOrEqualElementsCount(h int, citations []int) int {
 }
 
 func getLastLessElementIdx(h int, citations []int) int {
-	low, high := 0, len(citations) - 1
+	low, high := 0, len(citations)-1
 	for low <= high {
-		mid := low + (high - low) >> 1
+		mid := low + (high-low)>>1
 		if citations[mid] <= h {
-			if (mid == len(citations) - 1) || (citations[mid + 1] > h) {
+			if (mid == len(citations)-1) || (citations[mid+1] > h) {
 				return mid
 			}
 			low = mid + 1
@@ -57,6 +57,7 @@ func getLastLessElementIdx(h int, citations []int) int {
 	}
 	return -1
 }
+
 //
 //func main() {
 //	arr := []int{1,2}

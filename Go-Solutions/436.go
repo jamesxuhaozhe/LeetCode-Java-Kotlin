@@ -29,7 +29,7 @@ func findRightInterval(intervals [][]int) []int {
 
 type Interval struct {
 	start int
-	end int
+	end   int
 }
 
 type IntervalList []Interval
@@ -79,11 +79,11 @@ func findRightInterval_binarySearch(intervals [][]int) []int {
 }
 
 func getFirstGreaterOrEqualIdx(list []Interval, target int) int {
-	low, high := 0, len(list) - 1
+	low, high := 0, len(list)-1
 	for low <= high {
-		mid := low + (high - low) >> 1
+		mid := low + (high-low)>>1
 		if target <= list[mid].start {
-			if (mid == 0) || (list[mid - 1].start < target) {
+			if (mid == 0) || (list[mid-1].start < target) {
 				return mid
 			}
 			high = mid - 1

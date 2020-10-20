@@ -25,7 +25,7 @@ func lengthOfLongestSubstringTwoDistinct(s string) int {
 			left = idx + 1
 			delete(table, s[idx])
 		}
-		res = max159(res, right - left)
+		res = max159(res, right-left)
 	}
 	return res
 }

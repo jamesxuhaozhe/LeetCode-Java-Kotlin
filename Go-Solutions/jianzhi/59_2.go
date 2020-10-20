@@ -3,7 +3,7 @@ package jianzhi
 import "math"
 
 type MaxQueue struct {
-	queue []int
+	queue          []int
 	monotonicQueue monotonicQueue
 }
 
@@ -12,8 +12,8 @@ type monotonicQueue struct {
 }
 
 func (mono *monotonicQueue) push(value int) {
-	for len(mono.arr) > 0 && mono.arr[len(mono.arr) - 1] < value {
-		mono.arr = mono.arr[:len(mono.arr) - 1]
+	for len(mono.arr) > 0 && mono.arr[len(mono.arr)-1] < value {
+		mono.arr = mono.arr[:len(mono.arr)-1]
 	}
 	mono.arr = append(mono.arr, value)
 }
@@ -41,10 +41,9 @@ func (mono *monotonicQueue) popMax() int {
 func Constructor_59_2() MaxQueue {
 	return MaxQueue{
 		queue:          make([]int, 0),
-		monotonicQueue: monotonicQueue{arr:make([]int, 0)},
+		monotonicQueue: monotonicQueue{arr: make([]int, 0)},
 	}
 }
-
 
 func (this *MaxQueue) Max_value() int {
 	if this.monotonicQueue.len() > 0 {
@@ -53,12 +52,10 @@ func (this *MaxQueue) Max_value() int {
 	return -1
 }
 
-
-func (this *MaxQueue) Push_back(value int)  {
+func (this *MaxQueue) Push_back(value int) {
 	this.monotonicQueue.push(value)
 	this.queue = append(this.queue, value)
 }
-
 
 func (this *MaxQueue) Pop_front() int {
 	if len(this.queue) == 0 {
@@ -71,6 +68,7 @@ func (this *MaxQueue) Pop_front() int {
 	}
 	return ans
 }
+
 //
 //func main() {
 //	arr := []int{1}
