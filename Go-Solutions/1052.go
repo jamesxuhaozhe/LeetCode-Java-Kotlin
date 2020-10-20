@@ -44,9 +44,6 @@ func totalNum(customers []int, grumpy []int, start int, end int) int {
 	return count
 }
 
-
-
-
 func maxSatisfied_sliding_window(customers []int, grumpy []int, X int) int {
 	if customers == nil || len(customers) == 0 {
 		return 0
@@ -78,7 +75,7 @@ func maxSatisfied_sliding_window(customers []int, grumpy []int, X int) int {
 		if grumpy[right] == 1 {
 			baseCount += customers[right]
 		}
-		if right - X + 1 > 0 {
+		if right-X+1 > 0 {
 			if grumpy[left] == 1 {
 				baseCount -= customers[left]
 			}
@@ -91,7 +88,6 @@ func maxSatisfied_sliding_window(customers []int, grumpy []int, X int) int {
 	}
 	return max
 }
-
 
 func maxSatisfied_sliding_window_while(customers []int, grumpy []int, X int) int {
 	if customers == nil || len(customers) == 0 {
@@ -125,7 +121,7 @@ func maxSatisfied_sliding_window_while(customers []int, grumpy []int, X int) int
 			baseCount += customers[right]
 		}
 
-		if right - left == X {
+		if right-left == X {
 			if grumpy[left] == 1 {
 				baseCount -= customers[left]
 			}
@@ -144,6 +140,7 @@ func max1052(a int, b int) int {
 	}
 	return b
 }
+
 //
 //
 //func main() {
