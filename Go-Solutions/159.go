@@ -3,6 +3,7 @@ package main
 import "math"
 
 // https://leetcode-cn.com/problems/longest-substring-with-at-most-two-distinct-characters/solution/zhi-duo-bao-han-liang-ge-bu-tong-zi-fu-de-zui-chan/
+// 跟340是一样的
 func lengthOfLongestSubstringTwoDistinct(s string) int {
 	sLen := len(s)
 	if sLen < 3 {
