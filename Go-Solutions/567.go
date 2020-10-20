@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // stupid solution
 func checkInclusion(s1 string, s2 string) bool {
 	if len(s1) > len(s2) {
@@ -67,9 +65,9 @@ func isOk567(flag1 []int, flag2 []int) bool {
 	}
 	return true
 }
-func main() {
-	s1 := "ab"
-	s2 := "eidboaoo"
-
-	fmt.Println(checkInclusion_sliding_window(s1, s2))
-}
+//func main() {
+//	s1 := "ab"
+//	s2 := "eidboaoo"
+//
+//	fmt.Println(checkInclusion_sliding_window(s1, s2))
+//}
