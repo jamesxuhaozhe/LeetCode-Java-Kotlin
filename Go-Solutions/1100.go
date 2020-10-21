@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 这种做法比较弱智一些，理念是这样，每次以固定长度K的窗口进行滑动，用一个map[byte][int]来记录固定窗口内的情况，没有重复的字符，表示，这个map的所有value都是等于1的
 func numKLenSubstrNoRepeats(S string, K int) int {
 	if K > len(S) {
@@ -79,8 +77,8 @@ func numKLenSubstrNoRepeats_smart(S string, K int) int {
 	return count
 }
 
-func main() {
-	S := "havefunonleetcode"
-	K := 5
-	fmt.Println(numKLenSubstrNoRepeats_smart(S, K))
-}
+//func main() {
+//	S := "havefunonleetcode"
+//	K := 5
+//	fmt.Println(numKLenSubstrNoRepeats_smart(S, K))
+//}
