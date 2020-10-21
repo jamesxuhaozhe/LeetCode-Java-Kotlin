@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 func missingNumber(nums []int) int {
 	n := len(nums) + 1

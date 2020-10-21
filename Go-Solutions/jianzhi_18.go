@@ -1,8 +1,10 @@
-package jianzhi
+package main
+
+import "Go-Solutions/jianzhi"
 
 // https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/
-func deleteNode(head *ListNode, val int) *ListNode {
-	dummy := &ListNode{
+func deleteNode(head *jianzhi.ListNode, val int) *jianzhi.ListNode {
+	dummy := &jianzhi.ListNode{
 		Val:  0,
 		Next: head,
 	}

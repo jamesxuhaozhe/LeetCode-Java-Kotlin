@@ -1,7 +1,9 @@
-package jianzhi
+package main
+
+import "Go-Solutions/jianzhi"
 
 // Problem link: https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
-func reversePrint(head *ListNode) []int {
+func reversePrint(head *jianzhi.ListNode) []int {
 	if head == nil {
 		return []int{}
 	}

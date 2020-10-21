@@ -1,6 +1,6 @@
 package main
 
-func missingNumber(nums []int) int {
+func missingNumber_268(nums []int) int {
 	n := len(nums)
 	expectedSum := n * (n + 1) / 2
 

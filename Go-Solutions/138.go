@@ -1,6 +1,6 @@
 package main
 
-func copyRandomList(head *Node) *Node {
+func copyRandomList_138(head *Node) *Node {
 	if head == nil {
 		return head
 	}

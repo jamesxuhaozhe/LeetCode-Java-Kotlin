@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 // 直接套模板就ok
 func search53_1(nums []int, target int) int {

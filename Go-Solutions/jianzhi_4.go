@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 // Problem link: https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/
 // sol: https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5vl81e/

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 // 标准的slide window
@@ -51,7 +50,7 @@ func getCost1208(s, t string, i int) int {
 	return int(ti - si)
 }
 
-func main() {
+/*func main() {
 	s := "krrgw"
 	t := "zjxss"
 
@@ -60,4 +59,4 @@ func main() {
 	//}
 
 	fmt.Println(equalSubstring(s, t, 19))
-}
+}*/

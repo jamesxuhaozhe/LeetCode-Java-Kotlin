@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 // Problem link: https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/
 // sol: https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5055b1/

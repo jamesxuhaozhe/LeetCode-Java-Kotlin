@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 func verifyPostorder(postorder []int) bool {
 

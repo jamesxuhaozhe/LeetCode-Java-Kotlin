@@ -1,13 +1,15 @@
-package jianzhi
+package main
+
+import "Go-Solutions/jianzhi"
 
 // Problem link: https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/
 // bfs level order
-func levelOrder32_2(root *TreeNode) [][]int {
+func levelOrder32_2(root *jianzhi.TreeNode) [][]int {
 	if root == nil {
 		return [][]int{}
 	}
 
-	queue := make([]*TreeNode, 0)
+	queue := make([]*jianzhi.TreeNode, 0)
 	queue = append(queue, root)
 
 	res := make([][]int, 0)

@@ -4,7 +4,7 @@ package main
 //
 //}
 
-func twoSum(numbers []int, target int) []int {
+func twoSum_167(numbers []int, target int) []int {
 	start := 0
 	last := len(numbers) - 1
 	for start < last {

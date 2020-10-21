@@ -1,7 +1,9 @@
-package jianzhi
+package main
+
+import "Go-Solutions/jianzhi"
 
 // Problem link: https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/
-func isBalanced_55_2(root *TreeNode) bool {
+func isBalanced_55_2(root *jianzhi.TreeNode) bool {
 	if root == nil {
 		return true
 	}
@@ -10,7 +12,7 @@ func isBalanced_55_2(root *TreeNode) bool {
 	return abs55_2(leftHeight, rightHeight) <= 1 && isBalanced_55_2(root.Left) && isBalanced_55_2(root.Right)
 }
 
-func getHeight55_2(root *TreeNode) int {
+func getHeight55_2(root *jianzhi.TreeNode) int {
 	if root == nil {
 		return 0
 	}

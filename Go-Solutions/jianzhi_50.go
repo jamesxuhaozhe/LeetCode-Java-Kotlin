@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 // Problem link: https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/
 // 第一次用哈希表记一下数，然后再看一次

@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 // 与239是一样的，用单调队列
 func maxSlidingWindow(nums []int, k int) []int {

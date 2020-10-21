@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 func exchange(nums []int) []int {
 	if nums == nil || len(nums) == 0 {

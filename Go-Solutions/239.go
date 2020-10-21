@@ -5,7 +5,7 @@ import (
 )
 
 // 最直观的解法, 会导致超时
-func maxSlidingWindow(nums []int, k int) []int {
+func maxSlidingWindow_239(nums []int, k int) []int {
 	res := make([]int, 0)
 	for i := 0; i < len(nums)-k+1; i++ {
 		max := math.MinInt64

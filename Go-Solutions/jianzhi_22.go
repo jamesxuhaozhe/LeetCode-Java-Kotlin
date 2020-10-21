@@ -1,6 +1,8 @@
-package jianzhi
+package main
 
-func getKthFromEnd(head *ListNode, k int) *ListNode {
+import "Go-Solutions/jianzhi"
+
+func getKthFromEnd(head *jianzhi.ListNode, k int) *jianzhi.ListNode {
 	if k < 1 || head == nil {
 		return nil
 	}

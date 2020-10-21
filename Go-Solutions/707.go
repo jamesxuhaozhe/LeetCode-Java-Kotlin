@@ -13,7 +13,7 @@ type myDoublyLinkedList struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() MyLinkedList {
+func Constructor_707() MyLinkedList {
 	var linkedList = MyLinkedList{
 		size: 0,
 		headDummy: &myDoublyLinkedList{

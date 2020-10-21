@@ -1,14 +1,16 @@
-package jianzhi
+package main
+
+import "Go-Solutions/jianzhi"
 
 // Problem link: https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/
-func isSymmetric28(root *TreeNode) bool {
+func isSymmetric28(root *jianzhi.TreeNode) bool {
 	if root == nil {
 		return true
 	}
 	return isSymmetric28Helper(root.Left, root.Right)
 }
 
-func isSymmetric28Helper(left *TreeNode, right *TreeNode) bool {
+func isSymmetric28Helper(left *jianzhi.TreeNode, right *jianzhi.TreeNode) bool {
 	if left == nil || right == nil {
 		return left == right
 	}

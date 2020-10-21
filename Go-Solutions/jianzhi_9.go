@@ -1,4 +1,4 @@
-package jianzhi
+package main
 
 type CQueue struct {
 	stack1 stack

@@ -1,14 +1,16 @@
-package jianzhi
+package main
+
+import "Go-Solutions/jianzhi"
 
 // Problem link: https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/
 // in order traversal first
-func kthLargest54(root *TreeNode, k int) int {
+func kthLargest54(root *jianzhi.TreeNode, k int) int {
 	arr := make([]int, 0)
 	inorder54(root, &arr)
 	return arr[len(arr)-k]
 }
 
-func inorder54(root *TreeNode, arr *[]int) {
+func inorder54(root *jianzhi.TreeNode, arr *[]int) {
 	if root == nil {
 		return
 	}
