@@ -1,16 +1,15 @@
 package main
 
-import "Go-Solutions/jianzhi"
 
 // Problem link: https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/
 // bfs level order
-func levelOrder_32_3(root *jianzhi.TreeNode) [][]int {
+func levelOrder_32_3(root *TreeNode) [][]int {
 	if root == nil {
 		return [][]int{}
 	}
 
 	res := make([][]int, 0)
-	queue := make([]*jianzhi.TreeNode, 0)
+	queue := make([]*TreeNode, 0)
 	queue = append(queue, root)
 	curLevel := 0
 	for len(queue) != 0 {

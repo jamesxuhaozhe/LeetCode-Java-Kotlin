@@ -1,9 +1,8 @@
 package main
 
-import "Go-Solutions/jianzhi"
 
 // just like problem 138
-func copyRandomList(head *jianzhi.Node) *jianzhi.Node {
+func copyRandomList(head *Node) *Node {
 	if head == nil {
 		return head
 	}
@@ -12,7 +11,7 @@ func copyRandomList(head *jianzhi.Node) *jianzhi.Node {
 	cur := head
 	for cur != nil {
 		next := cur.Next
-		copyNode := &jianzhi.Node{
+		copyNode := &Node{
 			Val:    cur.Val,
 			Next:   next,
 			Random: nil,
@@ -31,7 +30,7 @@ func copyRandomList(head *jianzhi.Node) *jianzhi.Node {
 		cur = copyNode.Next
 	}
 
-	originDummy, resDummy := &jianzhi.Node{}, &jianzhi.Node{}
+	originDummy, resDummy := &Node{}, &Node{}
 	originRunner, resRunner := originDummy, resDummy
 	count := 1
 

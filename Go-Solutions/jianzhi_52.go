@@ -1,9 +1,7 @@
 package main
 
-import "Go-Solutions/jianzhi"
-
 // sol: https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/solution/shuang-zhi-zhen-fa-lang-man-xiang-yu-by-ml-zimingm/
-func getIntersectionNode_52(headA, headB *jianzhi.ListNode) *jianzhi.ListNode {
+func getIntersectionNode_52(headA, headB *ListNode) *ListNode {
 	node1, node2 := headA, headB
 
 	for node1 != node2 {

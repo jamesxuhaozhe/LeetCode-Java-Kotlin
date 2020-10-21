@@ -1,10 +1,9 @@
 package main
 
-import "Go-Solutions/jianzhi"
 
 // Problem link: https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/
 // nothing but standard depth of binary tree
-func maxDepth55_1(root *jianzhi.TreeNode) int {
+func maxDepth55_1(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
