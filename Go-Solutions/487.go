@@ -25,7 +25,7 @@ func findMaxConsecutiveOnes_487(nums []int) int {
 			}
 			left++
 		}
-		res = max1004(res, right - left + 1)
+		res = max1004(res, right-left+1)
 		right++
 	}
 	return res

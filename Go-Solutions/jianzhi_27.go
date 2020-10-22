@@ -1,6 +1,5 @@
 package main
 
-
 // Problem link: https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/
 // just recursive
 func mirrorTree(root *TreeNode) *TreeNode {

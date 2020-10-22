@@ -3,6 +3,7 @@ package main
 import (
 	"math"
 )
+
 // 标准的slide window
 // right 指针一直往前进，知道cost刚好超过maxcost位置，这个时候移动left，使得cost又满足条件，
 // 需要维护的是cost本身，新的元素进入窗口，需要计算新元素的cost，当有元素移除window的时候，需要把他的cost移除
@@ -26,7 +27,7 @@ func equalSubstring(s string, t string, maxCost int) int {
 			//fmt.Printf("right: %d, left: %d\n", right, left)
 			left++
 		}
-		res = max1208(res, right - left)
+		res = max1208(res, right-left)
 	}
 	if res == math.MinInt64 {
 		return 1

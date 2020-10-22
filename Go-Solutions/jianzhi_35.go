@@ -1,6 +1,5 @@
 package main
 
-
 // just like problem 138
 func copyRandomList(head *Node) *Node {
 	if head == nil {

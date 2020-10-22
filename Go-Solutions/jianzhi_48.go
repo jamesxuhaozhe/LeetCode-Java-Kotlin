@@ -10,14 +10,14 @@ func lengthOfLongestSubstring_jianzhi_48(s string) int {
 	left, right := 0, 0
 	var flag [256]int
 	for right < len(s) {
-		if flag[s[right] - 'a'] == 0 {
-			flag[s[right] - 'a']++
+		if flag[s[right]-'a'] == 0 {
+			flag[s[right]-'a']++
 			right++
 		} else {
-			flag[s[left] - 'a']--
+			flag[s[left]-'a']--
 			left++
 		}
-		res = max_jianzhi_48(res, right - left)
+		res = max_jianzhi_48(res, right-left)
 	}
 	return res
 }

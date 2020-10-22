@@ -36,12 +36,12 @@ func shortestSeq(big []int, small []int) []int {
 			if need[big[left]] > 0 && need[big[left]] >= window[big[left]] {
 				count--
 			}
-			if right - left + 1 < res {
+			if right-left+1 < res {
 				res = right - left + 1
 				finalLeft, finalRight = left, right
 				// 因为题目的意思需要我们返回最短seq的起始index，如果有多个结果的话，需要返回最左的那个，所以这里的逻辑要用finalLeft缓存一下，如果这次的res跟上次最小的一样，
 				// 需要看一下left 和 finalLeft哪个更左
-			} else if right - left + 1 == res {
+			} else if right-left+1 == res {
 				if left < finalLeft {
 					finalLeft, finalRight = left, right
 				}
@@ -59,7 +59,7 @@ func shortestSeq(big []int, small []int) []int {
 }
 
 func main() {
-	big := []int{7,5,9,0,2,1,3,5,7,9,1,1,5,8,8,9,7}
-	small := []int{1,5,9}
+	big := []int{7, 5, 9, 0, 2, 1, 3, 5, 7, 9, 1, 1, 5, 8, 8, 9, 7}
+	small := []int{1, 5, 9}
 	fmt.Printf("result: %v", shortestSeq(big, small))
 }

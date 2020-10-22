@@ -1,6 +1,5 @@
 package main
 
-
 // https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/
 func deleteNode(head *ListNode, val int) *ListNode {
 	dummy := &ListNode{

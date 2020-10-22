@@ -12,7 +12,7 @@ func numKLenSubstrNoRepeats(S string, K int) int {
 	for right < len(S) {
 		flag[S[right]]++
 		// 当窗口的大小第一次等于K的时候，以后每次都是平移K窗口，说明往后left和right都要同步++
-		if right - left + 1 == K {
+		if right-left+1 == K {
 			if isValidWindow1100(flag) {
 				count++
 			}
@@ -51,7 +51,7 @@ func isValidWindow1100(flag map[byte]int) bool {
 链接：https://leetcode-cn.com/problems/find-k-length-substrings-with-no-repeated-characters/solution/1100-chang-du-wei-k-de-wu-zhong-fu-zi-fu-zi-chua-2/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
- */
+*/
 func numKLenSubstrNoRepeats_smart(S string, K int) int {
 	if K > len(S) {
 		return 0

@@ -11,7 +11,7 @@ import "math"
 链接：https://leetcode-cn.com/problems/max-consecutive-ones-iii/solution/hua-dong-chuang-kou-de-chang-gui-jie-fa-by-xiaonen/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
- */
+*/
 func longestOnes(A []int, K int) int {
 	if A == nil || len(A) == 0 {
 		return 0
@@ -34,7 +34,7 @@ func longestOnes(A []int, K int) int {
 			}
 			left++
 		}
-		res = max1004(res, right - left + 1)
+		res = max1004(res, right-left+1)
 		right++
 	}
 	return res

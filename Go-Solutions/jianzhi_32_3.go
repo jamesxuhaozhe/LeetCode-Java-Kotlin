@@ -1,6 +1,5 @@
 package main
 
-
 // Problem link: https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/
 // bfs level order
 func levelOrder_32_3(root *TreeNode) [][]int {

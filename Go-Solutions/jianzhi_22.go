@@ -1,6 +1,5 @@
 package main
 
-
 func getKthFromEnd(head *ListNode, k int) *ListNode {
 	if k < 1 || head == nil {
 		return nil

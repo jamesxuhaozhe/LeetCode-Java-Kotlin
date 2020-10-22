@@ -1,6 +1,5 @@
 package main
 
-
 // Problem link: https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/
 func isBalanced_55_2(root *TreeNode) bool {
 	if root == nil {

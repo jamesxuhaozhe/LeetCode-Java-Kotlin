@@ -1,6 +1,5 @@
 package main
 
-
 // Problem link: https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/
 // nothing but standard depth of binary tree
 func maxDepth55_1(root *TreeNode) int {
