@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // like problem 3
 func lengthOfLongestSubstring_jianzhi_48(s string) int {
 	if len(s) == 0 {
@@ -31,7 +29,7 @@ func max_jianzhi_48(a int, b int) int {
 	return b
 }
 
-func main() {
-	s := "abcabcbb"
-	fmt.Println(lengthOfLongestSubstring_jianzhi_48(s))
-}
+//func main() {
+//	s := "abcabcbb"
+//	fmt.Println(lengthOfLongestSubstring_jianzhi_48(s))
+//}
