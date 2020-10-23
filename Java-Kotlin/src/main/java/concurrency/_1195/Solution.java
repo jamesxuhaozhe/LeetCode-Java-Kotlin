@@ -6,6 +6,14 @@ import java.util.function.IntConsumer;
 
 public class Solution {
 
+    private final CyclicBarrier cyclicBarrier;
+    private int n;
+
+    public Solution(int n) {
+        this.n = n;
+        this.cyclicBarrier = new CyclicBarrier(4);
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution(100);
 
@@ -60,15 +68,6 @@ public class Solution {
         t3.start();
 
 
-    }
-
-    private int n;
-
-    private final CyclicBarrier cyclicBarrier;
-
-    public Solution(int n) {
-        this.n = n;
-        this.cyclicBarrier = new CyclicBarrier(4);
     }
 
     // printFizz.run() outputs "fizz".

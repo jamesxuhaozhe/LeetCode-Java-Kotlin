@@ -8,6 +8,17 @@ import java.util.Set;
 
 public class Solution {
 
+    public static void main(String[] args) {
+        ListNode head = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3));
+        int count = 0;
+        while (head.next != null) {
+            count++;
+            head = head.next;
+        }
+
+        System.out.println(count);
+    }
+
     /**
      * Time and Space complexity: O(n)
      *
@@ -63,16 +74,5 @@ public class Solution {
         }
 
         return null;
-    }
-
-    public static void main(String[] args) {
-        ListNode head = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3));
-        int count = 0;
-        while (head.next != null) {
-            count++;
-            head = head.next;
-        }
-
-        System.out.println(count);
     }
 }

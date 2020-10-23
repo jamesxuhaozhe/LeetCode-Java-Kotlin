@@ -5,6 +5,16 @@ import java.util.function.IntConsumer;
 
 public class Solution3 {
 
+    private final Semaphore fizzSem = new Semaphore(0);
+    private final Semaphore buzzSem = new Semaphore(0);
+    private final Semaphore fizzBuzzSem = new Semaphore(0);
+    private final Semaphore numberSem = new Semaphore(1);
+    private int n;
+
+    public Solution3(int n) {
+        this.n = n;
+    }
+
     public static void main(String[] args) {
         Solution3 solution = new Solution3(1000);
 
@@ -61,19 +71,20 @@ public class Solution3 {
 
     }
 
-    private int n;
+    private static boolean isFizzOK(int number) {
+        return number % 3 == 0 && number % 5 != 0;
+    }
 
-    private final Semaphore fizzSem = new Semaphore(0);
+    private static boolean isBuzzOK(int number) {
+        return number % 3 != 0 && number % 5 == 0;
+    }
 
-    private final Semaphore buzzSem = new Semaphore(0);
+    private static boolean isFizzBuzzOK(int number) {
+        return number % 3 == 0 && number % 5 == 0;
+    }
 
-    private final Semaphore fizzBuzzSem = new Semaphore(0);
-
-    private final Semaphore numberSem = new Semaphore(1);
-
-
-    public Solution3(int n) {
-        this.n = n;
+    private static boolean isNumberOK(int number) {
+        return number % 3 != 0 && number % 5 != 0;
     }
 
     // printFizz.run() outputs "fizz".
@@ -137,21 +148,5 @@ public class Solution3 {
                 fizzBuzzSem.release();
             }
         }
-    }
-
-    private static boolean isFizzOK(int number) {
-        return number % 3 == 0 && number % 5 != 0;
-    }
-
-    private static boolean isBuzzOK(int number) {
-        return number % 3 != 0 && number % 5 == 0;
-    }
-
-    private static boolean isFizzBuzzOK(int number) {
-        return number % 3 == 0 && number % 5 == 0;
-    }
-
-    private static boolean isNumberOK(int number) {
-        return number % 3 != 0 && number % 5 != 0;
     }
 }

@@ -4,6 +4,10 @@ public class _168 {
 
     private static final String ALPHA = "ZABCDEFGHIJKLMNOPQRSTUVWXY";
 
+    public static void main(String[] args) {
+        System.out.println(new _168().convertToTitle(52));
+    }
+
     /**
      * https://leetcode-cn.com/problems/excel-sheet-column-title/solution/zhuan-huan-wei-chuan-tong-jin-zhi-fang-shi-ji-suan/
      *
@@ -22,9 +26,5 @@ public class _168 {
         }
 
         return sb.reverse().toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new _168().convertToTitle(52));
     }
 }

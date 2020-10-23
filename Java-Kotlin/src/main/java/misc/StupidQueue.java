@@ -2,17 +2,7 @@ package misc;
 
 public class StupidQueue<T> {
 
-    private static class QueueNode<T> {
-        T data;
-        QueueNode<T> next;
-
-        public QueueNode(T data) {
-            this.data = data;
-        }
-    }
-
     private QueueNode<T> first;
-
     private QueueNode<T> last;
 
     public void add(T data) {
@@ -47,5 +37,14 @@ public class StupidQueue<T> {
 
     public boolean isEmpty() {
         return first == null;
+    }
+
+    private static class QueueNode<T> {
+        T data;
+        QueueNode<T> next;
+
+        public QueueNode(T data) {
+            this.data = data;
+        }
     }
 }

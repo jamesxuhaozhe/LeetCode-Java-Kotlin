@@ -10,6 +10,10 @@ public class _51 {
 
     private Set<Integer> nas = new HashSet<>();
 
+    public static void main(String[] args) {
+        System.out.println(new _51().solveNQueens(4));
+    }
+
     public List<List<String>> solveNQueens(int n) {
         // obviously, just return empty list
         if (n < 1) {
@@ -45,7 +49,6 @@ public class _51 {
         return result;
     }
 
-
     private void dfs(int row, int n, List<List<Integer>> resultColIndices, List<Integer> colIndices) {
         if (row >= n) {
             resultColIndices.add(new ArrayList<>(colIndices));
@@ -69,9 +72,5 @@ public class _51 {
             nas.remove(row - col);
             colIndices.remove(colIndices.size() - 1);
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new _51().solveNQueens(4));
     }
 }

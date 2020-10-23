@@ -2,6 +2,28 @@ package string;
 
 public class _680 {
 
+    private static boolean isPalindrome(String str) {
+        if (str.isEmpty()) {
+            return true;
+        }
+
+        int left = 0;
+        int right = str.length() - 1;
+        while (left <= right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new _680().validPalindrome("abca"));
+    }
+
     /**
      * Bad solution, there should be a better one. TODO: get a better solution
      *
@@ -23,27 +45,5 @@ public class _680 {
         }
 
         return false;
-    }
-
-    private static boolean isPalindrome(String str) {
-        if (str.isEmpty()) {
-            return true;
-        }
-
-        int left = 0;
-        int right = str.length() - 1;
-        while (left <= right) {
-            if (str.charAt(left) != str.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
-        }
-
-        return true;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new _680().validPalindrome("abca"));
     }
 }

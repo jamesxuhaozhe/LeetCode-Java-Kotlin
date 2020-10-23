@@ -6,14 +6,10 @@ import java.util.Hashtable;
 public class LRUCache {
 
     private final int capacity;
-
-    private int size;
-
-    private DoubleLinkedNode head = new DoubleLinkedNode();
-
-    private DoubleLinkedNode tail = new DoubleLinkedNode();
-
     private final Hashtable<Integer, DoubleLinkedNode> cache;
+    private int size;
+    private DoubleLinkedNode head = new DoubleLinkedNode();
+    private DoubleLinkedNode tail = new DoubleLinkedNode();
 
     public LRUCache(int capacity) {
         this.capacity = capacity;

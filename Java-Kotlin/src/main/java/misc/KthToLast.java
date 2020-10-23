@@ -4,27 +4,6 @@ import common.datastructure.LinkedListNode;
 
 public class KthToLast {
 
-    static class Index {
-        public int value = 0;
-    }
-
-    LinkedListNode kthToLast(LinkedListNode head, int k) {
-        Index index = new Index();
-        return kthToLast(head, k, index);
-    }
-
-    private LinkedListNode kthToLast(LinkedListNode head, int k, Index index) {
-        if (head == null) {
-            return null;
-        }
-        LinkedListNode node = kthToLast(head.next, k, index);
-        index.value++;
-        if (index.value == k) {
-            return head;
-        }
-        return node;
-    }
-
     public static void main(String[] args) {
         LinkedListNode head = new LinkedListNode(1);
         LinkedListNode node1 = new LinkedListNode(2);
@@ -44,5 +23,26 @@ public class KthToLast {
 
         LinkedListNode kthNode = new KthToLast().kthToLast(head, 1);
         System.out.println(kthNode);
+    }
+
+    LinkedListNode kthToLast(LinkedListNode head, int k) {
+        Index index = new Index();
+        return kthToLast(head, k, index);
+    }
+
+    private LinkedListNode kthToLast(LinkedListNode head, int k, Index index) {
+        if (head == null) {
+            return null;
+        }
+        LinkedListNode node = kthToLast(head.next, k, index);
+        index.value++;
+        if (index.value == k) {
+            return head;
+        }
+        return node;
+    }
+
+    static class Index {
+        public int value = 0;
     }
 }

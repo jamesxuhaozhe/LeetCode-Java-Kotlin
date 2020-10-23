@@ -13,6 +13,10 @@ import java.util.Map;
  */
 public class _1207 {
 
+    public static void main(String[] args) {
+        new _1207().uniqueOccurrences(new int[]{1, 2});
+    }
+
     public boolean uniqueOccurrences(int[] arr) {
         if (arr == null) {
             throw new IllegalArgumentException("no solution");
@@ -32,9 +36,5 @@ public class _1207 {
         int numSize = map.keySet().size();
         int valueSize = new HashSet<>(map.values()).size();
         return numSize == valueSize;
-    }
-
-    public static void main(String[] args) {
-        new _1207().uniqueOccurrences(new int[]{1, 2});
     }
 }

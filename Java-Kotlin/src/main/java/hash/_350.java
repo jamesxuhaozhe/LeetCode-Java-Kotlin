@@ -7,6 +7,29 @@ import java.util.Map;
 
 public class _350 {
 
+    private static Map<Integer, Integer> getMap(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            if (!map.containsKey(num)) {
+                map.put(num, 1);
+            } else {
+                map.put(num, map.get(num) + 1);
+            }
+        }
+        return map;
+    }
+
+    public static void main(String[] args) {
+
+        int[] nums1 = new int[]{4, 9, 5};
+        int[] nums2 = new int[]{9, 4, 9, 8, 4};
+
+        int[] result = new _350().intersect(nums1, nums2);
+        for (int num : result) {
+            System.out.println(num);
+        }
+    }
+
     /**
      * Solution that just works, TODO: find better one
      *
@@ -38,28 +61,5 @@ public class _350 {
         }
 
         return arr;
-    }
-
-    private static Map<Integer, Integer> getMap(int[] nums) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int num : nums) {
-            if (!map.containsKey(num)) {
-                map.put(num, 1);
-            } else {
-                map.put(num, map.get(num) + 1);
-            }
-        }
-        return map;
-    }
-
-    public static void main(String[] args) {
-
-        int[] nums1 = new int[]{4, 9, 5};
-        int[] nums2 = new int[]{9, 4, 9, 8, 4};
-
-        int[] result = new _350().intersect(nums1, nums2);
-        for (int num : result) {
-            System.out.println(num);
-        }
     }
 }

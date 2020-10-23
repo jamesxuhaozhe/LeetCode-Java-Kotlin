@@ -6,24 +6,6 @@ public class _249 {
 
     private static final int ALPHA_SIZE = 26;
 
-    public List<List<String>> groupStrings(String[] strings) {
-        if (strings == null || strings.length == 0) {
-            return Collections.emptyList();
-        }
-
-        Map<String, List<String>> map = new HashMap<>();
-        for (String str : strings) {
-            //每个string 以，第一个char为例，rebase到以z为开头的string作为key
-            String key = getKey(str);
-            if (!map.containsKey(key)) {
-                map.put(key, new ArrayList<>());
-            }
-            map.get(key).add(str);
-        }
-
-        return new ArrayList<>(map.values());
-    }
-
     private static String getKey(String str) {
         if (str.isEmpty()) {
             return "empty";
@@ -49,5 +31,23 @@ public class _249 {
     public static void main(String[] args) {
         String[] strings = new String[]{"abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"};
         System.out.println(new _249().groupStrings(strings));
+    }
+
+    public List<List<String>> groupStrings(String[] strings) {
+        if (strings == null || strings.length == 0) {
+            return Collections.emptyList();
+        }
+
+        Map<String, List<String>> map = new HashMap<>();
+        for (String str : strings) {
+            //每个string 以，第一个char为例，rebase到以z为开头的string作为key
+            String key = getKey(str);
+            if (!map.containsKey(key)) {
+                map.put(key, new ArrayList<>());
+            }
+            map.get(key).add(str);
+        }
+
+        return new ArrayList<>(map.values());
     }
 }

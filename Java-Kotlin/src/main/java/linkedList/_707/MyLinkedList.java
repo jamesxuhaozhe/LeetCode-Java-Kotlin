@@ -8,18 +8,6 @@ public class MyLinkedList {
 
     private MyDoublyLinkedList tailDummy;
 
-    private static class MyDoublyLinkedList {
-        private int val;
-
-        private MyDoublyLinkedList previous;
-
-        private MyDoublyLinkedList next;
-
-        private MyDoublyLinkedList(int val) {
-            this.val = val;
-        }
-    }
-
     /**
      * Initialize your data structure here.
      */
@@ -108,7 +96,6 @@ public class MyLinkedList {
         return currHead;
     }
 
-
     /**
      * Delete the index-th node in the linked list, if the index is valid.
      */
@@ -121,6 +108,18 @@ public class MyLinkedList {
             preNodeAtIndex.next = nextNodeAtIndex;
             nextNodeAtIndex.previous = preNodeAtIndex;
             size--;
+        }
+    }
+
+    private static class MyDoublyLinkedList {
+        private int val;
+
+        private MyDoublyLinkedList previous;
+
+        private MyDoublyLinkedList next;
+
+        private MyDoublyLinkedList(int val) {
+            this.val = val;
         }
     }
 }

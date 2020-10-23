@@ -2,15 +2,6 @@ package misc;
 
 public class StupidStack<T> {
 
-    private static class StackNode<T> {
-        T data;
-        StackNode<T> next;
-
-        public StackNode(T data) {
-            this.data = data;
-        }
-    }
-
     private StackNode<T> top;
 
     public T pop() {
@@ -37,5 +28,14 @@ public class StupidStack<T> {
 
     public boolean isEmpty() {
         return top == null;
+    }
+
+    private static class StackNode<T> {
+        T data;
+        StackNode<T> next;
+
+        public StackNode(T data) {
+            this.data = data;
+        }
     }
 }

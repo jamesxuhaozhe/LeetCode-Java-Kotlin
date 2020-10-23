@@ -4,6 +4,20 @@ import java.util.*;
 
 public class _1213 {
 
+    private static Map<Integer, Integer> getMap(int[] arr, int min, int max) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int num : arr) {
+            if (isInValidRange(num, min, max)) {
+                map.put(num, 1);
+            }
+        }
+        return map;
+    }
+
+    private static boolean isInValidRange(int num, int min, int max) {
+        return num >= min && num <= max;
+    }
+
     public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {
         int min1 = arr1[0];
         int max1 = arr1[arr1.length - 1];
@@ -39,19 +53,5 @@ public class _1213 {
         Collections.sort(result);
         return result;
 
-    }
-
-    private static Map<Integer, Integer> getMap(int[] arr, int min, int max) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int num : arr) {
-            if (isInValidRange(num, min, max)) {
-                map.put(num, 1);
-            }
-        }
-        return map;
-    }
-
-    private static boolean isInValidRange(int num, int min, int max) {
-        return num >= min && num <= max;
     }
 }

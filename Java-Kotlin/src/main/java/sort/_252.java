@@ -5,6 +5,11 @@ import java.util.Comparator;
 
 public class _252 {
 
+    public static void main(String[] args) {
+        int[][] intervals = new int[][]{{0, 30}, {5, 10}, {15, 20}};
+        System.out.println(new _252().canAttendMeetings(intervals));
+    }
+
     public boolean canAttendMeetings(int[][] intervals) {
         if (intervals.length == 1 || intervals.length == 0) {
             return true;
@@ -20,10 +25,5 @@ public class _252 {
         }
 
         return true;
-    }
-
-    public static void main(String[] args) {
-        int[][] intervals = new int[][]{{0, 30}, {5, 10}, {15, 20}};
-        System.out.println(new _252().canAttendMeetings(intervals));
     }
 }

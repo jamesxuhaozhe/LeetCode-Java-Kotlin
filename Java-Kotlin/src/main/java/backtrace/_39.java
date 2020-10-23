@@ -6,6 +6,12 @@ import java.util.List;
 
 public class _39 {
 
+    public static void main(String[] args) {
+        int[] nums = new int[]{2, 3, 6, 7};
+        int target = 7;
+        System.out.println(new _39().combinationSum(nums, target));
+    }
+
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
         if (candidates == null || candidates.length == 0 || target < 0) {
@@ -32,11 +38,5 @@ public class _39 {
                 list.remove(list.size() - 1);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{2, 3, 6, 7};
-        int target = 7;
-        System.out.println(new _39().combinationSum(nums, target));
     }
 }

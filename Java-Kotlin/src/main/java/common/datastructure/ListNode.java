@@ -10,19 +10,6 @@ public class ListNode {
         val = x;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-
-        ListNode head = this;
-        while (head != null) {
-            sb.append(head.val);
-            head = head.next;
-        }
-
-        return sb.toString();
-    }
-
     public static void printList(ListNode head) {
         ListNode temp = head;
         System.out.println();
@@ -46,5 +33,18 @@ public class ListNode {
         }
         //printList(head);
         return head;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        ListNode head = this;
+        while (head != null) {
+            sb.append(head.val);
+            head = head.next;
+        }
+
+        return sb.toString();
     }
 }

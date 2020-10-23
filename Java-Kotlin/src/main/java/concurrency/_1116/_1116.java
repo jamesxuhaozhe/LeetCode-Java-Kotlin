@@ -4,53 +4,14 @@ import java.util.function.IntConsumer;
 
 public class _1116 {
 
-    private int n;
-
-    private int currentNum;
-
     private final Object lock = new Object();
-
+    private int n;
+    private int currentNum;
     private volatile boolean shouldPrintZero = true;
 
     public _1116(int n) {
         this.n = n;
         this.currentNum = 1;
-    }
-
-    // printNumber.accept(x) outputs "x", where x is an integer.
-    public void zero(IntConsumer printNumber) throws InterruptedException {
-        while (currentNum <= n) {
-            synchronized (lock) {
-                if (currentNum <= n && shouldPrintZero) {
-                    printNumber.accept(0);
-                    shouldPrintZero = false;
-                }
-            }
-        }
-    }
-
-    public void even(IntConsumer printNumber) throws InterruptedException {
-        while (currentNum <= n) {
-            synchronized (lock) {
-                while (currentNum <= n && !shouldPrintZero && isEven(currentNum)) {
-                    printNumber.accept(currentNum);
-                    currentNum++;
-                    shouldPrintZero = true;
-                }
-            }
-        }
-    }
-
-    public void odd(IntConsumer printNumber) throws InterruptedException {
-        while (currentNum <= n) {
-            synchronized (lock) {
-                while (currentNum <= n && !shouldPrintZero && !isEven(currentNum)) {
-                    printNumber.accept(currentNum);
-                    currentNum++;
-                    shouldPrintZero = true;
-                }
-            }
-        }
     }
 
     private static boolean isEven(int number) {
@@ -87,5 +48,41 @@ public class _1116 {
         t1.start();
         t2.start();
         t3.start();
+    }
+
+    // printNumber.accept(x) outputs "x", where x is an integer.
+    public void zero(IntConsumer printNumber) throws InterruptedException {
+        while (currentNum <= n) {
+            synchronized (lock) {
+                if (currentNum <= n && shouldPrintZero) {
+                    printNumber.accept(0);
+                    shouldPrintZero = false;
+                }
+            }
+        }
+    }
+
+    public void even(IntConsumer printNumber) throws InterruptedException {
+        while (currentNum <= n) {
+            synchronized (lock) {
+                while (currentNum <= n && !shouldPrintZero && isEven(currentNum)) {
+                    printNumber.accept(currentNum);
+                    currentNum++;
+                    shouldPrintZero = true;
+                }
+            }
+        }
+    }
+
+    public void odd(IntConsumer printNumber) throws InterruptedException {
+        while (currentNum <= n) {
+            synchronized (lock) {
+                while (currentNum <= n && !shouldPrintZero && !isEven(currentNum)) {
+                    printNumber.accept(currentNum);
+                    currentNum++;
+                    shouldPrintZero = true;
+                }
+            }
+        }
     }
 }

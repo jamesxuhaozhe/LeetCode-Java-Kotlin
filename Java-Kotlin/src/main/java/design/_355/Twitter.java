@@ -31,6 +31,17 @@ public class Twitter {
         this.userFollowerMapping = new HashMap<>();
     }
 
+    public static void main(String[] args) {
+        Twitter twitter = new Twitter();
+        twitter.postTweet(1, 5);
+        twitter.getNewsFeed(1).forEach(System.out::println);
+        twitter.follow(1, 2);
+        twitter.postTweet(2, 6);
+        twitter.getNewsFeed(1).forEach(System.out::println);
+        twitter.unfollow(1, 2);
+        twitter.getNewsFeed(1).forEach(System.out::println);
+    }
+
     /**
      * Compose a new tweet.
      */
@@ -119,16 +130,5 @@ public class Twitter {
             this.tweetCounter = tweetCounter;
         }
 
-    }
-
-    public static void main(String[] args) {
-        Twitter twitter = new Twitter();
-        twitter.postTweet(1, 5);
-        twitter.getNewsFeed(1).forEach(System.out::println);
-        twitter.follow(1, 2);
-        twitter.postTweet(2, 6);
-        twitter.getNewsFeed(1).forEach(System.out::println);
-        twitter.unfollow(1, 2);
-        twitter.getNewsFeed(1).forEach(System.out::println);
     }
 }

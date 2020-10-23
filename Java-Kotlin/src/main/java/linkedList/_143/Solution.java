@@ -7,6 +7,25 @@ import java.util.List;
 
 public class Solution {
 
+    public static void main(String[] args) {
+        ListNode one = new ListNode(1);
+        ListNode two = new ListNode(2);
+        ListNode three = new ListNode(3);
+        ListNode four = new ListNode(4);
+
+        one.next = two;
+        two.next = three;
+        three.next = four;
+
+        ListNode slow = one;
+        ListNode fast = one;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        System.out.println(slow.val);
+    }
+
     /**
      * Time Complexity: O(n)
      * <p>
@@ -67,25 +86,6 @@ public class Solution {
         }
 
         return slow;
-    }
-
-    public static void main(String[] args) {
-        ListNode one = new ListNode(1);
-        ListNode two = new ListNode(2);
-        ListNode three = new ListNode(3);
-        ListNode four = new ListNode(4);
-
-        one.next = two;
-        two.next = three;
-        three.next = four;
-
-        ListNode slow = one;
-        ListNode fast = one;
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        System.out.println(slow.val);
     }
 
     /**

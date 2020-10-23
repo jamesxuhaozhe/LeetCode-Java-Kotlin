@@ -55,24 +55,6 @@ public class _212 {
     }
 
     private static class Trie {
-        static class TrieNode {
-            private char val;
-            private TrieNode[] children;
-            private boolean isWord;
-
-            TrieNode() {
-                this.val = ' ';
-                this.children = new TrieNode[26];
-                this.isWord = false;
-            }
-
-            TrieNode(char c) {
-                this.val = c;
-                this.children = new TrieNode[26];
-                this.isWord = false;
-            }
-        }
-
         private TrieNode root;
 
         Trie() {
@@ -132,6 +114,24 @@ public class _212 {
 
         boolean isValidInput(String str) {
             return str != null && str.length() != 0;
+        }
+
+        static class TrieNode {
+            private char val;
+            private TrieNode[] children;
+            private boolean isWord;
+
+            TrieNode() {
+                this.val = ' ';
+                this.children = new TrieNode[26];
+                this.isWord = false;
+            }
+
+            TrieNode(char c) {
+                this.val = c;
+                this.children = new TrieNode[26];
+                this.isWord = false;
+            }
         }
     }
 }

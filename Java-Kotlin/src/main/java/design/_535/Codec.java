@@ -19,22 +19,6 @@ public class Codec {
 
     private static final Map<String, String> TINY_TO_LONG_MAP = new HashMap<>();
 
-
-    // Encodes a URL to a shortened URL.
-    public String encode(String longUrl) {
-        counter.incrementAndGet();
-        String tinyUrl = fromBase10(counter.get());
-        TINY_TO_LONG_MAP.put(tinyUrl, longUrl);
-        return PRE_FIX + tinyUrl;
-    }
-
-    // Decodes a shortened URL to its original URL.
-    public String decode(String shortUrl) {
-        String[] arr = shortUrl.split("/");
-        String tinyUrl = arr[arr.length - 1];
-        return TINY_TO_LONG_MAP.get(tinyUrl);
-    }
-
     /**
      * Give a base10 integer, return a String hash which is 62 based
      *
@@ -78,5 +62,20 @@ public class Codec {
 
     private static int toBase10(int n, int pow) {
         return n * (int) Math.pow(BASE, pow);
+    }
+
+    // Encodes a URL to a shortened URL.
+    public String encode(String longUrl) {
+        counter.incrementAndGet();
+        String tinyUrl = fromBase10(counter.get());
+        TINY_TO_LONG_MAP.put(tinyUrl, longUrl);
+        return PRE_FIX + tinyUrl;
+    }
+
+    // Decodes a shortened URL to its original URL.
+    public String decode(String shortUrl) {
+        String[] arr = shortUrl.split("/");
+        String tinyUrl = arr[arr.length - 1];
+        return TINY_TO_LONG_MAP.get(tinyUrl);
     }
 }

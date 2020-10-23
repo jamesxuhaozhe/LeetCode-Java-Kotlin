@@ -2,6 +2,11 @@ package array;
 
 public class _53 {
 
+    public static void main(String[] args) {
+        int[] nums = new int[]{-1, -2, -3, -4, -5, -6, -7, -8};
+        System.out.println(new _53kt().maxSubArray(nums));
+    }
+
     public int maxSubArray(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
@@ -43,10 +48,5 @@ public class _53 {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{-1, -2, -3, -4, -5, -6, -7, -8};
-        System.out.println(new _53kt().maxSubArray(nums));
     }
 }

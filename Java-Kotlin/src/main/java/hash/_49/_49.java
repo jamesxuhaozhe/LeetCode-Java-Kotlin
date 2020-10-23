@@ -4,6 +4,23 @@ import java.util.*;
 
 public class _49 {
 
+    private static String getBasicOrderStr(String str) {
+        if (str.equals("")) {
+            return "empty";
+        }
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        char[] chars = str.toCharArray();
+        for (char aChar : chars) {
+            pq.add((int) aChar);
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!pq.isEmpty()) {
+            sb.append(pq.poll());
+        }
+
+        return sb.toString();
+    }
+
     public List<List<String>> groupAnagrams(String[] strs) {
         if (strs == null || strs.length == 0) {
             return Collections.emptyList();
@@ -24,24 +41,6 @@ public class _49 {
         List<List<String>> result = new ArrayList<>(map.values());
         return result;
     }
-
-    private static String getBasicOrderStr(String str) {
-        if (str.equals("")) {
-            return "empty";
-        }
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-        char[] chars = str.toCharArray();
-        for (char aChar : chars) {
-            pq.add((int) aChar);
-        }
-        StringBuilder sb = new StringBuilder();
-        while (!pq.isEmpty()) {
-            sb.append(pq.poll());
-        }
-
-        return sb.toString();
-    }
-
 
     public List<List<String>> groupAnagrams1(String[] strs) {
         if (strs == null || strs.length == 0) {

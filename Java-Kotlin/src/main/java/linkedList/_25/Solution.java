@@ -3,6 +3,27 @@ package linkedList._25;
 import common.datastructure.ListNode;
 
 public class Solution {
+    public static void main(String[] args) {
+        ListNode one = new ListNode(1);
+        ListNode two = new ListNode(2);
+        ListNode three = new ListNode(3);
+        ListNode four = new ListNode(4);
+        one.next = two;
+        two.next = three;
+        three.next = four;
+        //new Solution().reverseKGroup1(one, 3);
+        exp(one);
+        //one = one.next;
+        //one = one.next;
+        System.out.println(one.val);
+    }
+
+    private static void exp(ListNode node) {
+        node = node.next;
+        node = node.next;
+        System.out.println(node.val);
+    }
+
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
@@ -75,26 +96,5 @@ public class Solution {
         }
         return pre;
 
-    }
-
-    public static void main(String[] args) {
-        ListNode one = new ListNode(1);
-        ListNode two = new ListNode(2);
-        ListNode three = new ListNode(3);
-        ListNode four = new ListNode(4);
-        one.next = two;
-        two.next = three;
-        three.next = four;
-        //new Solution().reverseKGroup1(one, 3);
-        exp(one);
-        //one = one.next;
-        //one = one.next;
-        System.out.println(one.val);
-    }
-
-    private static void exp(ListNode node) {
-        node = node.next;
-        node = node.next;
-        System.out.println(node.val);
     }
 }

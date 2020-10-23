@@ -4,6 +4,16 @@ import java.util.*;
 
 public class SolutionBFS {
 
+    public static void main(String[] args) {
+        Employee employee1 = new Employee(1, 5, Arrays.asList(2, 3));
+        Employee employee2 = new Employee(2, 3, Arrays.asList(4));
+        Employee employee3 = new Employee(3, 4, Collections.emptyList());
+        Employee employee4 = new Employee(4, 1, Collections.emptyList());
+
+        List<Employee> list = Arrays.asList(employee1, employee2, employee3, employee4);
+        System.out.println(new SolutionBFS().getImportance(list, 1));
+    }
+
     public int getImportance(List<Employee> employees, int id) {
         //dump all the employee info into a map which is a helpful look up data structure
         Map<Integer, Employee> map = new HashMap<>();
@@ -43,16 +53,6 @@ public class SolutionBFS {
             this.importance = importance;
             this.subordinates = subordinates;
         }
-    }
-
-    public static void main(String[] args) {
-        Employee employee1 = new Employee(1, 5, Arrays.asList(2, 3));
-        Employee employee2 = new Employee(2, 3, Arrays.asList(4));
-        Employee employee3 = new Employee(3, 4, Collections.emptyList());
-        Employee employee4 = new Employee(4, 1, Collections.emptyList());
-
-        List<Employee> list = Arrays.asList(employee1, employee2, employee3, employee4);
-        System.out.println(new SolutionBFS().getImportance(list, 1));
     }
 
 }

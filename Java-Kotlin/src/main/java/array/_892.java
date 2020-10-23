@@ -2,27 +2,6 @@ package array;
 
 public class _892 {
 
-    public int surfaceArea(int[][] grid) {
-        if (grid == null || grid.length == 0) {
-            return 0;
-        }
-        int area = 0;
-        int row = grid.length;
-        int col = grid[0].length;
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                if (grid[i][j] > 0) {
-                    area += 2;
-                    area += checkLeft(grid, row, col, i, j);
-                    area += checkUp(grid, row, col, i, j);
-                    area += checkRight(grid, row, col, i, j);
-                    area += checkDown(grid, row, col, i, j);
-                }
-            }
-        }
-        return area;
-    }
-
     private static int checkDown(int[][] grid, int row, int col, int i, int j) {
         if (i < row - 1) {
             int downNeighbor = grid[i + 1][j];
@@ -95,5 +74,26 @@ public class _892 {
 
     public static void main(String[] args) {
         new _892().surfaceArea(new int[][]{{1, 0}, {0, 2}});
+    }
+
+    public int surfaceArea(int[][] grid) {
+        if (grid == null || grid.length == 0) {
+            return 0;
+        }
+        int area = 0;
+        int row = grid.length;
+        int col = grid[0].length;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (grid[i][j] > 0) {
+                    area += 2;
+                    area += checkLeft(grid, row, col, i, j);
+                    area += checkUp(grid, row, col, i, j);
+                    area += checkRight(grid, row, col, i, j);
+                    area += checkDown(grid, row, col, i, j);
+                }
+            }
+        }
+        return area;
     }
 }

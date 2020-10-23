@@ -7,6 +7,12 @@ import java.util.Set;
 
 public class _997 {
 
+    public static void main(String[] args) {
+
+        int[][] trust = new int[][]{{1, 8}, {1, 3}, {2, 8}, {2, 3}, {4, 8}, {4, 3}, {5, 8}, {5, 3}, {6, 8}, {6, 3}, {7, 8}, {7, 3}, {9, 8}, {9, 3}, {11, 8}, {11, 3}};
+        System.out.println(new _997().findJudge2(11, trust));
+    }
+
     public int findJudge(int N, int[][] trust) {
         Set<String> relation = transfer(trust);
         for (int i = 1; i <= N; i++) {
@@ -96,11 +102,5 @@ public class _997 {
             result.get(cur[0]).add(cur[1]);
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-
-        int[][] trust = new int[][]{{1, 8}, {1, 3}, {2, 8}, {2, 3}, {4, 8}, {4, 3}, {5, 8}, {5, 3}, {6, 8}, {6, 3}, {7, 8}, {7, 3}, {9, 8}, {9, 3}, {11, 8}, {11, 3}};
-        System.out.println(new _997().findJudge2(11, trust));
     }
 }

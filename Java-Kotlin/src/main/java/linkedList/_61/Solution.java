@@ -4,6 +4,20 @@ import common.datastructure.ListNode;
 
 public class Solution {
 
+    public static void main(String[] args) {
+        ListNode node1 = new ListNode(0);
+        ListNode node2 = new ListNode(1);
+        ListNode node3 = new ListNode(2);
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = null;
+
+        ListNode result = new Solution().rotateRight(node1, 4);
+
+        System.out.println(result);
+    }
+
     public ListNode rotateRight(ListNode head, int k) {
         // just do nothing
         if (k == 0) {
@@ -52,20 +66,5 @@ public class Solution {
         // have the cut node point to null
         curr.next = null;
         return newHead;
-    }
-
-
-    public static void main(String[] args) {
-        ListNode node1 = new ListNode(0);
-        ListNode node2 = new ListNode(1);
-        ListNode node3 = new ListNode(2);
-
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = null;
-
-        ListNode result = new Solution().rotateRight(node1, 4);
-
-        System.out.println(result);
     }
 }

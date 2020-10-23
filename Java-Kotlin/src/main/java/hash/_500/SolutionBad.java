@@ -41,6 +41,13 @@ public class SolutionBad {
 
     }
 
+    public static void main(String[] args) {
+        String[] results = new SolutionBad().findWords(new String[]{"Alaska", "Dad"});
+        for (String word : results) {
+            System.out.println(word);
+        }
+    }
+
     public String[] findWords(String[] words) {
         if (words == null || words.length == 0) {
             return words;
@@ -67,12 +74,5 @@ public class SolutionBad {
             results[i] = result.get(i);
         }
         return results;
-    }
-
-    public static void main(String[] args) {
-        String[] results = new SolutionBad().findWords(new String[]{"Alaska", "Dad"});
-        for (String word : results) {
-            System.out.println(word);
-        }
     }
 }

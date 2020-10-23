@@ -6,6 +6,14 @@ import java.util.Arrays;
 
 public class Solution {
 
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        ListNode head = ListNode.createSinglyLinkedList(Arrays.asList(1));
+
+        ListNode.printList(solution.insertionSortList(head));
+    }
+
     public ListNode insertionSortList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
@@ -58,14 +66,5 @@ public class Solution {
         }
 
         return dummy.next;
-    }
-
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        ListNode head = ListNode.createSinglyLinkedList(Arrays.asList(1));
-
-        ListNode.printList(solution.insertionSortList(head));
     }
 }

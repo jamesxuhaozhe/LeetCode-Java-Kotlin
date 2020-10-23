@@ -9,6 +9,10 @@ package string._171;
  */
 public class Solution {
 
+    private static int getNumberFrom(char ch) {
+        return ch - 64;
+    }
+
     public int titleToNumber(String s) {
 
         int result = 0;
@@ -20,9 +24,5 @@ public class Solution {
         }
 
         return result;
-    }
-
-    private static int getNumberFrom(char ch) {
-        return ch - 64;
     }
 }

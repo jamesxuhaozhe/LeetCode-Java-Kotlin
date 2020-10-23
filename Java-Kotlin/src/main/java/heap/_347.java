@@ -27,16 +27,6 @@ public class _347 {
         return result;
     }
 
-    private static class Holder {
-        private int keyNum;
-        private int count;
-
-        Holder(int keyNum, int count) {
-            this.keyNum = keyNum;
-            this.count = count;
-        }
-    }
-
     public List<Integer> topKFrequent1(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i : nums) {
@@ -60,5 +50,15 @@ public class _347 {
         }
 
         return result;
+    }
+
+    private static class Holder {
+        private int keyNum;
+        private int count;
+
+        Holder(int keyNum, int count) {
+            this.keyNum = keyNum;
+            this.count = count;
+        }
     }
 }

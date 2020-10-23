@@ -4,26 +4,6 @@ public class _208 {
 
     static class Trie {
 
-        static class TrieNode {
-            private char val;
-
-            private TrieNode[] children;
-
-            private boolean isWord;
-
-            private TrieNode() {
-                this.val = ' ';
-                this.children = new TrieNode[26];
-                this.isWord = false;
-            }
-
-            private TrieNode(char c) {
-                this.val = c;
-                this.children = new TrieNode[26];
-                this.isWord = false;
-            }
-        }
-
         private TrieNode root;
 
         /**
@@ -90,6 +70,26 @@ public class _208 {
 
         private boolean isValid(String str) {
             return str != null && str.length() != 0;
+        }
+
+        static class TrieNode {
+            private char val;
+
+            private TrieNode[] children;
+
+            private boolean isWord;
+
+            private TrieNode() {
+                this.val = ' ';
+                this.children = new TrieNode[26];
+                this.isWord = false;
+            }
+
+            private TrieNode(char c) {
+                this.val = c;
+                this.children = new TrieNode[26];
+                this.isWord = false;
+            }
         }
     }
 }

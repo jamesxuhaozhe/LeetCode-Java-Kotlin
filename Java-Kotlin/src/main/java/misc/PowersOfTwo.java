@@ -2,6 +2,10 @@ package misc;
 
 public class PowersOfTwo {
 
+    public static void main(String[] args) {
+        new PowersOfTwo().printPowersOfTwo(100);
+    }
+
     public int printPowersOfTwo(int n) {
         if (n < 1) {
             return 0;
@@ -15,9 +19,5 @@ public class PowersOfTwo {
             System.out.println(current);
             return current;
         }
-    }
-
-    public static void main(String[] args) {
-        new PowersOfTwo().printPowersOfTwo(100);
     }
 }

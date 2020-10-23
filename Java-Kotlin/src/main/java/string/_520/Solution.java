@@ -9,6 +9,10 @@ package string._520;
  */
 public class Solution {
 
+    private static boolean isUpperCase(char ch) {
+        return ch >= 'A' && ch <= 'Z';
+    }
+
     public boolean detectCapitalUse(String word) {
         int len = word.length();
         int count = 0;
@@ -21,9 +25,5 @@ public class Solution {
         if (count == 0 || count == len) {
             return true;
         } else return isUpperCase(word.charAt(0)) && count == 1;
-    }
-
-    private static boolean isUpperCase(char ch) {
-        return ch >= 'A' && ch <= 'Z';
     }
 }

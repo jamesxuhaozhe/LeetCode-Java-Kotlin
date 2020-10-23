@@ -3,9 +3,14 @@ package concurrency._1195;
 import java.util.function.IntConsumer;
 
 class Solution2 {
+    private final Object lock = new Object();
     private int n;
     private int i;
-    private final Object lock = new Object();
+
+    public Solution2(int n) {
+        this.n = n;
+        this.i = 1;
+    }
 
     public static void main(String[] args) {
 
@@ -52,12 +57,6 @@ class Solution2 {
         t3.start();
 
 
-    }
-
-
-    public Solution2(int n) {
-        this.n = n;
-        this.i = 1;
     }
 
     // printFizz.run() outputs "fizz".

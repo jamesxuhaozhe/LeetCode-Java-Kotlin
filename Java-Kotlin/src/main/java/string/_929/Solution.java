@@ -5,6 +5,15 @@ import java.util.Set;
 
 public class Solution {
 
+    public static void main(String[] args) {
+        System.out.println("ajmesxuhaozhe@email.com".split("@")[0]);
+
+        System.out.println("ajmesxuhaozhe@email.com".split("@")[1]);
+        int index = "jamesxuhaozhe@qq.com".indexOf('@');
+        System.out.println("jamesxuhaozhe@qq.com".substring(index));
+        System.out.println("jamesxuhaozhe@qq.com".substring(0, index));
+    }
+
     public int numUniqueEmails(String[] emails) {
         if (emails == null || emails.length == 0) {
             return 0;
@@ -35,14 +44,5 @@ public class Solution {
 
         sb.append(domainName);
         return sb.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println("ajmesxuhaozhe@email.com".split("@")[0]);
-
-        System.out.println("ajmesxuhaozhe@email.com".split("@")[1]);
-        int index = "jamesxuhaozhe@qq.com".indexOf('@');
-        System.out.println("jamesxuhaozhe@qq.com".substring(index));
-        System.out.println("jamesxuhaozhe@qq.com".substring(0, index));
     }
 }

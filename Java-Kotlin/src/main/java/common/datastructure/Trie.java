@@ -2,26 +2,6 @@ package common.datastructure;
 
 public class Trie {
 
-    private static class TrieNode {
-        private char val;
-
-        private TrieNode[] children;
-
-        private boolean isWord;
-
-        private TrieNode(char c) {
-            this.val = c;
-            this.children = new TrieNode[26];
-            this.isWord = false;
-        }
-
-        private TrieNode() {
-            this.val = ' ';
-            this.children = new TrieNode[26];
-            this.isWord = false;
-        }
-    }
-
     private TrieNode root;
 
     public Trie() {
@@ -77,5 +57,25 @@ public class Trie {
             node = node.children[index];
         }
         return true;
+    }
+
+    private static class TrieNode {
+        private char val;
+
+        private TrieNode[] children;
+
+        private boolean isWord;
+
+        private TrieNode(char c) {
+            this.val = c;
+            this.children = new TrieNode[26];
+            this.isWord = false;
+        }
+
+        private TrieNode() {
+            this.val = ' ';
+            this.children = new TrieNode[26];
+            this.isWord = false;
+        }
     }
 }

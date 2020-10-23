@@ -8,6 +8,26 @@ import java.util.List;
 
 public class Solution {
 
+    private List<Integer> sortedList = new ArrayList<>();
+
+    private static ListNode findMiddleNode(ListNode head) {
+        ListNode pre = null;
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            pre = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // handle the base case
+        if (pre != null) {
+            pre.next = null;
+        }
+
+        return slow;
+    }
+
     /**
      * Time complexity: O(nlogn)
      * <p>
@@ -35,24 +55,6 @@ public class Solution {
         root.left = left;
         root.right = right;
         return root;
-    }
-
-    private static ListNode findMiddleNode(ListNode head) {
-        ListNode pre = null;
-        ListNode slow = head;
-        ListNode fast = head;
-        while (fast != null && fast.next != null) {
-            pre = slow;
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-
-        // handle the base case
-        if (pre != null) {
-            pre.next = null;
-        }
-
-        return slow;
     }
 
     /**
@@ -86,8 +88,6 @@ public class Solution {
         root.right = rightTree;
         return root;
     }
-
-    private List<Integer> sortedList = new ArrayList<>();
 
     private void addToList(ListNode head) {
         while (head != null) {
