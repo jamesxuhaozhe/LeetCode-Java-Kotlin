@@ -49,6 +49,7 @@ public class Solution {
         return dummy.next;
     }
 
+    // classic linked list reversal
     private ListNode reverse(ListNode head) {
         ListNode pre = null;
         ListNode curr = head;
