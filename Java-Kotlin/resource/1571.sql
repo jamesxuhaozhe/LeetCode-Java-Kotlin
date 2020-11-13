@@ -1,0 +1,1 @@
+select T.warehouse_name as WAREHOUSE_NAME, sum(volume) as VOLUME from (select w.`name` as warehouse_name, w.units * p.Width * p.`Length` * p.`Height` as volume from Warehouse w left join Products p on w.product_id = p.product_id) T group by T.warehouse_name;
