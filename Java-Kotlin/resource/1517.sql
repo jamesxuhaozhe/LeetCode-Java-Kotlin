@@ -1,0 +1,1 @@
+select * from Users where mail regexp '^[A-Za-z][\\w\\.\\-]*@leetcode\\.com$';
