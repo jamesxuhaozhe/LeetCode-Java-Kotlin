@@ -1,0 +1,1 @@
+select distinct title from Content c left join TVProgram t using(content_id) where c.content_type = 'Movies' and Kids_content = 'Y' and year(program_date) = 2020 and month(program_date) = 6;
