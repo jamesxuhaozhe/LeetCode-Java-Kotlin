@@ -1,5 +1,6 @@
 package main
 
+// 非常典型的后续遍历
 func invertTree(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
