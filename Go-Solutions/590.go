@@ -2,7 +2,7 @@ package main
 
 type Node590 struct {
 	Val      int
-	Children []*Node
+	Children []*Node590
 }
 
 func postorder590(root *Node590) []int {
@@ -20,7 +20,7 @@ func postOrder590(root *Node590, res *[]int) {
 		return
 	}
 	for _, n := range root.Children {
-		postOrder(n, res)
+		postOrder590(n, res)
 	}
 	*res = append(*res, root.Val)
 }
