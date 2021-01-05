@@ -2,6 +2,7 @@ package main
 
 //https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
 // sol: https://leetcode-cn.com/problems/reverse-nodes-in-k-group/solution/di-gui-java-by-reedfan-2/
+// 这个题目本质上是跟24一样的，只不过是24的通用解法
 func reverseKGroup(head *ListNode, k int) *ListNode {
 	node := head
 	for i := 0; i < k; i++ {
@@ -15,6 +16,7 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 	return newHead
 }
 
+// 左闭右开
 func reverse25(first *ListNode, last *ListNode) *ListNode {
 	var newHead *ListNode = nil
 	for first != last {
