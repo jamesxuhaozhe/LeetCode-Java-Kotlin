@@ -1,6 +1,6 @@
 package main
 
-func isPalindrome(head *ListNode) bool {
+func isPalindrome_ok(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return true
 	}
