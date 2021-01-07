@@ -20,6 +20,7 @@ func oddEvenList(head *ListNode) *ListNode {
 	return head
 }
 
+
 // 用两个哨兵模式，很优雅， 与86题是一样的
 func oddEvenList1(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
