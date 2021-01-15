@@ -67,10 +67,9 @@ func NewLRUCache(size int) *DefaultLRUCache {
 }
 
 func (cache *DefaultLRUCache) Set(key, value int) {
-	if _, ok := cache.mapping[key]; ok {
-		node := cache.mapping[key]
-		node.val = value
-		cache.moveToFirst(node)
+	if n, ok := cache.mapping[key]; ok {
+		n.val = value
+		cache.moveToFirst(n)
 	} else {
 		if len(cache.mapping) < cache.size {
 			node := &DListNode{key: key, val: value, next: nil, prev: nil,}
@@ -86,12 +85,11 @@ func (cache *DefaultLRUCache) Set(key, value int) {
 }
 
 func (cache *DefaultLRUCache) Get(key int) int {
-	if _, ok := cache.mapping[key]; !ok {
+	if n, ok := cache.mapping[key]; !ok {
 		return -1
 	} else {
-		node := cache.mapping[key]
-		cache.moveToFirst(node)
-		return node.val
+		cache.moveToFirst(n)
+		return n.val
 	}
 }
 
