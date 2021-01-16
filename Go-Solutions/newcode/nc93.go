@@ -1,8 +1,8 @@
-package main
+package newcode
 
 import "fmt"
 
-func main() {
+func driver() {
 	s1 := []int{1, 1, 1}
 	s2 := []int{1, 2, 2}
 	s3 := []int{1, 3, 2}
