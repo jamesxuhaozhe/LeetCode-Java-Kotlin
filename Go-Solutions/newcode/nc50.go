@@ -10,12 +10,12 @@ func reverseKGroup( head *ListNode ,  k int ) *ListNode {
 		tail = tail.Next
 	}
 
-	newHead := reverse(head, tail)
+	newHead := reverse50(head, tail)
 	head.Next = reverseKGroup(tail, k)
 	return newHead
 }
 
-func reverse(head *ListNode, tail *ListNode) *ListNode {
+func reverse50(head *ListNode, tail *ListNode) *ListNode {
 	var newHead *ListNode = nil
 	var next *ListNode = nil
 	runner := head
