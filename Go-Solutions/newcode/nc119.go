@@ -3,6 +3,7 @@ package newcode
 import "sort"
 
 // todo use heap
+//https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/tu-jie-top-k-wen-ti-de-liang-chong-jie-fa-you-lie-/
 func GetLeastNumbers_Solution( input []int ,  k int ) []int {
 	// write code here
 	if k > len(input) {
