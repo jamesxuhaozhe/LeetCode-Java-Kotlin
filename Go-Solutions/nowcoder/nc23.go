@@ -1,6 +1,6 @@
 package nowcoder
 
-func partition23( head *ListNode ,  x int ) *ListNode {
+func partition23(head *ListNode, x int) *ListNode {
 	// write code here
 	if head == nil {
 		return nil
