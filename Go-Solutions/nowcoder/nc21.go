@@ -1,6 +1,6 @@
 package nowcoder
 
-func reverseBetween( head *ListNode ,  m int ,  n int ) *ListNode {
+func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	// write code here
 	if head == nil || head.Next == nil {
 		return head
@@ -9,12 +9,12 @@ func reverseBetween( head *ListNode ,  m int ,  n int ) *ListNode {
 	dummy := &ListNode{Val: 0, Next: head,}
 
 	preStart := dummy
-	for i := 0; i < m - 1; i++ {
+	for i := 0; i < m-1; i++ {
 		preStart = preStart.Next
 	}
 	start := preStart.Next
 	end := preStart
-	for i := 0; i < n - m + 1; i++ {
+	for i := 0; i < n-m+1; i++ {
 		end = end.Next
 	}
 	afterEnd := end.Next
