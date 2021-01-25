@@ -4,7 +4,7 @@ import java.util.*;
 
 public class nc97 {
 
-    public String[][] topKstrings (String[] strings, int k) {
+    public String[][] topKstrings(String[] strings, int k) {
         // write code here
         if (strings == null || k > strings.length) {
             return new String[0][0];
@@ -37,6 +37,7 @@ public class nc97 {
     private static class Node {
         private String element;
         private int freq;
+
         private Node(String element, int freq) {
             this.element = element;
             this.freq = freq;
