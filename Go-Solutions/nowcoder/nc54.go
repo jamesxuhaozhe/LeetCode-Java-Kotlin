@@ -34,7 +34,6 @@ func twoSum54(num []int, start int, target int) [][]int {
 				high--
 			}
 		} else if sum < target {
-
 			for low < high && num[low] == left {
 				low++
 			}
