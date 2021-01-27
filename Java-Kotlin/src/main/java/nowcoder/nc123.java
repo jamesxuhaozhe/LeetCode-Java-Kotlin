@@ -4,6 +4,7 @@ import common.datastructure.TreeNode;
 
 import java.util.LinkedList;
 
+// on blue book
 public class nc123 {
 
     private static final String NULL = "#";
