@@ -1,5 +1,6 @@
 package nowcoder
 
+// like nc12
 func solve136(pre []int, in []int) []int {
 	// write code here
 	if len(pre) != len(in) || len(in) == 0 || len(pre) == 0 {
