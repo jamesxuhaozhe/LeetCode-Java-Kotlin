@@ -1,7 +1,6 @@
 package nowcoder;
 
 // the blue book
-// todo use golang
 public class nc47 {
 
     public void solveSudoku(char[][] board) {
