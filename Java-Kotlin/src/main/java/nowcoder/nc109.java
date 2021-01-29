@@ -28,9 +28,9 @@ public class nc109 {
 
     private static void dfs(boolean[][] visited, char[][] grid, int i, int j, int m, int n) {
         visited[i][j] = true;
-        for (int k = 0; k < DIRECTIONS.length; k++) {
-            int newX = i + DIRECTIONS[k][0];
-            int newY = j + DIRECTIONS[k][1];
+        for (int[] direction : DIRECTIONS) {
+            int newX = i + direction[0];
+            int newY = j + direction[1];
             if (inArea(newX, newY, m, n) && !visited[newX][newY] && grid[newX][newY] == '1') {
                 dfs(visited, grid, newX, newY, m, n);
             }
