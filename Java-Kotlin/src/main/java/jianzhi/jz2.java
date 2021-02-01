@@ -2,6 +2,7 @@ package jianzhi;
 
 public class jz2 {
 
+    // todo use golang
     public String replaceSpace(StringBuffer str) {
         int p1 = str.length() - 1;
         for (int i = 0; i <= p1; i++) {
