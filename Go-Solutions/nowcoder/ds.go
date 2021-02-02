@@ -10,3 +10,10 @@ type TreeNode struct {
 	Left  *TreeNode
 	Right *TreeNode
 }
+
+
+type RandomListNode struct {
+    Label int
+    Next *RandomListNode
+    Random *RandomListNode
+}
