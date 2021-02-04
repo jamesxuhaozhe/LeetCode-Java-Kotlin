@@ -2,6 +2,7 @@ package jianzhi;
 
 import common.datastructure.TreeNode;
 
+//todo: use golang
 public class jz38 {
 
     public int TreeDepth(TreeNode root) {
