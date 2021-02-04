@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class jz41 {
 
+    // see jianzhi book todo: use golang to do it
     public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
         if (sum < 1) {
             return new ArrayList<>();
