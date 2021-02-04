@@ -4,7 +4,7 @@ import common.datastructure.TreeNode;
 
 public class jz39 {
 
-    // see jianzhi book solution
+    // see jianzhi book solution todo: use golang to do it again
     public boolean IsBalanced_Solution(TreeNode root) {
         IntHolder depth = new IntHolder(0);
         return isBalanced(root, depth);
