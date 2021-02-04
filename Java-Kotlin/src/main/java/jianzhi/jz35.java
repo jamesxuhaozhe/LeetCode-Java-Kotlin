@@ -1,6 +1,6 @@
 package jianzhi;
 
-// see jianzhi offer book
+// see jianzhi offer book, todo: use golang
 public class jz35 {
 
     private static final int MOD = 1000000007;
