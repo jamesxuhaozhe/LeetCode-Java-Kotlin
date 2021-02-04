@@ -25,6 +25,8 @@ public class jz41 {
                 left++;
             } else {
                 res.add(getRangeList(left, right));
+/*                right++;
+                curSum += right;*/
                 curSum -= left;
                 left++;
             }
