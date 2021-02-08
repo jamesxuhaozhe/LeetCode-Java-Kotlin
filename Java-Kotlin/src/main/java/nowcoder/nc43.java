@@ -4,18 +4,6 @@ import java.util.ArrayList;
 
 public class nc43 {
 
-    // https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liweiw/
-    public ArrayList<ArrayList<Integer>> permute(int[] num) {
-        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
-        if (num == null || num.length == 0) {
-            return res;
-        }
-        boolean[] used = new boolean[num.length];
-        ArrayList<Integer> list = new ArrayList<>();
-        dfs(num, res, list, used);
-        return res;
-    }
-
     private static void dfs(int[] num,
                             ArrayList<ArrayList<Integer>> res,
                             ArrayList<Integer> list,
@@ -36,5 +24,17 @@ public class nc43 {
                 used[i] = false;
             }
         }
+    }
+
+    // https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liweiw/
+    public ArrayList<ArrayList<Integer>> permute(int[] num) {
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        if (num == null || num.length == 0) {
+            return res;
+        }
+        boolean[] used = new boolean[num.length];
+        ArrayList<Integer> list = new ArrayList<>();
+        dfs(num, res, list, used);
+        return res;
     }
 }

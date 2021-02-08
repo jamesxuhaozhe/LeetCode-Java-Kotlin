@@ -4,6 +4,12 @@ import java.util.Arrays;
 
 public class nc30 {
 
+    public static void main(String[] args) {
+        int[] arr = new int[]{-1, 0, 2, 3, 4};
+
+        System.out.println(new nc30().minNumberdisappered(arr));
+    }
+
     public int minNumberdisappered(int[] arr) {
         // write code here
         // write code here
@@ -20,11 +26,5 @@ public class nc30 {
             }
         }
         return i;
-    }
-
-    public static void main(String[] args) {
-        int[] arr = new int[]{-1, 0, 2, 3, 4};
-
-        System.out.println(new nc30().minNumberdisappered(arr));
     }
 }

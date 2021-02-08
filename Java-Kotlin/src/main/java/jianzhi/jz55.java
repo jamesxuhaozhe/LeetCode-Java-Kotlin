@@ -4,6 +4,19 @@ import common.datastructure.ListNode;
 
 public class jz55 {
 
+    private static ListNode getMeetNode(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                return slow;
+            }
+        }
+        return null;
+    }
+
     public ListNode EntryNodeOfLoop(ListNode pHead) {
         if (pHead == null || pHead.next == null) {
             return null;
@@ -19,18 +32,5 @@ public class jz55 {
             meetNode = meetNode.next;
         }
         return runner;
-    }
-
-    private static ListNode getMeetNode(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head;
-        while (fast.next != null && fast.next.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-            if (slow == fast) {
-                return slow;
-            }
-        }
-        return null;
     }
 }

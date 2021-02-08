@@ -2,7 +2,7 @@ package jianzhi;
 
 public class jz6 {
 
-    public int minNumberInRotateArray(int [] array) {
+    public int minNumberInRotateArray(int[] array) {
         if (array == null || array.length == 0) {
             return 0;
         }

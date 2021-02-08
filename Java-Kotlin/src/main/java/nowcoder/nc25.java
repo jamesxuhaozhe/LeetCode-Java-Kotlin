@@ -4,7 +4,7 @@ import common.datastructure.ListNode;
 
 public class nc25 {
 
-    public ListNode deleteDuplicates (ListNode head) {
+    public ListNode deleteDuplicates(ListNode head) {
         // write code here
         if (head == null || head.next == null) {
             return head;

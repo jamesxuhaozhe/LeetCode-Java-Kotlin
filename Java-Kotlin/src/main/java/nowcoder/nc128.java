@@ -2,6 +2,10 @@ package nowcoder;
 
 public class nc128 {
 
+    private static boolean isValid(int[] arr) {
+        return arr != null && arr.length != 0;
+    }
+
     // see blue book
     public long maxWater(int[] arr) {
         // write code here
@@ -26,12 +30,5 @@ public class nc128 {
             }
         }
         return ans;
-    }
-
-    private static boolean isValid(int[] arr) {
-        if (arr == null || arr.length == 0) {
-            return false;
-        }
-        return true;
     }
 }

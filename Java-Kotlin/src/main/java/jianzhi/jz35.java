@@ -7,7 +7,7 @@ public class jz35 {
 
     private int result = 0;
 
-    public int InversePairs(int [] array) {
+    public int InversePairs(int[] array) {
         if (array == null || array.length == 0) {
             return 0;
         }

@@ -4,6 +4,10 @@ public class nc89 {
 
     private static final int DIFF = 'A' - 'a';
 
+    public static void main(String[] args) {
+        System.out.println(new nc89().trans("This is a sample", 16));
+    }
+
     public String trans(String s, int n) {
         // write code here
 
@@ -48,9 +52,5 @@ public class nc89 {
         } else {
             return ch;
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new nc89().trans("This is a sample", 16));
     }
 }

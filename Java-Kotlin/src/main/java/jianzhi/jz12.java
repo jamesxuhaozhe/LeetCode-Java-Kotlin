@@ -4,6 +4,7 @@ public class jz12 {
 
     /**
      * https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/solution/fei-di-gui-he-di-gui-de-liang-chong-jie-jue-fang-s/
+     *
      * @param base
      * @param exponent
      * @return

@@ -2,6 +2,19 @@ package nowcoder;
 
 public class nc59 {
 
+    private static boolean isValid(int[][] matrix) {
+        if (matrix == null) {
+            return false;
+        }
+        int m = matrix.length;
+        if (m < 1) {
+            return false;
+        }
+
+        int n = matrix[0].length;
+        return n >= 1;
+    }
+
     public int minPathSum(int[][] matrix) {
         // write code here
         if (!isValid(matrix)) {
@@ -29,22 +42,5 @@ public class nc59 {
             }
         }
         return dp[m - 1][n - 1];
-    }
-
-    private static boolean isValid(int[][] matrix) {
-        if (matrix == null) {
-            return false;
-        }
-        int m = matrix.length;
-        if (m < 1) {
-            return false;
-        }
-
-        int n = matrix[0].length;
-        if (n < 1) {
-            return false;
-        }
-
-        return true;
     }
 }

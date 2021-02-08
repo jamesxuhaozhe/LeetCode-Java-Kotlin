@@ -6,7 +6,7 @@ import java.util.TreeSet;
 public class jz45 {
 
     // solution is from jianzhi offer book
-    public boolean IsContinuous(int [] nums) {
+    public boolean IsContinuous(int[] nums) {
         // 1.数组是null或者数组长度不是5这两种情况显然不用考虑。
         // 2. 先进行排序
         // 3. 统计数组中0的个数
@@ -37,10 +37,11 @@ public class jz45 {
 
     /**
      * 可以这么理解，简单来说就是要是5个数字，最大和最小差值在5以内，并且没有重复数值。用一个set来填充数据，0不要放进去。set的大小加上0的个数必须为5个。此外set中数值差值在5以内.
+     *
      * @param nums
      * @return
      */
-    public boolean IsContinuous_2(int [] nums) {
+    public boolean IsContinuous_2(int[] nums) {
         if (nums == null || nums.length != 5) {
             return false;
         }

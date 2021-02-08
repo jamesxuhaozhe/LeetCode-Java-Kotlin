@@ -3,18 +3,8 @@ package nowcoder;
 // the blue book
 public class nc47 {
 
-    public void solveSudoku(char[][] board) {
-        if (!isValid(board)) {
-            return;
-        }
-        dfs(board, 0, 0, board.length, board[0].length);
-    }
-
     private static boolean isValid(char[][] board) {
-        if (board == null || board.length == 0 || board[0].length == 0) {
-            return false;
-        }
-        return true;
+        return board != null && board.length != 0 && board[0].length != 0;
     }
 
     private static boolean dfs(char[][] board, int i, int j, int m, int n) {
@@ -59,5 +49,12 @@ public class nc47 {
             }
         }
         return true;
+    }
+
+    public void solveSudoku(char[][] board) {
+        if (!isValid(board)) {
+            return;
+        }
+        dfs(board, 0, 0, board.length, board[0].length);
     }
 }

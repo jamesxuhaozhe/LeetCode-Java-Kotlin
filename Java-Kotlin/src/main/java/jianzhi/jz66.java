@@ -2,15 +2,6 @@ package jianzhi;
 
 public class jz66 {
 
-    public int movingCount(int threshold, int rows, int cols) {
-        if (rows <= 0 || cols <= 0 || threshold < 0) {
-            return 0;
-        }
-
-        boolean[][] visited = new boolean[rows][cols];
-        return dfs(0, 0, rows, cols, threshold, visited);
-    }
-
     private static int dfs(int row, int col, int rows, int cols, int threshold, boolean[][] visited) {
         int count = 0;
         if (row >= 0 && row < rows && col >= 0 && col < cols
@@ -38,5 +29,14 @@ public class jz66 {
             index /= 10;
         }
         return sum;
+    }
+
+    public int movingCount(int threshold, int rows, int cols) {
+        if (rows <= 0 || cols <= 0 || threshold < 0) {
+            return 0;
+        }
+
+        boolean[][] visited = new boolean[rows][cols];
+        return dfs(0, 0, rows, cols, threshold, visited);
     }
 }

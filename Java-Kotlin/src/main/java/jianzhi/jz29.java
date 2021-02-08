@@ -6,7 +6,7 @@ import java.util.Queue;
 
 public class jz29 {
 
-    public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
+    public ArrayList<Integer> GetLeastNumbers_Solution(int[] input, int k) {
         ArrayList<Integer> result = new ArrayList<>();
         if (input == null || k <= 0 || k > input.length) {
             return result;

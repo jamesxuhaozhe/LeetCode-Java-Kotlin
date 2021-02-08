@@ -10,6 +10,6 @@ public class jz38 {
             return 0;
         }
 
-        return Math.max(TreeDepth(root.left), TreeDepth(root.right)) +1;
+        return Math.max(TreeDepth(root.left), TreeDepth(root.right)) + 1;
     }
 }

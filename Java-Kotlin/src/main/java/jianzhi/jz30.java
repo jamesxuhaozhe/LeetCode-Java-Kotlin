@@ -3,10 +3,10 @@ package jianzhi;
 public class jz30 {
 
     /**
-     状态定义：dp[i]表示以i结尾的连续子数组的最大和。所以最终要求dp[n-1]
-     状态转移方程：dp[i] = max(array[i], dp[i-1]+array[i])
-     解释：如果当前元素为整数，并且dp[i-1]为负数，那么当然结果就是只选当前元素
-     技巧：这里为了统一代码的书写，定义dp[i]表示前i个元素的连续子数组的最大和，结尾元素为array[i-1]
+     * 状态定义：dp[i]表示以i结尾的连续子数组的最大和。所以最终要求dp[n-1]
+     * 状态转移方程：dp[i] = max(array[i], dp[i-1]+array[i])
+     * 解释：如果当前元素为整数，并且dp[i-1]为负数，那么当然结果就是只选当前元素
+     * 技巧：这里为了统一代码的书写，定义dp[i]表示前i个元素的连续子数组的最大和，结尾元素为array[i-1]
      **/
     public int FindGreatestSumOfSubArray(int[] array) {
         if (array == null || array.length == 0) {

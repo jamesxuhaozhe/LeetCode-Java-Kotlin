@@ -6,20 +6,6 @@ import java.util.ArrayList;
 
 public class nc8 {
 
-    // dfs
-    public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
-        // write code here
-        if (root == null) {
-            return new ArrayList<>();
-        }
-
-        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
-
-        ArrayList<Integer> list = new ArrayList<>();
-        dfs(root, res, list, sum);
-        return res;
-    }
-
     private static void dfs(TreeNode node, ArrayList<ArrayList<Integer>> res, ArrayList<Integer> list, int leftToSum) {
         if (node == null) {
             return;
@@ -36,5 +22,19 @@ public class nc8 {
         dfs(node.left, res, list, leftToSum - node.val);
         dfs(node.right, res, list, leftToSum - node.val);
         list.remove(list.size() - 1);
+    }
+
+    // dfs
+    public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
+        // write code here
+        if (root == null) {
+            return new ArrayList<>();
+        }
+
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+
+        ArrayList<Integer> list = new ArrayList<>();
+        dfs(root, res, list, sum);
+        return res;
     }
 }

@@ -7,6 +7,16 @@ import java.util.List;
 
 public class jz26 {
 
+    private static void inOrder(TreeNode node, List<TreeNode> list) {
+        if (node == null) {
+            return;
+        }
+
+        inOrder(node.left, list);
+        list.add(node);
+        inOrder(node.right, list);
+    }
+
     public TreeNode Convert(TreeNode root) {
         if (root == null) {
             return root;
@@ -27,15 +37,5 @@ public class jz26 {
             pre = cur;
         }
         return dummy;
-    }
-
-    private static void inOrder(TreeNode node, List<TreeNode> list) {
-        if (node == null) {
-            return;
-        }
-
-        inOrder(node.left, list);
-        list.add(node);
-        inOrder(node.right, list);
     }
 }

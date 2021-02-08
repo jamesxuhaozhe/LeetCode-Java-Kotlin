@@ -6,8 +6,14 @@ import java.util.Set;
 
 public class jz50 {
 
+    private static void swap(int[] numbers, int i, int m) {
+        int tmp = numbers[i];
+        numbers[i] = numbers[m];
+        numbers[m] = tmp;
+    }
+
     // 如果题目不要求返回第一个重复的数，这么做是对的
-    public boolean duplicate_1(int numbers[],int length,int [] duplication) {
+    public boolean duplicate_1(int[] numbers, int length, int[] duplication) {
         if (numbers == null || numbers.length == 0 || numbers.length != length) {
             return false;
         }
@@ -22,7 +28,7 @@ public class jz50 {
         return false;
     }
 
-    public boolean duplicate_2(int numbers[],int length,int [] duplication) {
+    public boolean duplicate_2(int[] numbers, int length, int[] duplication) {
         if (numbers == null || numbers.length == 0 || numbers.length != length) {
             return false;
         }
@@ -38,7 +44,7 @@ public class jz50 {
     }
 
     // jianzhi offer的方法，但是牛客上每个过，因为返回的不是第一重复的数字
-    public boolean duplicate_3(int numbers[],int length,int [] duplication) {
+    public boolean duplicate_3(int[] numbers, int length, int[] duplication) {
         if (numbers == null || numbers.length == 0 || numbers.length != length) {
             return false;
         }
@@ -54,11 +60,5 @@ public class jz50 {
             }
         }
         return false;
-    }
-
-    private static void swap(int[] numbers, int i, int m) {
-        int tmp = numbers[i];
-        numbers[i] = numbers[m];
-        numbers[m] = tmp;
     }
 }

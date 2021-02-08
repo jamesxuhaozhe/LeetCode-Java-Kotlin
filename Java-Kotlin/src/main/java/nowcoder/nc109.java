@@ -5,6 +5,25 @@ public class nc109 {
 
     private static final int[][] DIRECTIONS = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
+    private static void dfs(boolean[][] visited, char[][] grid, int i, int j, int m, int n) {
+        visited[i][j] = true;
+        for (int[] direction : DIRECTIONS) {
+            int newX = i + direction[0];
+            int newY = j + direction[1];
+            if (inArea(newX, newY, m, n) && !visited[newX][newY] && grid[newX][newY] == '1') {
+                dfs(visited, grid, newX, newY, m, n);
+            }
+        }
+    }
+
+    private static boolean inArea(int i, int j, int m, int n) {
+        return i >= 0 && i < m && j >= 0 && j < n;
+    }
+
+    private static boolean isValid(char[][] grid) {
+        return grid != null && grid.length != 0 && grid[0].length != 0;
+    }
+
     public int solve(char[][] grid) {
         // write code here
         if (!isValid(grid)) {
@@ -24,27 +43,5 @@ public class nc109 {
             }
         }
         return count;
-    }
-
-    private static void dfs(boolean[][] visited, char[][] grid, int i, int j, int m, int n) {
-        visited[i][j] = true;
-        for (int[] direction : DIRECTIONS) {
-            int newX = i + direction[0];
-            int newY = j + direction[1];
-            if (inArea(newX, newY, m, n) && !visited[newX][newY] && grid[newX][newY] == '1') {
-                dfs(visited, grid, newX, newY, m, n);
-            }
-        }
-    }
-
-    private static boolean inArea(int i, int j, int m, int n) {
-        return i >= 0 && i < m && j >= 0 && j < n;
-    }
-
-    private static boolean isValid(char[][] grid) {
-        if (grid == null || grid.length == 0 || grid[0].length == 0) {
-            return false;
-        }
-        return true;
     }
 }

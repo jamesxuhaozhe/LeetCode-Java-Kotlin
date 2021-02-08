@@ -6,7 +6,7 @@ import java.util.Comparator;
 public class jz32 {
 
     // see book
-    public String PrintMinNumber(int [] numbers) {
+    public String PrintMinNumber(int[] numbers) {
         if (numbers == null || numbers.length == 0) {
             return "";
         }

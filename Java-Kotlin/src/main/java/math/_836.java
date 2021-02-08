@@ -13,9 +13,7 @@ public class _836 {
 
     private static boolean isWithinRec(int[] rec, int[] point) {
         if (point[0] < rec[2] && point[0] > rec[0]) {
-            if (point[1] < rec[3] && point[1] > rec[1]) {
-                return true;
-            }
+            return point[1] < rec[3] && point[1] > rec[1];
         }
         return false;
     }

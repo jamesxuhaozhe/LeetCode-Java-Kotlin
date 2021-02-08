@@ -4,30 +4,6 @@ import common.datastructure.TreeNode;
 
 public class nc98 {
 
-    public boolean isContains(TreeNode root1, TreeNode root2) {
-        // write code here
-        StringBuffer res1 = new StringBuffer();
-        StringBuffer res2 = new StringBuffer();
-        preOrder(root1, res1);
-        preOrder(root2, res2);
-        System.out.println("res1: " + res1.toString());
-        System.out.println("res2: " + res2.toString());
-        if (res1.toString().contains(res2.toString())) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public void preOrder(TreeNode root, StringBuffer res) {
-        if (root == null) {
-            return;
-        }
-        preOrder(root.left, res);
-        res.append(root.val);
-        preOrder(root.right, res);
-    }
-
     public static void main(String[] args) {
         TreeNode root1 = new TreeNode(23);
         TreeNode root1_4 = new TreeNode(4);
@@ -46,6 +22,26 @@ public class nc98 {
 
         System.out.println(new nc98().isContains(root1, root2));
 
+    }
+
+    public boolean isContains(TreeNode root1, TreeNode root2) {
+        // write code here
+        StringBuffer res1 = new StringBuffer();
+        StringBuffer res2 = new StringBuffer();
+        preOrder(root1, res1);
+        preOrder(root2, res2);
+        System.out.println("res1: " + res1.toString());
+        System.out.println("res2: " + res2.toString());
+        return res1.toString().contains(res2.toString());
+    }
+
+    public void preOrder(TreeNode root, StringBuffer res) {
+        if (root == null) {
+            return;
+        }
+        preOrder(root.left, res);
+        res.append(root.val);
+        preOrder(root.right, res);
     }
 
     public boolean isContainsRecur(TreeNode root1, TreeNode root2) {

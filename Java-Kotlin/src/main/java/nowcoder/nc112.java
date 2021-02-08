@@ -4,7 +4,7 @@ public class nc112 {
 
     private static final String TAB = "0123456789ABCDEF";
 
-    public String solve (int m, int n) {
+    public String solve(int m, int n) {
         // write code here
         if (m == 0) {
             return "0";

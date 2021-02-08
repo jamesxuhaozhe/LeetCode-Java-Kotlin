@@ -4,20 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class nc42 {
-    // https://leetcode-cn.com/problems/permutations-ii/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liwe-2/
-    public ArrayList<ArrayList<Integer>> permuteUnique(int[] num) {
-        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
-        if (num == null || num.length == 0) {
-            return res;
-        }
-
-        ArrayList<Integer> list = new ArrayList<>();
-        boolean[] used = new boolean[num.length];
-        Arrays.sort(num);
-        dfs(num, res, list, used);
-        return res;
-    }
-
     private static void dfs(int[] num, ArrayList<ArrayList<Integer>> res, ArrayList<Integer> list, boolean[] used) {
         if (num.length == list.size()) {
             res.add(new ArrayList<>(list));
@@ -40,5 +26,19 @@ public class nc42 {
             list.remove(list.size() - 1);
             used[i] = false;
         }
+    }
+
+    // https://leetcode-cn.com/problems/permutations-ii/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liwe-2/
+    public ArrayList<ArrayList<Integer>> permuteUnique(int[] num) {
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        if (num == null || num.length == 0) {
+            return res;
+        }
+
+        ArrayList<Integer> list = new ArrayList<>();
+        boolean[] used = new boolean[num.length];
+        Arrays.sort(num);
+        dfs(num, res, list, used);
+        return res;
     }
 }

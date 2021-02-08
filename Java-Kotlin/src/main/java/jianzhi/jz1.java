@@ -2,6 +2,10 @@ package jianzhi;
 
 public class jz1 {
 
+    private static boolean isValid(int[][] array) {
+        return array != null && array.length != 0 && array[0].length != 0;
+    }
+
     public boolean Find(int target, int[][] array) {
         if (!isValid(array)) {
             return false;
@@ -21,12 +25,5 @@ public class jz1 {
             }
         }
         return false;
-    }
-
-    private static boolean isValid(int[][] array) {
-        if (array == null || array.length == 0 || array[0].length == 0) {
-            return false;
-        }
-        return true;
     }
 }

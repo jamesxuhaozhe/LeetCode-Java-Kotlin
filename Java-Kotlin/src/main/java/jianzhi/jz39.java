@@ -4,12 +4,6 @@ import common.datastructure.TreeNode;
 
 public class jz39 {
 
-    // see jianzhi book solution todo: use golang to do it again
-    public boolean IsBalanced_Solution(TreeNode root) {
-        IntHolder depth = new IntHolder(0);
-        return isBalanced(root, depth);
-    }
-
     private static boolean isBalanced(TreeNode node, IntHolder depth) {
         if (node == null) {
             depth.value = 0;
@@ -30,8 +24,15 @@ public class jz39 {
         return false;
     }
 
+    // see jianzhi book solution todo: use golang to do it again
+    public boolean IsBalanced_Solution(TreeNode root) {
+        IntHolder depth = new IntHolder(0);
+        return isBalanced(root, depth);
+    }
+
     private static class IntHolder {
         private int value;
+
         private IntHolder(int value) {
             this.value = value;
         }

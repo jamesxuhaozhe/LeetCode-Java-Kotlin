@@ -6,7 +6,7 @@ import java.util.Comparator;
 // 跟jianzhi的题目差不多
 public class nc111 {
 
-    public String solve (int[] nums) {
+    public String solve(int[] nums) {
         // write code here
 
         if (nums == null || nums.length == 0) {

@@ -8,6 +8,18 @@ import java.util.Queue;
 
 public class jz59 {
 
+    private static void reverse(ArrayList<Integer> list) {
+        int start = 0;
+        int end = list.size() - 1;
+        while (start < end) {
+            int tmp = list.get(start);
+            list.set(start, list.get(end));
+            list.set(end, tmp);
+            start++;
+            end--;
+        }
+    }
+
     public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
         if (pRoot == null) {
@@ -37,17 +49,5 @@ public class jz59 {
             count++;
         }
         return result;
-    }
-
-    private static void reverse(ArrayList<Integer> list) {
-        int start = 0;
-        int end = list.size() - 1;
-        while (start < end) {
-            int tmp = list.get(start);
-            list.set(start, list.get(end));
-            list.set(end, tmp);
-            start++;
-            end--;
-        }
     }
 }
