@@ -2,6 +2,16 @@ package hot100;
 
 public class lc557 {
 
+    private static void swap(char[] chars, int start, int end) {
+        while (start < end) {
+            char tmp = chars[start];
+            chars[start] = chars[end];
+            chars[end] = tmp;
+            start++;
+            end--;
+        }
+    }
+
     public String reverseWords(String s) {
         if (s == null || s.length() == 0) {
             return s;
@@ -15,20 +25,10 @@ public class lc557 {
                 i++;
             }
             swap(chars, start, i - 1);
-            while(i < chars.length && chars[i] == ' ') {
+            while (i < chars.length && chars[i] == ' ') {
                 i++;
             }
         }
         return new String(chars);
-    }
-
-    private static void swap(char[] chars, int start, int end) {
-        while (start < end) {
-            char tmp = chars[start];
-            chars[start] = chars[end];
-            chars[end] = tmp;
-            start++;
-            end--;
-        }
     }
 }

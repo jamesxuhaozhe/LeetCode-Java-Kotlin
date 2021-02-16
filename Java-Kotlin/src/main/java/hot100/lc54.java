@@ -11,7 +11,7 @@ public class lc54 {
         }
 
         int left = 0;
-        int right = matrix[0].length - 1;;
+        int right = matrix[0].length - 1;
         int top = 0;
         int bottom = matrix.length - 1;
         List<Integer> result = new ArrayList<>();
