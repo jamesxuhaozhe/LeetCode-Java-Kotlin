@@ -28,4 +28,5 @@ public class jz67 {
         }
         return products[target];
     }
+
 }
