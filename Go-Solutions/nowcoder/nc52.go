@@ -1,6 +1,6 @@
 package nowcoder
 
-func isValid( s string ) bool {
+func isValid(s string) bool {
 	// write code here
 	n := len(s)
 	if n%2 == 1 {

@@ -1,6 +1,6 @@
 package nowcoder
 
-func solve107( a []int ) int {
+func solve107(a []int) int {
 	// write code here
 	if len(a) == 0 {
 		return -1

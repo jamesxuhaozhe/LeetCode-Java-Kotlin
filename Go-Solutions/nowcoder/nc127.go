@@ -3,7 +3,7 @@ package nowcoder
 /**
 一看到两个字符串的“最值”问题，一般想到二维dp。很自然地想到把str1前i个字符和str2前j个字符最长公共子串的长度作为dp[i][j]，但由于子串定义必须是原字符串连续的序列，这样定义无法找到递推关系，因此需要加限定条件——以str1[i-1]和str2[j-1]结尾的最长公共子串长度。
 另外如果找不到这样的子串，应该return "-1"而不是返回空串
- */
+*/
 func LCS127(str1 string, str2 string) string {
 	// write code here
 	m := len(str1)

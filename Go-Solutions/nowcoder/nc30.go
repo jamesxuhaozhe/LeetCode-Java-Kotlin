@@ -1,6 +1,6 @@
 package nowcoder
 
-func minNumberdisappered( arr []int ) int {
+func minNumberdisappered(arr []int) int {
 	// write code here
 	if len(arr) == 0 {
 		return 0

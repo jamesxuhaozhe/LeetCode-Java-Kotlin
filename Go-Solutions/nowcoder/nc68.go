@@ -1,6 +1,6 @@
 package nowcoder
 
-func jumpFloor( number int ) int {
+func jumpFloor(number int) int {
 	// write code here
 	if number == 0 || number == 1 {
 		return 1
@@ -16,7 +16,7 @@ func jumpFloor( number int ) int {
 	return dp[number]
 }
 
-func jumpFloor_better( number int ) int {
+func jumpFloor_better(number int) int {
 	// write code here
 	if number == 0 || number == 1 {
 		return 1

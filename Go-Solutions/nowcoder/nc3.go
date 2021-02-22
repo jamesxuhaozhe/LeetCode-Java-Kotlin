@@ -1,6 +1,6 @@
 package nowcoder
 
-func detectCycle( head *ListNode ) *ListNode {
+func detectCycle(head *ListNode) *ListNode {
 	// write code here
 	if head == nil || head.Next == nil {
 		return nil

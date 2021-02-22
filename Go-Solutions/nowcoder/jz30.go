@@ -1,8 +1,7 @@
 package nowcoder
 
-
 // see java sol
-func FindGreatestSumOfSubArray( array []int ) int {
+func FindGreatestSumOfSubArray(array []int) int {
 	// write code here
 	if len(array) == 0 {
 		return 0

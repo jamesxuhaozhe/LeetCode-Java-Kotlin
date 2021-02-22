@@ -1,6 +1,6 @@
 package nowcoder
 
-func Mergejz16( pHead1 *ListNode ,  pHead2 *ListNode ) *ListNode {
+func Mergejz16(pHead1 *ListNode, pHead2 *ListNode) *ListNode {
 	if pHead1 == nil && pHead2 == nil {
 		return nil
 	}

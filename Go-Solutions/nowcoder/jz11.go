@@ -1,10 +1,10 @@
 package nowcoder
 
 // 这个算法怎么都要32次运算，思路是每次读看最后一位，然后如果是1的话，就计数加1，并每次循环结束前右移1位
-func NumberOf1( n int ) int {
+func NumberOf1(n int) int {
 	ans := 0
 	for i := 0; i < 32; i++ {
-		ans += n & 1  //每次判断最低位是否为1
+		ans += n & 1 //每次判断最低位是否为1
 		n >>= 1
 	}
 	return ans
@@ -33,7 +33,7 @@ func NumberOf1( n int ) int {
  * @param n
  * @return
  */
-func NumberOf1_better( n int ) int {
+func NumberOf1_better(n int) int {
 	ans := 0
 	for int32(n) != 0 {
 		ans++

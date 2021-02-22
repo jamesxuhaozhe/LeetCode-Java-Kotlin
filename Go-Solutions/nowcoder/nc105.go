@@ -1,6 +1,6 @@
 package nowcoder
 
-func upper_bound_( n int ,  v int ,  a []int ) int {
+func upper_bound_(n int, v int, a []int) int {
 	// write code here
 	left, right := 0, n-1
 	for left <= right {

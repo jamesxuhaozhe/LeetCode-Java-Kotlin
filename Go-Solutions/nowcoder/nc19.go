@@ -1,7 +1,7 @@
 package nowcoder
 
 // https://leetcode-cn.com/problems/maximum-subarray/solution/zui-da-zi-xu-he-by-leetcode-solution/
-func maxsumofSubarray19( arr []int ) int {
+func maxsumofSubarray19(arr []int) int {
 	// write code here
 	if arr == nil || len(arr) == 0 {
 		return 0

@@ -2,7 +2,7 @@ package nowcoder
 
 import "strings"
 
-func solve114( A string ,  B string ) bool {
+func solve114(A string, B string) bool {
 	// write code here
 
 	if len(A) == 1 || len(B) == 1 {

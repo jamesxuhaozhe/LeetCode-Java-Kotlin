@@ -1,6 +1,6 @@
 package nowcoder
 
-func removeNthFromEnd( head *ListNode ,  n int ) *ListNode {
+func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	// write code here
 	dummy := &ListNode{Val: -1, Next: head,}
 	slow, fast := dummy, dummy

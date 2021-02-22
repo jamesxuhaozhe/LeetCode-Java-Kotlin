@@ -1,6 +1,5 @@
 package nowcoder
 
-
 var stack1jz20 []int
 var stack2jz20 []int
 

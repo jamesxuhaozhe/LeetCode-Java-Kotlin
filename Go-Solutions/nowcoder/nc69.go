@@ -1,6 +1,6 @@
 package nowcoder
 
-func FindKthToTail( pListHead *ListNode ,  k int ) *ListNode {
+func FindKthToTail(pListHead *ListNode, k int) *ListNode {
 	// write code here
 	length := getLength(pListHead)
 	if k > length {

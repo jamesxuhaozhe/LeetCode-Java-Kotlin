@@ -27,7 +27,7 @@ package nowcoder
  * @param sequence
  * @return
  */
-func VerifySquenceOfBST( seq []int ) bool {
+func VerifySquenceOfBST(seq []int) bool {
 	// write code here
 	if len(seq) == 0 {
 		return false

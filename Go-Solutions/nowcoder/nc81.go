@@ -1,6 +1,6 @@
 package nowcoder
 
-func KthNode( pRoot *TreeNode ,  k int ) *TreeNode {
+func KthNode(pRoot *TreeNode, k int) *TreeNode {
 	// write code here
 	if pRoot == nil {
 		return nil

@@ -1,6 +1,6 @@
 package nowcoder
 
-func solve103( str string ) string {
+func solve103(str string) string {
 	// write code here
 	if len(str) == 0 {
 		return str

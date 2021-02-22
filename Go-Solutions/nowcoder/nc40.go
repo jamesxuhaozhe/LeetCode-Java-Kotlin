@@ -1,7 +1,7 @@
 package nowcoder
 
 //todo 再用stack做一遍
-func addInList( head1 *ListNode ,  head2 *ListNode ) *ListNode {
+func addInList(head1 *ListNode, head2 *ListNode) *ListNode {
 	// write code here
 	if head1 == nil {
 		return head2
@@ -28,11 +28,11 @@ func addInList( head1 *ListNode ,  head2 *ListNode ) *ListNode {
 			l2 = l2.Next
 		}
 		current.Next = &ListNode{
-			Val: (n1+n2+carry)%10,
+			Val:  (n1 + n2 + carry) % 10,
 			Next: nil,
 		}
 		current = current.Next
-		carry = (n1+n2+carry)/10
+		carry = (n1 + n2 + carry) / 10
 	}
 	return reverse40(head.Next)
 }

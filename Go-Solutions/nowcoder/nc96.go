@@ -1,6 +1,6 @@
 package nowcoder
 
-func isPail96( head *ListNode ) bool {
+func isPail96(head *ListNode) bool {
 	// write code here
 	reversed := reverse96(head)
 	for reversed != nil && head != nil {

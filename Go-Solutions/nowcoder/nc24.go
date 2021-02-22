@@ -1,6 +1,6 @@
 package nowcoder
 
-func deleteDuplicates24( head *ListNode ) *ListNode {
+func deleteDuplicates24(head *ListNode) *ListNode {
 	// write code here
 	if head == nil || head.Next == nil {
 		return head

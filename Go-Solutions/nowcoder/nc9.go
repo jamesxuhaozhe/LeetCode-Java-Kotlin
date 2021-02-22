@@ -1,7 +1,7 @@
 package nowcoder
 
 // TODO use java
-func hasPathSum( root *TreeNode ,  sum int ) bool {
+func hasPathSum(root *TreeNode, sum int) bool {
 	// write code here
 	if root == nil {
 		return false

@@ -1,6 +1,6 @@
 package nowcoder
 
-func GetNumberOfK( data []int ,  k int ) int {
+func GetNumberOfK(data []int, k int) int {
 	// write code here
 	leftIdx := getFarLeftIndex74(data, k)
 	if leftIdx == -1 {

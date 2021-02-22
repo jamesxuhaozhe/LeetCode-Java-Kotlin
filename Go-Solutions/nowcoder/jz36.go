@@ -1,7 +1,6 @@
 package nowcoder
 
-
-func FindFirstCommonNodejz36( pHead1 *ListNode ,  pHead2 *ListNode ) *ListNode {
+func FindFirstCommonNodejz36(pHead1 *ListNode, pHead2 *ListNode) *ListNode {
 	// write code here
 	if pHead1 == nil || pHead2 == nil {
 		return nil

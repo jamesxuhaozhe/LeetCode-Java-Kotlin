@@ -1,6 +1,6 @@
 package nowcoder
 
-func Fibonacci( n int ) int {
+func Fibonacci(n int) int {
 	// write code here
 	if n == 0 || n == 1 {
 		return n

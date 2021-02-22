@@ -1,6 +1,6 @@
 package nowcoder
 
-func hasCycle( head *ListNode ) bool {
+func hasCycle(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return false
 	}

@@ -1,6 +1,6 @@
 package nowcoder
 
-func zigzagLevelOrder( root *TreeNode ) [][]int {
+func zigzagLevelOrder(root *TreeNode) [][]int {
 	// write code here
 	if root == nil {
 		return [][]int{}

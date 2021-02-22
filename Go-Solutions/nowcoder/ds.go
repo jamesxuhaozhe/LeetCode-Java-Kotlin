@@ -11,9 +11,8 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-
 type RandomListNode struct {
-    Label int
-    Next *RandomListNode
-    Random *RandomListNode
+	Label  int
+	Next   *RandomListNode
+	Random *RandomListNode
 }

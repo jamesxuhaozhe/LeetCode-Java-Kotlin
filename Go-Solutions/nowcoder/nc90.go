@@ -1,6 +1,6 @@
 package nowcoder
 
-func getMinStack( op [][]int ) []int {
+func getMinStack(op [][]int) []int {
 	// write code here
 	mStack := newMinStack()
 	res := make([]int, 0)
@@ -48,7 +48,7 @@ func (s *stack90) size() int {
 }
 
 type minStack struct {
-	data1 *stack90
+	data1  *stack90
 	assist *stack90
 }
 
@@ -74,4 +74,3 @@ func (s *minStack) pop() int {
 func (s *minStack) min() int {
 	return s.assist.peek()
 }
-

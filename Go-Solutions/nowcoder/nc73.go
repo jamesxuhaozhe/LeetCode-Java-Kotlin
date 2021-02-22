@@ -2,7 +2,7 @@ package nowcoder
 
 import "sort"
 
-func MoreThanHalfNum_Solution( numbers []int ) int {
+func MoreThanHalfNum_Solution(numbers []int) int {
 	// write code here
 	sort.Ints(numbers)
 	mid := numbers[len(numbers)/2]

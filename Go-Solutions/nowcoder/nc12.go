@@ -17,7 +17,7 @@ package nowcoder
  * 则切割后的左子树前序序列为：{2,4,7}，切割后的左子树中序序列为：{4,7,2}；切割后的右子树前序序列为：{3,5,6,8}，切割后的右子树中序序列为：{5,3,8,6}
  * 对子树分别使用同样的方法分解
  */
-func reConstructBinaryTree( pre []int ,  vin []int ) *TreeNode {
+func reConstructBinaryTree(pre []int, vin []int) *TreeNode {
 	// write code here
 	if pre == nil || len(pre) == 0 || vin == nil || len(vin) == 0 {
 		return nil

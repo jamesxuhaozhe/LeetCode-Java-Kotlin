@@ -1,10 +1,10 @@
 package nowcoder
 
-func sqrt32( x int ) int {
+func sqrt32(x int) int {
 	// write code here
 	r := x
 	for r*r > x {
-		r = (r + x/r)/2
+		r = (r + x/r) / 2
 	}
 	return r
 }

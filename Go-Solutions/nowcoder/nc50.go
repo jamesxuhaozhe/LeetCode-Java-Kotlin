@@ -1,6 +1,6 @@
 package nowcoder
 
-func reverseKGroup( head *ListNode ,  k int ) *ListNode {
+func reverseKGroup(head *ListNode, k int) *ListNode {
 	// write code here
 	tail := head
 	for i := 0; i < k; i++ {

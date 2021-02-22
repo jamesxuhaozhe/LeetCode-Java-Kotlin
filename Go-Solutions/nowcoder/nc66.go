@@ -1,6 +1,6 @@
 package nowcoder
 
-func FindFirstCommonNode( pHead1 *ListNode ,  pHead2 *ListNode ) *ListNode {
+func FindFirstCommonNode(pHead1 *ListNode, pHead2 *ListNode) *ListNode {
 	// write code here
 	if pHead1 == nil || pHead2 == nil {
 		return nil

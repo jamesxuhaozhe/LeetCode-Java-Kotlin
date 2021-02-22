@@ -1,6 +1,6 @@
 package nowcoder
 
-func GetUglyNumber_Solution( index int ) int {
+func GetUglyNumber_Solution(index int) int {
 	if index <= 0 {
 		return 0
 	}
